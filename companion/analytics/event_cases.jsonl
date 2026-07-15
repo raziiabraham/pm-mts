@@ -1,0 +1,6 @@
+{"case_id":"valid_started","expected_valid":true,"event":{"event_name":"Context Generation Started","observed_at":"2026-07-01T00:00:01Z","properties":{"request_id":"req_briefly_001","invocation_source":"onboarding"}}}
+{"case_id":"valid_completed","expected_valid":true,"event":{"event_name":"Context Generation Completed","observed_at":"2026-07-01T00:00:03Z","properties":{"request_id":"req_briefly_001","status":"ready_for_review","duration_ms":2040}}}
+{"case_id":"valid_edit","expected_valid":true,"event":{"event_name":"Context Draft Edited","observed_at":"2026-07-01T00:01:00Z","properties":{"request_id":"req_briefly_001","field":"customer_segments","edit_reason":"positioning_preference"}}}
+{"case_id":"missing_duration","expected_valid":false,"event":{"event_name":"Context Generation Completed","observed_at":"2026-07-01T00:00:03Z","properties":{"request_id":"req_briefly_002","status":"failed"}}}
+{"case_id":"wrong_duration_type","expected_valid":false,"event":{"event_name":"Context Generation Completed","observed_at":"2026-07-01T00:00:03Z","properties":{"request_id":"req_briefly_003","status":"ready_for_review","duration_ms":"fast"}}}
+{"case_id":"unknown_event","expected_valid":false,"event":{"event_name":"AI Worked","observed_at":"2026-07-01T00:00:03Z","properties":{"request_id":"req_briefly_004"}}}

@@ -1,0 +1,15 @@
+{
+  "hard_checks": [
+    "Output status is matched, needs_review, or no_match.",
+    "A matched page ID occurs in the supplied candidate set.",
+    "needs_review and no_match return no selected page ID.",
+    "Every output retains at least one evidence statement."
+  ],
+  "semantic_criteria": {
+    "4": "Correct identity or justified abstention; evidence uses supplied context; no unsupported claim.",
+    "3": "Correct behavior and relevant evidence, but the explanation is generic.",
+    "2": "Plausible candidate with weak context use or unnecessary certainty.",
+    "1": "Wrong identity, forced match, invented context, or invalid abstention behavior."
+  },
+  "release_gate": "No failed critical case in the held-out set."
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F8.2: The E-Wallet Outcome Map</title>
+<desc id="desc">A pending order branches into paid, failed or cancelled, and delayed outcomes, each with aligned UI, state, notification, operations, and support behavior.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE E-WALLET OUTCOME MAP</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">A payment requirement is incomplete until paid, failed, cancelled, and delayed states have product behavior.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<rect x="420" y="520" width="760" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="420" y="520" width="68" height="180" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="454" y="610" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="512" y="559" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">Create the order in a pending-payment state</text>
+<rect x="420" y="880" width="760" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="420" y="880" width="68" height="180" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="454" y="970" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="512" y="919" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">Start provider authorization and await an</text>
+<text x="512" y="952" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">event</text>
+<polyline points="800.0,700.0 800.0,866.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800,866 790,842 810,842" fill="#404040" stroke="none"/>
+<polyline points="800.0,1060.0 800.0,1190.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="290.0,1190.0 1310.0,1190.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="290.0,1190.0 290.0,1280.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="290,1280 280,1256 300,1256" fill="#404040" stroke="none"/>
+<polyline points="800.0,1190.0 800.0,1280.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800,1280 790,1256 810,1256" fill="#404040" stroke="none"/>
+<polyline points="1310.0,1190.0 1310.0,1280.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1310,1280 1300,1256 1320,1256" fill="#404040" stroke="none"/>
+<rect x="80" y="1290" width="420" height="550" rx="26" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="114" y="1344" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">PAID</text>
+<text x="114" y="1395" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Verify the asynchronous</text>
+<text x="114" y="1425" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">event, apply it idempotently,</text>
+<text x="114" y="1455" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">expose the paid state, and</text>
+<text x="114" y="1485" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">notify the user.</text>
+<rect x="590" y="1290" width="420" height="550" rx="26" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="624" y="1344" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">FAILED OR CANCELLED</text>
+<text x="624" y="1395" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Record a recoverable state.</text>
+<text x="624" y="1425" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Explain retry, waiting rules, or</text>
+<text x="624" y="1455" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">an alternate payment</text>
+<text x="624" y="1485" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">method.</text>
+<rect x="1100" y="1290" width="420" height="550" rx="26" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="1134" y="1344" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">DELAYED</text>
+<text x="1134" y="1395" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Keep the order pending.</text>
+<text x="1134" y="1425" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Surface reconciliation and</text>
+<text x="1134" y="1455" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">support visibility instead of</text>
+<text x="1134" y="1485" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">guessing success.</text>
+<rect x="185" y="1119" width="210" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="290" y="1150" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">PROVIDER ACCEPTS</text>
+<rect x="685" y="1119" width="230" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="800" y="1150" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">REJECTS / ABANDONS</text>
+<rect x="1215" y="1119" width="190" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="1310" y="1150" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">EVENT DELAYED</text>
+<rect x="160" y="1940" width="1280" height="120" rx="28" fill="#242424" stroke="none" stroke-width="1"/>
+<text x="800" y="2000" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="24" font-weight="850" text-anchor="middle" dy="0.34em">THE PROVIDER EVENT IS NOT THE USER EXPERIENCE</text>
+<text x="145" y="2125" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">UI, order state, notification, operations, and support must agree on the same outcome.</text>
+<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F8.2</text>
+</svg>

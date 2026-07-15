@@ -1,0 +1,17 @@
+{"review_id":"HC001","review_date":"2026-06-01","language":"en","split":"development","text":"Search filters reset every time I return from a product page."}
+{"review_id":"HC002","review_date":"2026-06-02","language":"en","split":"development","text":"My refund was approved yesterday but the app still shows it as pending."}
+{"review_id":"HC003","review_date":"2026-06-03","language":"en","split":"development","text":"Face ID login is finally reliable. Much faster than typing my password."}
+{"review_id":"HC004","review_date":"2026-06-04","language":"en","split":"development","text":"The courier was rude when the parcel arrived."}
+{"review_id":"HC005","review_date":"2026-06-05","language":"en","split":"development","text":"The app says delivered while the parcel is still marked in transit on the tracking page."}
+{"review_id":"HC006","review_date":"2026-06-06","language":"en","split":"development","text":"Search is much better, but all my saved filters disappeared after the update."}
+{"review_id":"HC007","review_date":"2026-06-07","language":"en","split":"development","text":"Amazing update—now checkout crashes every single time. Five stars for consistency."}
+{"review_id":"HC008","review_date":"2026-06-08","language":"id-en","split":"development","text":"Pembayaran berhasil, but the order still appears as unpaid in the app."}
+{"review_id":"HC009","review_date":"2026-06-09","language":"en","split":"test","text":"ok"}
+{"review_id":"HC010","review_date":"2026-06-10","language":"en","split":"test","text":"The promo code applies, then disappears when I choose a saved card."}
+{"review_id":"HC011","review_date":"2026-06-11","language":"en","split":"test","text":"Support chat closes whenever I attach a screenshot."}
+{"review_id":"HC012","review_date":"2026-06-12","language":"en","split":"test","text":"I can report a suspicious seller from the order screen now. Thank you."}
+{"review_id":"HC013","review_date":"2026-06-13","language":"en","split":"test","text":"A full-screen ad covers the add-to-cart button and the close icon does nothing."}
+{"review_id":"HC014","review_date":"2026-06-14","language":"en","split":"test","text":"The refund button is disabled and the help article sends me back to the same page."}
+{"review_id":"HC015","review_date":"2026-06-15","language":"en","split":"test","text":"A seller asked me in chat to pay by bank transfer outside HarborCart."}
+{"review_id":"HC016","review_date":"2026-06-16","language":"en","split":"test","text":"The delivery estimate was clear and the live map matched the driver's arrival."}
+{"review_id":"HC017","review_date":"2026-06-17","language":"en","split":"test","text":"Please add dark mode."}

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F7.1: The Experiment Decision Canvas</title>
+<desc id="desc">A decision canvas separates validity, benefit, guardrails, uncertainty, and product action into explicit gates and evidence labels.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE EXPERIMENT DECISION CANVAS</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">Evidence validity, product benefit, downside, and action are separate judgments.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<rect x="475" y="455" width="650" height="150" rx="28" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="800" y="500" fill="#242424" font-family="Manrope, sans-serif" font-size="28" font-weight="720" text-anchor="middle" dy="0">Read results at the prespecified horizon or</text>
+<text x="800" y="533" fill="#242424" font-family="Manrope, sans-serif" font-size="28" font-weight="720" text-anchor="middle" dy="0">valid stop</text>
+<polygon points="800,695 980,790 800,885 620,790" fill="#FFFFFF" stroke="#242424"/>
+<text x="800" y="756" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">Validity checks</text>
+<text x="800" y="787" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">pass?</text>
+<polygon points="800,1015 980,1110 800,1205 620,1110" fill="#FFFFFF" stroke="#242424"/>
+<text x="800" y="1076" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">Primary benefit</text>
+<text x="800" y="1107" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">criterion met?</text>
+<polygon points="430,1355 610,1450 430,1545 250,1450" fill="#FFFFFF" stroke="#242424"/>
+<text x="430" y="1416" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">Guardrails and</text>
+<text x="430" y="1447" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="760" text-anchor="middle" dy="0">diagnostics pass?</text>
+<polygon points="1170,1355 1350,1450 1170,1545 990,1450" fill="#FFFFFF" stroke="#242424"/>
+<text x="1170" y="1416" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="760" text-anchor="middle" dy="0">Interval rules out</text>
+<text x="1170" y="1445" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="760" text-anchor="middle" dy="0">worthwhile benefit?</text>
+<polyline points="800.0,605.0 800.0,685.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800,685 790,661 810,661" fill="#404040" stroke="none"/>
+<polyline points="800.0,885.0 800.0,1005.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800,1005 790,981 810,981" fill="#404040" stroke="none"/>
+<polyline points="620.0,790.0 380.0,790.0 380.0,870.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="380,870 370,846 390,846" fill="#404040" stroke="none"/>
+<rect x="120" y="875" width="490" height="235" rx="26" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="154" y="929" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">INVALID</text>
+<text x="154" y="980" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Repair the design, data, or analysis</text>
+<text x="154" y="1010" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">before making a product claim.</text>
+<polyline points="695.0,1170.0 535.0,1350.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="535,1350 543,1325 558,1339" fill="#404040" stroke="none"/>
+<polyline points="905.0,1170.0 1065.0,1350.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1065,1350 1042,1339 1057,1325" fill="#404040" stroke="none"/>
+<rect x="95" y="1745" width="360" height="275" rx="26" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="129" y="1799" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">GO</text>
+<text x="129" y="1850" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Ship or ramp with the</text>
+<text x="129" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">experiment-supported</text>
+<text x="129" y="1910" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">evidence label.</text>
+<rect x="475" y="1745" width="310" height="275" rx="26" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="509" y="1799" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">PAUSE</text>
+<text x="509" y="1850" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Investigate</text>
+<text x="509" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">downside or</text>
+<text x="509" y="1910" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">invalidity before</text>
+<text x="509" y="1940" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">exposure.</text>
+<rect x="815" y="1745" width="350" height="275" rx="26" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="849" y="1799" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">NO-GO</text>
+<text x="849" y="1850" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Stop or redesign this</text>
+<text x="849" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">version.</text>
+<rect x="1185" y="1745" width="325" height="275" rx="26" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="1219" y="1799" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">INCONCLUSIVE</text>
+<text x="1219" y="1850" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Do not call the variant</text>
+<text x="1219" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">a winner.</text>
+<polyline points="340.0,1545.0 275.0,1735.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="275,1735 273,1709 292,1716" fill="#404040" stroke="none"/>
+<polyline points="520.0,1515.0 630.0,1735.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="630,1735 610,1718 628,1709" fill="#404040" stroke="none"/>
+<polyline points="1080.0,1515.0 990.0,1735.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="990,1735 990,1709 1008,1717" fill="#404040" stroke="none"/>
+<polyline points="1260.0,1545.0 1350.0,1735.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1350,1735 1331,1718 1349,1709" fill="#404040" stroke="none"/>
+<rect x="213" y="1614" width="84" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="255" y="1645" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">YES</text>
+<rect x="558" y="1614" width="84" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="600" y="1645" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NO</text>
+<rect x="968" y="1614" width="84" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="1010" y="1645" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">YES</text>
+<rect x="1318" y="1614" width="84" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="1360" y="1645" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NO</text>
+<rect x="565" y="1209" width="90" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="610" y="1240" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">YES</text>
+<rect x="945" y="1209" width="90" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="990" y="1240" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NO</text>
+<rect x="265" y="759" width="90" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="310" y="790" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NO</text>
+<rect x="820" y="919" width="90" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="865" y="950" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">YES</text>
+<text x="145" y="2110" fill="#242424" font-family="Newsreader, sans-serif" font-size="24" font-weight="500" text-anchor="start" dy="0">A cautious rollout may still be a product decision, but the evidence label remains inconclusive.</text>
+<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F7.1</text>
+</svg>

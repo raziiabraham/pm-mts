@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F13.1: The Inspectable AI Evaluation System</title>
+<desc id="desc">Four phases connect discovery, collection, interpretation, and earned trust through an inspectable evidence path.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE INSPECTABLE AI EVALUATION SYSTEM</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">Quality is produced across identity, evidence, analysis, ranking, synthesis, and user trust.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<polyline points="190.0,490.0 190.0,2110.0" fill="none" stroke="#404040" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="190.0" cy="590.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="190" y="590" fill="#242424" font-family="Manrope, sans-serif" font-size="31" font-weight="850" text-anchor="middle" dy="0.34em">01</text>
+<text x="300" y="518" fill="#666666" font-family="Manrope, sans-serif" font-size="24" font-weight="850" text-anchor="start" dy="0">DISCOVER</text>
+<rect x="300" y="562" width="520" height="198" rx="24" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="560" y="612" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">User question</text>
+<rect x="930" y="562" width="520" height="198" rx="24" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="1190" y="612" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Candidate identity search</text>
+<ellipse cx="190.0" cy="995.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="190" y="995" fill="#242424" font-family="Manrope, sans-serif" font-size="31" font-weight="850" text-anchor="middle" dy="0.34em">02</text>
+<text x="300" y="923" fill="#666666" font-family="Manrope, sans-serif" font-size="24" font-weight="850" text-anchor="start" dy="0">COLLECT</text>
+<rect x="930" y="967" width="520" height="198" rx="24" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="1190" y="1017" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Entity resolution</text>
+<rect x="300" y="967" width="520" height="198" rx="24" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="560" y="1017" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Ad snapshot + provenance</text>
+<ellipse cx="190.0" cy="1400.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="190" y="1400" fill="#242424" font-family="Manrope, sans-serif" font-size="31" font-weight="850" text-anchor="middle" dy="0.34em">03</text>
+<text x="300" y="1328" fill="#666666" font-family="Manrope, sans-serif" font-size="24" font-weight="850" text-anchor="start" dy="0">INTERPRET</text>
+<rect x="300" y="1372" width="520" height="198" rx="24" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="560" y="1422" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Multimodal analysis</text>
+<rect x="930" y="1372" width="520" height="198" rx="24" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="1190" y="1422" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Question-aware ranking</text>
+<ellipse cx="190.0" cy="1805.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="190" y="1805" fill="#242424" font-family="Manrope, sans-serif" font-size="31" font-weight="850" text-anchor="middle" dy="0.34em">04</text>
+<text x="300" y="1733" fill="#666666" font-family="Manrope, sans-serif" font-size="24" font-weight="850" text-anchor="start" dy="0">EARN TRUST</text>
+<rect x="930" y="1777" width="520" height="198" rx="24" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="1190" y="1827" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Strategic synthesis</text>
+<rect x="300" y="1777" width="520" height="198" rx="24" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="560" y="1827" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="700" text-anchor="middle" dy="0">Inline evidence + user decision</text>
+<polyline points="820.0,661.0 902.0,661.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="902,661 878,671 878,651" fill="#404040" stroke="none"/>
+<polyline points="930.0,1066.0 848.0,1066.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="848,1066 872,1056 872,1076" fill="#404040" stroke="none"/>
+<polyline points="820.0,1471.0 902.0,1471.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="902,1471 878,1481 878,1461" fill="#404040" stroke="none"/>
+<polyline points="930.0,1876.0 848.0,1876.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="848,1876 872,1866 872,1886" fill="#404040" stroke="none"/>
+<polyline points="1190.0,760.0 1190.0,939.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1190,939 1180,915 1200,915" fill="#404040" stroke="none"/>
+<polyline points="560.0,1165.0 560.0,1344.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="560,1344 550,1320 570,1320" fill="#404040" stroke="none"/>
+<polyline points="1190.0,1570.0 1190.0,1749.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1190,1749 1180,1725 1200,1725" fill="#404040" stroke="none"/>
+<rect x="300" y="2100" width="1150" height="100" rx="24" fill="#242424" stroke="none" stroke-width="1"/>
+<text x="875" y="2150" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="24" font-weight="700" text-anchor="middle" dy="0.34em">The final answer is only as trustworthy as the evidence path behind it.</text>
+</svg>

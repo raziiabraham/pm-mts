@@ -1,0 +1,6 @@
+{
+  "request_id": "req_briefly_001",
+  "website_url": "https://example.invalid",
+  "requested_fields": ["flagship_offering", "offering_description", "customer_segments"],
+  "user_can_edit": true
+}

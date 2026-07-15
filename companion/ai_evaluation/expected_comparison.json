@@ -1,0 +1,4 @@
+{
+  "v1": {"passed": 2, "total": 5, "critical_failures": 2, "release": false},
+  "v2": {"passed": 5, "total": 5, "critical_failures": 0, "release": true}
+}

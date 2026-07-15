@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F1.1: The Technical Participation Climb</title>
+<desc id="desc">Technical confidence grows through observable contribution, not a change in title. The stages are: Ask: expose states, risks, and ownership; Inspect: trace behavior through artifacts; Prototype: create a bounded learning object; Contribute: change a team-owned system safely.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE TECHNICAL PARTICIPATION CLIMB</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">Technical confidence grows through observable contribution, not a change in title.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<polygon points="95,575 1510,540 1480,865 120,895" fill="#E2E2E2" stroke="none"/>
+<polygon points="115,1245 1485,1280 1510,1590 85,1555" fill="#D6D6D6" stroke="none"/>
+<polyline points="755.0,720.0 831.0,720.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="831,720 807,730 807,710" fill="#404040" stroke="none"/>
+<polyline points="1130.0,815.0 1130.0,1311.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1130,1311 1120,1287 1140,1287" fill="#404040" stroke="none"/>
+<polyline points="845.0,1420.0 769.0,1420.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="769,1420 793,1410 793,1430" fill="#404040" stroke="none"/>
+<polyline points="185.0,1420.0 55.0,1420.0 55.0,720.0 185.0,720.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="185,720 161,730 161,710" fill="#404040" stroke="none"/>
+<rect x="980" y="400" width="510" height="68" rx="18" fill="#FAFAFA" stroke="none" stroke-width="1"/>
+<text x="1460" y="434" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="19" font-weight="820" text-anchor="end" dy="0">EXPERIENCE SHARPENS THE NEXT QUESTION</text>
+<rect x="185" y="625" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="185" y="625" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="219" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="277" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Ask: expose states, risks, and</text>
+<text x="277" y="700" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">ownership</text>
+<rect x="845" y="625" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="845" y="625" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="879" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="937" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Inspect: trace behavior</text>
+<text x="937" y="700" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">through artifacts</text>
+<rect x="845" y="1325" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="845" y="1325" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="879" y="1420" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
+<text x="937" y="1364" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Prototype: create a bounded</text>
+<text x="937" y="1400" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">learning object</text>
+<rect x="185" y="1325" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="185" y="1325" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="219" y="1420" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
+<text x="277" y="1364" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Contribute: change a</text>
+<text x="277" y="1400" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">team-owned system safely</text>
+<text x="145" y="2115" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">Move only as far as the product question and risk require.</text>
+<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F1.1</text>
+</svg>

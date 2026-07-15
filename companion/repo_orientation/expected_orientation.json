@@ -1,0 +1,18 @@
+{
+  "files_inspected": [
+    "toy_repo/README.md",
+    "toy_repo/docs/design/uploads.md",
+    "toy_repo/src/CoverImageUploader.tsx",
+    "toy_repo/src/validateUpload.ts",
+    "toy_repo/src/documentEvents.ts",
+    "toy_repo/tests/document-cover.spec.ts"
+  ],
+  "verified_behavior": [
+    "The interface exposes select, preview, replace, remove, loading, and error states.",
+    "The update event is emitted only after the server-confirmed save callback.",
+    "The implemented validator and test reject files larger than 3 MB."
+  ],
+  "contradiction": "The design documentation promises 5 MB while the validator and test enforce 3 MB.",
+  "repo_cannot_answer": "Whether 3 MB is an intentional performance policy, a stale implementation, or a temporary provider limit.",
+  "decision": "Do not change one value in isolation. Resolve the intended contract with product and engineering evidence, then update interface copy, validation, tests, and documentation together."
+}

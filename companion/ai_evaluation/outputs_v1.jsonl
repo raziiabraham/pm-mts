@@ -1,0 +1,5 @@
+{"case_id":"domain","status":"matched","selected_page_id":"domain_property","evidence":["Exact name match"]}
+{"case_id":"northstar","status":"matched","selected_page_id":"northstar_official","evidence":["Description matches workforce planning"]}
+{"case_id":"acme_labs","status":"matched","selected_page_id":"acme_foods","evidence":["Closest available name"]}
+{"case_id":"storyrail","status":"matched","selected_page_id":"storyrail_current","evidence":["Official current page"]}
+{"case_id":"prooflane_apac","status":"matched","selected_page_id":"prooflane_apac","evidence":["Name contains APAC"]}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2200" viewBox="0 0 3000 2200" role="img" aria-labelledby="title desc">
+<title id="title">F20.1: Building Is Not Shipping</title>
+<desc id="desc">A coral route connects an evidence-backed brief through implementation, checks, human review, rollout, production behavior, and learning.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="3000" height="2200" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="70" font-weight="620" text-anchor="start" dy="0">BUILDING IS NOT SHIPPING</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">A change becomes a product only after it survives verification, review, controlled exposure, and learning.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<rect x="120" y="440" width="1290" height="1480" rx="42" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<rect x="1590" y="440" width="1290" height="1480" rx="42" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="370" y="545" fill="#666666" font-family="Newsreader, sans-serif" font-size="70" font-weight="620" text-anchor="start" dy="0">BUILD</text>
+<text x="1680" y="545" fill="#242424" font-family="Newsreader, sans-serif" font-size="70" font-weight="620" text-anchor="start" dy="0">SHIP</text>
+<text x="370" y="620" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="25" font-weight="600" text-anchor="start" dy="0">Produce a bounded change and earn confidence in it.</text>
+<text x="1680" y="620" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="25" font-weight="600" text-anchor="start" dy="0">Expose deliberately, observe reality, and keep learning.</text>
+<polyline points="310.0,810.0 310.0,780.0 511.0,780.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="511,780 487,790 487,770" fill="#404040" stroke="none"/>
+<polyline points="720.0,870.0 720.0,980.0 901.0,980.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="901,980 877,990 877,970" fill="#404040" stroke="none"/>
+<polyline points="1110.0,1070.0 1110.0,1170.0 1070.0,1170.0 1070.0,1266.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1070,1266 1060,1242 1080,1242" fill="#404040" stroke="none"/>
+<polyline points="875.0,1370.0 650.0,1370.0 650.0,1406.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="650,1406 640,1382 660,1382" fill="#404040" stroke="none"/>
+<polyline points="1810.0,1420.0 1810.0,1320.0 1951.0,1320.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1951,1320 1927,1330 1927,1310" fill="#404040" stroke="none"/>
+<polyline points="2160.0,1230.0 2500.0,1230.0 2500.0,1084.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2500,1084 2510,1108 2490,1108" fill="#404040" stroke="none"/>
+<polyline points="2500.0,890.0 2500.0,847.0 2700.0,847.0 2700.0,804.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2700,804 2710,828 2690,828" fill="#404040" stroke="none"/>
+<rect x="115" y="810" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="115" y="810" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="149" y="900" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="207" y="849" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Evidence-backed</text>
+<text x="207" y="880" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">brief</text>
+<rect x="525" y="690" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="525" y="690" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="559" y="780" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="617" y="729" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Bounded</text>
+<text x="617" y="760" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">implementation</text>
+<rect x="915" y="890" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="915" y="890" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="949" y="980" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
+<text x="1007" y="929" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Local product QA</text>
+<rect x="875" y="1280" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="875" y="1280" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="909" y="1370" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
+<text x="967" y="1319" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Automated checks</text>
+<rect x="455" y="1420" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="455" y="1420" width="68" height="180" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="489" y="1510" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">05</text>
+<text x="547" y="1459" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Robot + human</text>
+<text x="547" y="1490" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">review</text>
+<rect x="1615" y="1420" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1615" y="1420" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1649" y="1510" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">06</text>
+<text x="1707" y="1459" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Preview verification</text>
+<rect x="1965" y="1230" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1965" y="1230" width="68" height="180" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="1999" y="1320" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">07</text>
+<text x="2057" y="1269" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Flag + rollout</text>
+<text x="2057" y="1300" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">decision</text>
+<rect x="2305" y="890" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2305" y="890" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="2339" y="980" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">08</text>
+<text x="2397" y="929" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Production behavior</text>
+<text x="2397" y="960" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">+ GTM</text>
+<rect x="2505" y="610" width="390" height="180" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2505" y="610" width="68" height="180" rx="20" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="2539" y="700" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">09</text>
+<text x="2597" y="649" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="720" text-anchor="start" dy="0">Measure + learn</text>
+<polyline points="845.0,1510.0 1601.0,1510.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1601,1510 1577,1520 1577,1500" fill="#404040" stroke="none"/>
+<polyline points="2895.0,700.0 2940.0,700.0 2940.0,1840.0 70.0,1840.0 70.0,900.0 101.0,900.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="101,900 77,910 77,890" fill="#404040" stroke="none"/>
+<text x="1850" y="1800" fill="#242424" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="middle" dy="0.34em">NEXT: NEW EVIDENCE</text>
+<text x="775" y="2020" fill="#242424" font-family="Newsreader, sans-serif" font-size="30" font-weight="520" text-anchor="middle" dy="0">Local confidence is necessary.</text>
+<text x="2225" y="2020" fill="#242424" font-family="Newsreader, sans-serif" font-size="30" font-weight="520" text-anchor="middle" dy="0">Observable production behavior completes the work.</text>
+</svg>

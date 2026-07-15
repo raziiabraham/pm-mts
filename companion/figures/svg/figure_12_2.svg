@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="2200" viewBox="0 0 3000 2200" role="img" aria-labelledby="title desc">
+<title id="title">F12.2: The Model-Backed Application Pipeline</title>
+<desc id="desc">A two-page application pipeline separates source retrieval, context construction, model proposals, tool execution, structured validation, user confirmation, tracing, evaluation, and product evidence.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="3000" height="2200" fill="#FAFAFA"/>
+<text x="150" y="105" fill="#242424" font-family="Newsreader, sans-serif" font-size="58" font-weight="620" text-anchor="start" dy="0">THE MODEL-BACKED</text>
+<text x="150" y="205" fill="#242424" font-family="Newsreader, sans-serif" font-size="58" font-weight="620" text-anchor="start" dy="0">APPLICATION PIPELINE</text>
+<text x="1650" y="115" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="28" font-weight="520" text-anchor="start" dy="0">The model proposes. The application retrieves, validates, acts, confirms, traces, and earns</text>
+<text x="1650" y="148" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="28" font-weight="520" text-anchor="start" dy="0">trust.</text>
+<rect x="150" y="325" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<polygon points="90,455 710,430 690,1980 105,1960" fill="#E2E2E2" stroke="none"/>
+<text x="145" y="525" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">SOURCE</text>
+<polygon points="760,455 1410,430 1390,1980 775,1960" fill="#D6D6D6" stroke="none"/>
+<text x="815" y="525" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">CONTEXT</text>
+<polygon points="1590,455 2220,430 2200,1980 1605,1960" fill="#ECECEC" stroke="none"/>
+<text x="1645" y="525" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">MODEL + TOOLS</text>
+<polygon points="2270,455 2910,430 2890,1980 2285,1960" fill="#D6D6D6" stroke="none"/>
+<text x="2325" y="525" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">VALIDATION + CONTROL</text>
+<polyline points="600.0,720.0 836.0,720.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="836,720 812,730 812,710" fill="#404040" stroke="none"/>
+<polyline points="1100.0,815.0 1100.0,1051.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1100,1051 1090,1027 1110,1027" fill="#404040" stroke="none"/>
+<polyline points="850.0,1160.0 614.0,1160.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="614,1160 638,1150 638,1170" fill="#404040" stroke="none"/>
+<polyline points="2150.0,720.0 2386.0,720.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2386,720 2362,730 2362,710" fill="#404040" stroke="none"/>
+<polyline points="2650.0,815.0 2650.0,1051.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2650,1051 2640,1027 2660,1027" fill="#404040" stroke="none"/>
+<polyline points="2400.0,1160.0 2164.0,1160.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2164,1160 2188,1150 2188,1170" fill="#404040" stroke="none"/>
+<polyline points="1900.0,1255.0 1900.0,1491.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1900,1491 1890,1467 1910,1467" fill="#404040" stroke="none"/>
+<polyline points="2150.0,1600.0 2386.0,1600.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2386,1600 2362,1610 2362,1590" fill="#404040" stroke="none"/>
+<polyline points="2650.0,1695.0 2650.0,1771.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2650,1771 2640,1747 2660,1747" fill="#404040" stroke="none"/>
+<polyline points="2400.0,1880.0 2164.0,1880.0" fill="none" stroke="#404040" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2164,1880 2188,1870 2188,1890" fill="#404040" stroke="none"/>
+<rect x="100" y="625" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="100" y="625" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="134" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="192" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Work email and approved</text>
+<text x="192" y="692" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">domain</text>
+<rect x="850" y="625" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="850" y="625" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="884" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="942" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Deterministic retrieval</text>
+<rect x="850" y="1065" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="850" y="1065" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="884" y="1160" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
+<text x="942" y="1104" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Selected source passages</text>
+<rect x="100" y="1065" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="100" y="1065" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="134" y="1160" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
+<text x="192" y="1104" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Prompt template and runtime</text>
+<text x="192" y="1132" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">variables</text>
+<rect x="1650" y="625" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1650" y="625" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="1684" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">05</text>
+<text x="1742" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Model proposes output or tool</text>
+<text x="1742" y="692" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">action</text>
+<rect x="2400" y="625" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2400" y="625" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="2434" y="720" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">06</text>
+<text x="2492" y="664" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Tool action requested?</text>
+<rect x="2400" y="1065" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2400" y="1065" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="2434" y="1160" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">07</text>
+<text x="2492" y="1104" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Application executes a</text>
+<text x="2492" y="1132" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">permitted tool or validates</text>
+<text x="2492" y="1160" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">structured output</text>
+<rect x="1650" y="1065" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1650" y="1065" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="1684" y="1160" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">08</text>
+<text x="1742" y="1104" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Supported and unambiguous?</text>
+<rect x="1650" y="1505" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1650" y="1505" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="1684" y="1600" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">09</text>
+<text x="1742" y="1544" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Generate an offering-specific</text>
+<text x="1742" y="1572" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">segment or request manual</text>
+<text x="1742" y="1600" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">selection</text>
+<rect x="2400" y="1505" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2400" y="1505" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="2434" y="1600" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">10</text>
+<text x="2492" y="1544" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Editable confirmation UI</text>
+<rect x="2400" y="1785" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="2400" y="1785" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="2434" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">11</text>
+<text x="2492" y="1824" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Trace, operational metrics, and</text>
+<text x="2492" y="1852" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">evaluation</text>
+<rect x="1650" y="1785" width="500" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1650" y="1785" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="1684" y="1880" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">12</text>
+<text x="1742" y="1824" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">Product evidence for the next</text>
+<text x="1742" y="1852" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="720" text-anchor="start" dy="0">decision</text>
+<polyline points="350.0,1255.0 350.0,1535.0 1600.0,1535.0 1600.0,720.0 1636.0,720.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1636,720 1612,730 1612,710" fill="#404040" stroke="none"/>
+<text x="1080" y="1495" fill="#242424" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="middle" dy="0.34em">CONTEXT READY</text>
+<rect x="1635" y="2040" width="1230" height="100" rx="28" fill="#242424" stroke="none" stroke-width="1"/>
+<text x="2250" y="2090" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="middle" dy="0.34em">NO EXTERNAL ACTION WITHOUT APPLICATION VALIDATION</text>
+<text x="145" y="2070" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">Retrieval, generation, tool execution, validation, confirmation, and evaluation are separate responsibilities.</text>
+<text x="2850" y="2180" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="820" text-anchor="end" dy="0">F12.2</text>
+</svg>

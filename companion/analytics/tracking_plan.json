@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "product": "Briefly",
+  "events": [
+    {
+      "name": "Context Generation Started",
+      "trigger": "The server accepts a valid request and schedules public-context generation.",
+      "required_properties": {
+        "request_id": "string",
+        "invocation_source": "string"
+      },
+      "decision": "Compare discovery and completion by invocation source.",
+      "owner": "product_analytics"
+    },
+    {
+      "name": "Context Generation Completed",
+      "trigger": "The workflow reaches ready_for_review, source_unavailable, or failed.",
+      "required_properties": {
+        "request_id": "string",
+        "status": "string",
+        "duration_ms": "integer"
+      },
+      "decision": "Locate reliability and latency problems before interpreting downstream use.",
+      "owner": "product_analytics"
+    },
+    {
+      "name": "Context Draft Edited",
+      "trigger": "A user saves a change to one generated context field.",
+      "required_properties": {
+        "request_id": "string",
+        "field": "string",
+        "edit_reason": "string"
+      },
+      "decision": "Separate factual correction, outdated context, positioning preference, and tone before using edits as evaluation evidence.",
+      "owner": "product_research"
+    }
+  ]
+}

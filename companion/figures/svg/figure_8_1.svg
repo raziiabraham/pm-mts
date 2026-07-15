@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F8.1: The Reverse-Logistics Custody Trail</title>
+<desc id="desc">Courier, hub, fleet, and partner hand-offs each produce timestamped custody evidence, with the implementation boundary explicitly marked.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE REVERSE-LOGISTICS CUSTODY TRAIL</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">A return becomes manageable when each physical hand-off leaves a timestamped system receipt.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<polyline points="220.0,520.0 220.0,1980.0" fill="none" stroke="#404040" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="220.0" cy="560.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="220" y="560" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="28" font-weight="850" text-anchor="middle" dy="0.34em">01</text>
+<rect x="350" y="435" width="1100" height="250" rx="28" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="395" y="492" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">COURIER</text>
+<text x="395" y="550" fill="#242424" font-family="Manrope, sans-serif" font-size="29" font-weight="740" text-anchor="start" dy="0">Hand over the undelivered package</text>
+<text x="395" y="598" fill="#242424" font-family="Manrope, sans-serif" font-size="24" font-weight="540" text-anchor="start" dy="0">Physical package + return reason</text>
+<ellipse cx="220.0" cy="940.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="220" y="940" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="28" font-weight="850" text-anchor="middle" dy="0.34em">02</text>
+<rect x="350" y="815" width="1100" height="250" rx="28" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="395" y="872" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">HUB</text>
+<text x="395" y="930" fill="#242424" font-family="Manrope, sans-serif" font-size="29" font-weight="740" text-anchor="start" dy="0">Scan receipt and record hub custody</text>
+<text x="395" y="978" fill="#242424" font-family="Manrope, sans-serif" font-size="24" font-weight="540" text-anchor="start" dy="0">Timestamp + ready-for-return state</text>
+<ellipse cx="220.0" cy="1320.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="220" y="1320" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="28" font-weight="850" text-anchor="middle" dy="0.34em">03</text>
+<rect x="350" y="1195" width="1100" height="250" rx="28" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="395" y="1252" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">FLEET</text>
+<text x="395" y="1310" fill="#242424" font-family="Manrope, sans-serif" font-size="29" font-weight="740" text-anchor="start" dy="0">Scan acceptance and take fleet custody</text>
+<text x="395" y="1358" fill="#242424" font-family="Manrope, sans-serif" font-size="24" font-weight="540" text-anchor="start" dy="0">Package-left-hub evidence</text>
+<ellipse cx="220.0" cy="1700.0" rx="60.0" ry="60.0" fill="#404040" stroke="#242424" stroke-width="4"/>
+<text x="220" y="1700" fill="#FAFAFA" font-family="Manrope, sans-serif" font-size="28" font-weight="850" text-anchor="middle" dy="0.34em">04</text>
+<rect x="350" y="1575" width="1100" height="250" rx="28" fill="#E2E2E2" stroke="#242424" stroke-width="4"/>
+<text x="395" y="1632" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="23" font-weight="850" text-anchor="start" dy="0">PARTNER</text>
+<text x="395" y="1690" fill="#242424" font-family="Manrope, sans-serif" font-size="29" font-weight="740" text-anchor="start" dy="0">Receive the returned package</text>
+<text x="395" y="1738" fill="#242424" font-family="Manrope, sans-serif" font-size="24" font-weight="540" text-anchor="start" dy="0">Confirmation state for both parties</text>
+<rect x="350" y="1920" width="1100" height="155" rx="24" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="3"/>
+<text x="395" y="1970" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="20" font-weight="850" text-anchor="start" dy="0">IMPLEMENTATION BOUNDARY</text>
+<text x="395" y="2010" fill="#242424" font-family="Manrope, sans-serif" font-size="21" font-weight="560" text-anchor="start" dy="0">Hub and fleet scans were implemented; partner confirmation was designed but not completed during the</text>
+<text x="395" y="2034" fill="#242424" font-family="Manrope, sans-serif" font-size="21" font-weight="560" text-anchor="start" dy="0">author&#x27;s tenure.</text>
+<text x="145" y="2125" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">The backend does not move the package; it makes custody observable and disputable.</text>
+<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F8.1</text>
+</svg>

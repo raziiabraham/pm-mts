@@ -1,0 +1,10 @@
+{
+  "request_id": "req_briefly_001",
+  "status": "invalid_request",
+  "error": {
+    "code": "invalid_website_url",
+    "field": "website_url",
+    "message": "Enter a public http or https website URL."
+  },
+  "retryable": false
+}

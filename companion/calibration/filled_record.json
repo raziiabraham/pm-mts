@@ -1,0 +1,57 @@
+{
+  "record_id": "cal_domain_001",
+  "case_id": "domain",
+  "observed_version": "v1",
+  "failure": {
+    "severity": "critical",
+    "observed_status": "matched",
+    "observed_page_id": "domain_property",
+    "expected_status": "matched",
+    "expected_page_id": "domain_research",
+    "consequence": "The wrong identity would start collection, storage, analysis, and user-visible synthesis against an unrelated company."
+  },
+  "diagnosis": {
+    "component": "entity_resolver",
+    "failure_type": "context_underuse_and_forced_match",
+    "evidence": [
+      "Version v1 selected an exact-name candidate from the wrong industry.",
+      "The candidate list contained a description aligned with the user's product-research context.",
+      "The resolver had no reliable abstention policy for unresolved ambiguity."
+    ]
+  },
+  "change": {
+    "target_version": "v2",
+    "scope": "Pass bounded company context and candidate descriptions to a narrow resolver; allow no_match and needs_review before downstream collection.",
+    "unchanged": [
+      "provider candidate retrieval",
+      "ad collection",
+      "creative analysis",
+      "ranking and synthesis"
+    ]
+  },
+  "regression": {
+    "dataset": "../ai_evaluation/dataset.jsonl",
+    "cases": 5,
+    "v1_passed": 2,
+    "v2_passed": 5,
+    "v2_critical_failures": 0
+  },
+  "tradeoffs": {
+    "latency": "One additional small-model decision before expensive collection.",
+    "cost": "Higher resolver cost; lower expected cost of wrong-source scraping, storage, multimodal analysis, and trust repair."
+  },
+  "decision": {
+    "status": "release_to_bounded_production_sampling",
+    "conditions": [
+      "Preserve the held-out set.",
+      "Sample ambiguous and no-match production cases.",
+      "Monitor latency, cost, review rate, and user-confirmed identity corrections.",
+      "Stop downstream work on invalid or unresolved identity status."
+    ]
+  },
+  "limits": [
+    "Five constructed cases do not estimate production accuracy.",
+    "A passing deterministic identity label does not prove the later ad analysis is grounded or useful.",
+    "The record demonstrates the method and does not report Heatseeker production metrics."
+  ]
+}

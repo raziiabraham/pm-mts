@@ -1,0 +1,16 @@
+{
+  "request_id": "req_briefly_001",
+  "status": "ready_for_review",
+  "context": {
+    "flagship_offering": "Briefly Research Workspace",
+    "offering_description": "A fictional workspace for organizing public market evidence.",
+    "customer_segments": ["product teams", "market researchers"]
+  },
+  "sources": [
+    {
+      "url": "https://example.invalid",
+      "retrieved_at": "2026-07-01T00:00:00Z"
+    }
+  ],
+  "user_can_edit": true
+}

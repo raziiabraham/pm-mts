@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<title id="title">F4.2: The Asset State Map</title>
+<desc id="desc">Selected, uploading, processing, and ready states are connected to rejection, failure, reprocessing, retry, removal, and recovery behavior.</desc>
+<rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
+<rect width="1600" height="2300" fill="#FAFAFA"/>
+<text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE ASSET STATE MAP</text>
+<text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">Uploaded is not ready. Validation, transfer, processing, replacement, and removal are visible product states.</text>
+<rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
+<polygon points="90,455 970,485 930,2055 120,2025" fill="#E2E2E2" stroke="none"/>
+<polygon points="1000,475 1515,450 1480,2075 970,2040" fill="#ECECEC" stroke="none"/>
+<polyline points="520.0,705.0 520.0,866.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,866 510,842 530,842" fill="#404040" stroke="none"/>
+<polyline points="520.0,1050.0 520.0,1211.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,1211 510,1187 530,1187" fill="#404040" stroke="none"/>
+<polyline points="520.0,1395.0 520.0,1556.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,1556 510,1532 530,1532" fill="#404040" stroke="none"/>
+<rect x="240" y="535" width="560" height="170" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="240" y="535" width="68" height="170" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="274" y="620" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="332" y="574" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Selected</text>
+<rect x="240" y="880" width="560" height="170" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="240" y="880" width="68" height="170" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="274" y="965" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="332" y="919" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Uploading</text>
+<rect x="240" y="1225" width="560" height="170" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="240" y="1225" width="68" height="170" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="274" y="1310" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
+<text x="332" y="1264" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Processing</text>
+<rect x="240" y="1570" width="560" height="170" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="240" y="1570" width="68" height="170" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="274" y="1655" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
+<text x="332" y="1609" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Ready</text>
+<rect x="1030" y="500" width="430" height="235" rx="26" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="1064" y="554" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">REJECTED</text>
+<text x="1064" y="605" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Client or server validation fails</text>
+<text x="1064" y="635" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">before storage.</text>
+<rect x="1030" y="860" width="430" height="300" rx="26" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="1064" y="914" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">FAILED</text>
+<text x="1064" y="965" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Transfer, scan, or</text>
+<text x="1064" y="995" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">transformation fails. Preserve</text>
+<text x="1064" y="1025" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">a retry at the failed stage.</text>
+<rect x="1030" y="1285" width="430" height="285" rx="26" fill="#D6D6D6" stroke="#242424" stroke-width="4"/>
+<text x="1064" y="1339" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">REPROCESS</text>
+<text x="1064" y="1390" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">A new format, crop, policy, or</text>
+<text x="1064" y="1420" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">variant creates another</text>
+<text x="1064" y="1450" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">bounded job.</text>
+<rect x="1030" y="1725" width="430" height="265" rx="26" fill="#ECECEC" stroke="#242424" stroke-width="4"/>
+<text x="1064" y="1779" fill="#242424" font-family="Manrope, sans-serif" font-size="25" font-weight="850" text-anchor="start" dy="0">REMOVED</text>
+<text x="1064" y="1830" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">Stop delivery, preserve the</text>
+<text x="1064" y="1860" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">audit state, and resolve</text>
+<text x="1064" y="1890" fill="#242424" font-family="Manrope, sans-serif" font-size="27" font-weight="620" text-anchor="start" dy="0">references.</text>
+<polyline points="800.0,620.0 1014.0,620.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1014,620 990,630 990,610" fill="#404040" stroke="none"/>
+<rect x="810" y="534" width="190" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="905" y="565" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">VALIDATION FAILS</text>
+<polyline points="800.0,965.0 1014.0,965.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1014,965 990,975 990,955" fill="#404040" stroke="none"/>
+<rect x="818" y="879" width="174" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="905" y="910" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">TRANSFER FAILS</text>
+<polyline points="800.0,1310.0 915.0,1310.0 915.0,1110.0 1014.0,1110.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1014,1110 990,1120 990,1100" fill="#404040" stroke="none"/>
+<rect x="813" y="1184" width="204" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="915" y="1215" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">PROCESSING FAILS</text>
+<polyline points="800.0,1620.0 925.0,1620.0 1014.0,1480.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1014,1480 1010,1506 993,1495" fill="#404040" stroke="none"/>
+<rect x="838" y="1544" width="154" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="915" y="1575" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NEW VARIANT</text>
+<polyline points="1030.0,1480.0 900.0,1480.0 900.0,1350.0 814.0,1350.0" fill="none" stroke="#404040" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="814,1350 838,1340 838,1360" fill="#404040" stroke="none"/>
+<rect x="838" y="1384" width="124" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="900" y="1415" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">NEW JOB</text>
+<polyline points="800.0,1690.0 930.0,1690.0 1014.0,1840.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1014,1840 994,1824 1011,1814" fill="#404040" stroke="none"/>
+<rect x="858" y="1719" width="114" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="915" y="1750" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">REMOVE</text>
+<rect x="1085" y="414" width="330" height="62" rx="22" fill="#FAFAFA" stroke="#AAAAAA" stroke-width="2"/>
+<text x="1250" y="445" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="18" font-weight="820" text-anchor="middle" dy="0.34em">EXCEPTIONS + FOLLOW-UP</text>
+<text x="145" y="2125" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">Every terminal-looking state still needs ownership and a user-visible next action.</text>
+<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F4.2</text>
+</svg>
