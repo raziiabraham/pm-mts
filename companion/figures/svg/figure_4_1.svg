@@ -1,76 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2300" viewBox="0 0 1600 2300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150" role="img" aria-labelledby="title desc">
 <title id="title">F4.1: The Image Asset Journey</title>
 <desc id="desc">The application authorises the action; specialised systems move and transform the file. The stages are: User selects an image; Client validates format, size, and dimensions; Application authorises a short-lived upload; Client uploads directly to object storage; Object event starts scanning and transformation; Worker generates variants and metadata; Application exposes ready state and URLs; Client requests the appropriate CDN variant; CDN serves cache or fetches the origin.</desc>
 <rect data-figure-background="true" width="100%" height="100%" fill="#FFFFFF" />
-<rect width="1600" height="2300" fill="#FAFAFA"/>
+<rect width="1800" height="1150" fill="#FAFAFA"/>
 <text x="150" y="125" fill="#242424" font-family="Newsreader, sans-serif" font-size="48" font-weight="620" text-anchor="start" dy="0">THE IMAGE ASSET JOURNEY</text>
 <text x="154" y="225" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="27" font-weight="520" text-anchor="start" dy="0">The application authorises the action; specialised systems move and transform the file.</text>
 <rect x="150" y="345" width="190" height="14" rx="7" fill="#404040" stroke="none" stroke-width="1"/>
-<polygon points="95,440 1510,405 1480,730 120,760" fill="#E2E2E2" stroke="none"/>
-<polygon points="115,735 1485,770 1510,1080 85,1045" fill="#D6D6D6" stroke="none"/>
-<polygon points="95,1090 1510,1055 1480,1380 120,1410" fill="#ECECEC" stroke="none"/>
-<polygon points="115,1385 1485,1420 1510,1730 85,1695" fill="#E2E2E2" stroke="none"/>
-<polygon points="95,1740 1510,1705 1480,2030 120,2060" fill="#D6D6D6" stroke="none"/>
-<polyline points="755.0,585.0 831.0,585.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="831,585 807,595 807,575" fill="#404040" stroke="none"/>
-<polyline points="1130.0,680.0 1130.0,801.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="1130,801 1120,777 1140,777" fill="#404040" stroke="none"/>
-<polyline points="845.0,910.0 769.0,910.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="769,910 793,900 793,920" fill="#404040" stroke="none"/>
-<polyline points="470.0,1005.0 470.0,1126.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="470,1126 460,1102 480,1102" fill="#404040" stroke="none"/>
-<polyline points="755.0,1235.0 831.0,1235.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="831,1235 807,1245 807,1225" fill="#404040" stroke="none"/>
-<polyline points="1130.0,1330.0 1130.0,1451.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="1130,1451 1120,1427 1140,1427" fill="#404040" stroke="none"/>
-<polyline points="845.0,1560.0 769.0,1560.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="769,1560 793,1550 793,1570" fill="#404040" stroke="none"/>
-<polyline points="470.0,1655.0 470.0,1776.0" fill="none" stroke="#404040" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<polygon points="470,1776 460,1752 480,1752" fill="#404040" stroke="none"/>
-<rect x="185" y="490" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="185" y="490" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
-<text x="219" y="585" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
-<text x="277" y="529" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">User selects an image</text>
-<rect x="845" y="490" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="845" y="490" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
-<text x="879" y="585" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
-<text x="937" y="529" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Client validates format, size,</text>
-<text x="937" y="565" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">and dimensions</text>
-<rect x="845" y="815" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="845" y="815" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
-<text x="879" y="910" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
-<text x="937" y="854" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Application authorises a</text>
-<text x="937" y="890" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">short-lived upload</text>
-<rect x="185" y="815" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="185" y="815" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
-<text x="219" y="910" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
-<text x="277" y="854" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Client uploads directly to</text>
-<text x="277" y="890" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">object storage</text>
-<rect x="185" y="1140" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="185" y="1140" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
-<text x="219" y="1235" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">05</text>
-<text x="277" y="1179" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Object event starts scanning</text>
-<text x="277" y="1215" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">and transformation</text>
-<rect x="845" y="1140" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="845" y="1140" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
-<text x="879" y="1235" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">06</text>
-<text x="937" y="1179" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Worker generates variants</text>
-<text x="937" y="1215" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">and metadata</text>
-<rect x="845" y="1465" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="845" y="1465" width="68" height="190" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
-<text x="879" y="1560" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">07</text>
-<text x="937" y="1504" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Application exposes ready</text>
-<text x="937" y="1540" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">state and URLs</text>
-<rect x="185" y="1465" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="185" y="1465" width="68" height="190" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
-<text x="219" y="1560" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">08</text>
-<text x="277" y="1504" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Client requests the</text>
-<text x="277" y="1540" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">appropriate CDN variant</text>
-<rect x="185" y="1790" width="570" height="190" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
-<rect x="185" y="1790" width="68" height="190" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
-<text x="219" y="1885" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">09</text>
-<text x="277" y="1829" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">CDN serves cache or fetches</text>
-<text x="277" y="1865" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">the origin</text>
-<text x="145" y="2115" fill="#242424" font-family="Newsreader, sans-serif" font-size="25" font-weight="500" text-anchor="start" dy="0">Uploaded is a transition; ready, failed, and transformed are product states.</text>
-<text x="1450" y="2185" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="22" font-weight="820" text-anchor="end" dy="0">F4.1</text>
+<polygon points="70,380 1730,395 1715,575 85,590" fill="#E2E2E2" stroke="none"/>
+<polygon points="85,600 1715,585 1730,805 70,790" fill="#D6D6D6" stroke="none"/>
+<polygon points="70,820 1730,835 1715,1035 85,1050" fill="#ECECEC" stroke="none"/>
+<polyline points="575.0,480.0 651.0,480.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="651,480 627,490 627,470" fill="#404040" stroke="none"/>
+<polyline points="1135.0,480.0 1211.0,480.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1211,480 1187,490 1187,470" fill="#404040" stroke="none"/>
+<polyline points="1460.0,560.0 1460.0,616.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1460,616 1450,592 1470,592" fill="#404040" stroke="none"/>
+<polyline points="1225.0,710.0 1149.0,710.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1149,710 1173,700 1173,720" fill="#404040" stroke="none"/>
+<polyline points="665.0,710.0 589.0,710.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="589,710 613,700 613,720" fill="#404040" stroke="none"/>
+<polyline points="340.0,790.0 340.0,846.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="340,846 330,822 350,822" fill="#404040" stroke="none"/>
+<polyline points="575.0,940.0 651.0,940.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="651,940 627,950 627,930" fill="#404040" stroke="none"/>
+<polyline points="1135.0,940.0 1211.0,940.0" fill="none" stroke="#404040" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1211,940 1187,950 1187,930" fill="#404040" stroke="none"/>
+<rect x="105" y="400" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="105" y="400" width="68" height="160" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="139" y="480" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">01</text>
+<text x="197" y="439" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">User selects an image</text>
+<rect x="665" y="400" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="665" y="400" width="68" height="160" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="699" y="480" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">02</text>
+<text x="757" y="439" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Client validates format,</text>
+<text x="757" y="475" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">size, and dimensions</text>
+<rect x="1225" y="400" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1225" y="400" width="68" height="160" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="1259" y="480" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">03</text>
+<text x="1317" y="439" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Application authorises</text>
+<text x="1317" y="475" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">a short-lived upload</text>
+<rect x="1225" y="630" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1225" y="630" width="68" height="160" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="1259" y="710" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">04</text>
+<text x="1317" y="669" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Client uploads directly</text>
+<text x="1317" y="705" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">to object storage</text>
+<rect x="665" y="630" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="665" y="630" width="68" height="160" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="699" y="710" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">05</text>
+<text x="757" y="669" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">Object event starts</text>
+<text x="757" y="702" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">scanning and</text>
+<text x="757" y="735" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">transformation</text>
+<rect x="105" y="630" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="105" y="630" width="68" height="160" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="139" y="710" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">06</text>
+<text x="197" y="669" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Worker generates</text>
+<text x="197" y="705" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">variants and metadata</text>
+<rect x="105" y="860" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="105" y="860" width="68" height="160" rx="20" fill="#E2E2E2" stroke="none" stroke-width="1"/>
+<text x="139" y="940" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">07</text>
+<text x="197" y="899" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">Application exposes</text>
+<text x="197" y="935" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">ready state and URLs</text>
+<rect x="665" y="860" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="665" y="860" width="68" height="160" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<text x="699" y="940" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">08</text>
+<text x="757" y="899" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">Client requests the</text>
+<text x="757" y="932" fill="#242424" font-family="Manrope, sans-serif" font-size="32" font-weight="720" text-anchor="start" dy="0">appropriate CDN variant</text>
+<rect x="1225" y="860" width="470" height="160" rx="22" fill="#FFFFFF" stroke="#242424" stroke-width="4"/>
+<rect x="1225" y="860" width="68" height="160" rx="20" fill="#ECECEC" stroke="none" stroke-width="1"/>
+<text x="1259" y="940" fill="#242424" font-family="Manrope, sans-serif" font-size="30" font-weight="800" text-anchor="middle" dy="0.34em">09</text>
+<text x="1317" y="899" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">CDN serves cache or</text>
+<text x="1317" y="935" fill="#242424" font-family="Manrope, sans-serif" font-size="34" font-weight="720" text-anchor="start" dy="0">fetches the origin</text>
+<text x="115" y="1070" fill="#242424" font-family="Newsreader, sans-serif" font-size="22" font-weight="500" text-anchor="start" dy="0">One user action crosses validation, authorisation, transfer, processing, metadata, and delivery boundaries.</text>
+<text x="1685" y="1105" fill="#6D6D6D" font-family="Manrope, sans-serif" font-size="20" font-weight="820" text-anchor="end" dy="0">F4.1</text>
 </svg>

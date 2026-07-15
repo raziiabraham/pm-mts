@@ -10,9 +10,10 @@ The packaged companion includes all 25 final book diagrams as individual files:
 - `contact_sheet.png` provides a quick visual index of the complete set.
 
 The repository root also contains `PM-MTS-Printable-Figures.pdf`, a combined
-25-page print pack. Portrait diagrams use portrait A4 pages; the three spread
-diagrams use landscape A4 pages. Print with “Fit to printable area” if your PDF
-viewer does not scale mixed-orientation pages automatically.
+25-page print pack. Portrait diagrams use portrait A4 pages; landscape diagrams,
+including the three spread figures, use landscape A4 pages. Print with “Fit to
+printable area” if your PDF viewer does not scale mixed-orientation pages
+automatically.
 
 The spread figures (`F0.1`, `F12.2`, and `F20.1`) are supplied as complete
 two-page compositions. Their cross-page connectors align when the image is

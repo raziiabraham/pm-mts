@@ -53,3 +53,12 @@
 - Analytics or operational evidence:
 - Open infrastructure or security decisions:
 - What the requirement deliberately leaves to engineering/design judgment:
+
+## AI Coding-Agent Handoff
+
+- Observed user problem:
+- Smallest prototype slice needed to learn:
+- Explicit non-goals:
+- Assumptions the agent must surface:
+- Tests, diff, screenshots, and other evidence to return:
+- Human review gates before production architecture or deployment:

@@ -25,7 +25,7 @@ The PDF is designed for printing and handwriting. The Markdown files remain the 
 | 1 | Map your technical floor | Technical Floor Map |
 | 2 | Turn a user story into an API conversation | API State Worksheet |
 | 3 | Turn a feature idea into a release path | Feature Release Path Record |
-| 4 | Rewrite an image requirement | Image Requirement Record |
+| 4 | Rewrite and hand off an image requirement | Image Requirement Record |
 | 5 | Turn a product question into SQL thinking | Product Data Question Record |
 | 6 | Write a tracking plan | Tracking Plan |
 | 7 | Design an experiment before results exist | Experiment Pre-Registration Card |
