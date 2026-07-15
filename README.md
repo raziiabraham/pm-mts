@@ -34,8 +34,10 @@ See [Getting Started](GETTING_STARTED.md) for screenshots-free, step-by-step ins
 ## Prefer the workbook without local setup?
 
 - [Download the 52-page printable workbook](PM-MTS-Workbook.pdf)
+- [Download all 25 printable diagrams](PM-MTS-Printable-Figures.pdf)
 - [Edit the workbook in Markdown](companion/pm_mts_workbook.md)
 - [Browse the individual templates](companion/templates/)
+- [Browse individual printable figure PDFs](companion/figures/pdf/)
 - [Download the latest complete companion package](https://github.com/raziiabraham/pm-mts/releases/latest)
 
 ## What is included
@@ -50,7 +52,7 @@ See [Getting Started](GETTING_STARTED.md) for screenshots-free, step-by-step ins
 | `companion/calibration/` | Trace a failure through change and regression evidence |
 | `companion/repo_orientation/` | Find a contradiction between product documentation and implementation |
 | `companion/feedback_instrument/` | Inspect a synthetic labelled-feedback dataset and edge cases |
-| `companion/figures/` | Reuse or inspect the book's diagrams as PNG and SVG files |
+| `companion/figures/` | Print, reuse, or inspect every book diagram as PDF, PNG, and SVG files |
 
 ## Run every no-key check
 

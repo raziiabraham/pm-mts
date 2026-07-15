@@ -7,6 +7,7 @@ You do not need to be a developer to use this repository. The exercises are desi
 - **Agent-guided path:** clone the repository, open it in a local AI coding agent, and work through the chapter exercises. This is the recommended path.
 - **Manual path:** clone or download the repository and copy the commands in this guide yourself.
 - **Workbook-only path:** open [`PM-MTS-Workbook.pdf`](PM-MTS-Workbook.pdf) and complete the records without running code.
+- **Printable-figures path:** open [`PM-MTS-Printable-Figures.pdf`](PM-MTS-Printable-Figures.pdf) to print or annotate all 25 diagrams, or use the individual files under `companion/figures/pdf/`.
 
 ## Step 1: get a local copy
 
