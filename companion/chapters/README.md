@@ -1,14 +1,15 @@
 # Chapter Guides
 
-Each guide turns one chapter into a bounded reader journey:
+Each guide turns one chapter into a bounded AI-guided practice session. The linked files are the agent's sources, not a navigation assignment for the reader. Invoke `$pm-mts-guide Chapter N`, `/pm-mts N`, or simply say “Guide me through Chapter N.”
 
-- the product question;
-- the visible artifacts to inspect first;
-- a five-minute walkthrough;
-- a real-work application;
-- a copy-ready AI coding-agent prompt;
-- optional verification where useful; and
-- an explicit evidence boundary.
+The agent should:
+
+- render the product artifact directly in chat;
+- ask for a prediction or judgment;
+- run safe verification itself and interpret the output;
+- interview the reader through the relevant record one question at a time;
+- challenge one assumption; and
+- finish with an artifact, evidence boundary, and next action.
 
 Start with the chapter you are reading:
 

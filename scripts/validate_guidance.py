@@ -21,6 +21,8 @@ GUIDES = [
     ROOT / "companion" / "analytics" / "README.md",
     ROOT / "companion" / "ai_evaluation" / "README.md",
     ROOT / "companion" / "calibration" / "README.md",
+    ROOT / ".agents" / "skills" / "pm-mts-guide" / "SKILL.md",
+    ROOT / ".claude" / "skills" / "pm-mts" / "SKILL.md",
 ]
 CHAPTER_GUIDES = [ROOT / "companion" / "chapters" / f"{chapter:02d}.md" for chapter in range(1, 21)]
 GUIDES.extend([ROOT / "companion" / "chapters" / "README.md", *CHAPTER_GUIDES])
@@ -68,17 +70,36 @@ for guide in GUIDES:
     validate_local_links(guide)
 
 root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
-require("Start with a product question—not Python" in root_readme, "Root README lost artifact-first positioning")
+require("You have done the reading. Now let the repository respond." in root_readme, "Root README lost AI-first positioning")
+require("$pm-mts-guide Chapter 2" in root_readme, "Root README is missing the Codex skill invocation")
+require("/pm-mts 2" in root_readme, "Root README is missing the Claude command invocation")
 require("Chapters 1, 8, 13, 16, and 20" in root_readme, "Root README quick path is stale")
 require("Chapter 18" in root_readme and "Chapters 19–20" in root_readme, "Root README capstone path is stale")
 
 agent_guide = (ROOT / "AI_GUIDE.md").read_text(encoding="utf-8")
-for expected in ("Chapter 2 API contract", "Chapter 5 SQL", "Chapter 13 AI evaluation", "adapt a worksheet"):
+for expected in ("Chapter 2: API contract", "Chapter 5: SQL", "Chapter 13: AI evaluation", "Any workbook chapter"):
     require(expected in agent_guide, f"AI guide is missing route: {expected}")
+for expected in ("Progressive disclosure", "Prediction before reveal", "Counterexample coaching", "Teach-back", "Evidence ledger"):
+    require(expected in agent_guide, f"AI guide is missing AI-first technique: {expected}")
 
 agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
 require("First-response contract" in agents, "AGENTS.md lost its first-response teaching contract")
-require("Never lead with Python" in agents, "AGENTS.md no longer enforces artifact-first guidance")
+for expected in ("The conversation is the interface", "Render, do, discuss", "Safe command policy", "Progressive workbook interview", "Session completion contract"):
+    require(expected in agents, f"AGENTS.md is missing AI-first contract: {expected}")
+
+skill = (ROOT / ".agents" / "skills" / "pm-mts-guide" / "SKILL.md").read_text(encoding="utf-8")
+require(skill.startswith("---\nname: pm-mts-guide\n"), "PM MTS skill has invalid or missing frontmatter")
+for expected in ("demonstrate", "apply", "experiment", "Keep the conversation as the interface"):
+    require(expected in skill, f"PM MTS skill is missing behavior: {expected}")
+skill_ui_path = ROOT / ".agents" / "skills" / "pm-mts-guide" / "agents" / "openai.yaml"
+require(skill_ui_path.exists(), "PM MTS skill is missing Codex UI metadata")
+skill_ui = skill_ui_path.read_text(encoding="utf-8")
+require("$pm-mts-guide" in skill_ui, "PM MTS skill UI metadata has a stale default invocation")
+
+claude_skill = (ROOT / ".claude" / "skills" / "pm-mts" / "SKILL.md").read_text(encoding="utf-8")
+require(claude_skill.startswith("---\nname: pm-mts\n"), "Claude PM MTS skill has invalid or missing frontmatter")
+require("/pm-mts $ARGUMENTS" in claude_skill, "Claude skill no longer accepts compact arguments")
+require("Run safe, local, no-key repository checks yourself" in claude_skill, "Claude skill lost automatic execution behavior")
 
 chapter_map = (ROOT / "COMPANION_MAP.md").read_text(encoding="utf-8")
 for chapter in range(1, 21):
@@ -87,7 +108,7 @@ for chapter in range(1, 21):
 
 required_guide_sections = (
     "## Product question",
-    "## Start with the visible artifacts",
+    "## What the agent brings into chat",
     "## Five-minute walkthrough",
     "## Take it to your product",
     "## Ask an AI coding agent",

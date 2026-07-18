@@ -2,11 +2,11 @@
 
 This directory contains the bounded examples, worksheets, datasets, and optional checks used by *PM Is Now Another Member of Technical Staff*. It is not a production application or a coding curriculum.
 
-If you are a reader, begin with the repository [README](../README.md), [one of the 20 chapter guides](chapters/README.md), [Companion Map](../COMPANION_MAP.md), or [AI Agent Guide](../AI_GUIDE.md). Do not start by running every script.
+If you are a reader, invoke `$pm-mts-guide Chapter N`, `/pm-mts N`, or say “Guide me through Chapter N.” The agent uses the [Companion Map](../COMPANION_MAP.md) and [chapter guides](chapters/README.md) as bounded source contracts. It should render artifacts and execute safe checks for you rather than making this directory your user interface.
 
-## Artifact-first map
+## AI-guided source map
 
-| Chapter | Inspect first | Product question | Optional verification |
+| Chapter | Agent source | Product question | Check the agent may execute |
 | --- | --- | --- | --- |
 | 2 | [`api/README.md`](api/README.md) | What request, response, failure, and control states make the API behavior complete? | `python3 companion/api/validate_contract.py` |
 | 5 | [`sql/sakila/README.md`](sql/sakila/README.md) | What does the exact SQL measure, at what grain, and what can the result not prove? | `./companion/sql/validate_chapter_05.sh` |
@@ -18,17 +18,17 @@ If you are a reader, begin with the repository [README](../README.md), [one of t
 | Optional lab | [`feedback_instrument/README.md`](feedback_instrument/README.md) | Can synthetic reviews become a bounded, evaluated product instrument? | `python3 companion/feedback_instrument/validate_dataset.py` |
 | All | [`templates/`](templates/) and [`pm_mts_workbook.md`](pm_mts_workbook.md) | How does the reader apply the chapter to one bounded product problem? | `./scripts/assemble_workbook.sh` |
 
-## Why Python still exists here
+## Why executable checks still exist here
 
-The Python files are small deterministic verifiers. They check that teaching fixtures remain internally consistent as the repository evolves. They do not teach the chapter by themselves, call a model, contact a production service, or establish that a real system is correct.
+The Python and shell files are small deterministic verifiers. They check that teaching fixtures remain internally consistent as the repository evolves. They do not teach the chapter by themselves, call a model, contact a production service, or establish that a real system is correct. In an AI-guided session, the agent runs the narrow relevant check and displays the useful output in chat.
 
-The intended order is:
+The intended conversational order is:
 
-1. understand the product question;
-2. inspect the human-readable artifact;
-3. predict the result;
-4. optionally run the narrow check; and
-5. translate the output into a decision and evidence boundary.
+1. the agent states the product question and renders the artifact;
+2. the reader predicts or judges the result;
+3. the agent runs the narrow check;
+4. both interpret the output and its boundary; and
+5. the agent interviews the reader through the application artifact.
 
 ## Complete no-key verification
 
