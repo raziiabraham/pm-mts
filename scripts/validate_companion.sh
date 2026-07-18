@@ -3,6 +3,7 @@ set -eu
 
 root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 
+python3 "$root/scripts/validate_guidance.py"
 python3 "$root/companion/api/validate_contract.py"
 "$root/companion/sql/validate_chapter_05.sh"
 python3 "$root/companion/analytics/validate_tracking.py"
