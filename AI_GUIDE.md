@@ -1,61 +1,112 @@
-# Use the Companion with an AI Coding Agent
+# Use the Companion as an AI-Guided Practice Session
 
-An AI coding agent should act as a patient guide through the companion—not as a command runner that hides the product reasoning. The repository contains instructions for the agent in `AGENTS.md`; this page gives you prompts and explains what a good session should feel like.
+You have already read the book. This repository should now behave less like another book and more like a patient technical product coach.
 
-## Recommended first prompt
+Open or attach the repository in an AI coding agent, then say:
 
-Open the complete `pm-mts` folder in your coding agent and paste:
+> Guide me through Chapter 2.
 
-> You are my guide for the *PM Is Now Another Member of Technical Staff* companion. Read `AGENTS.md`, `AI_GUIDE.md`, `COMPANION_MAP.md`, and the matching file under `companion/chapters/`. I am reading Chapter [NUMBER], and my goal is [WHAT I WANT TO UNDERSTAND]. Start with the product question and visible artifact—not Python or a terminal command. Explain unfamiliar terms in plain language. Show me no more than four files in the order I should inspect them. Ask me to predict the behavior or result before revealing it. Offer an optional validator only after I understand the artifact, and explain exactly what a pass would and would not prove. Do not edit any file unless I explicitly ask to experiment.
+Repository-native shortcuts are also included:
 
-You can use this with Codex, Claude Code, GitHub Copilot coding agent, Cursor, or another agent that can read a local repository. Agent features and file-instruction conventions vary, so explicitly asking it to read the three files above keeps the session portable.
+- **Codex skill:** `$pm-mts-guide Chapter 2`
+- **Claude Code command:** `/pm-mts 2`
 
-## Prompt: help me choose a path
+Add a mode and context when useful: `$pm-mts-guide apply Chapter 8 to checkout recovery` or `/pm-mts 13 demonstrate`.
 
-> Read `COMPANION_MAP.md` and the chapter guides index. Ask me two short questions: which chapter I am reading, and whether I want to inspect an example, complete a worksheet, or run an experiment. Recommend one guide only. Explain why it fits and open its first artifact. Do not run a command yet.
+That is enough. The repository tells the agent to bring the example into the conversation, run safe local checks for you, explain the results, and interview you through the related product record. Add a goal when you have one:
 
-## Prompt: Chapter 2 API contract
+> Guide me through Chapter 5. I want to decide whether our “most popular” report is misleading.
 
-> Guide me through Chapter 2. Read `companion/api/README.md` and its linked request and response examples. First show me the host, HTTP method, path, request body, and three response outcomes. Help me map each outcome to what the user sees, whether retry is safe, what operations can inspect, and what remains under user control. Do not start with the Python validator. Offer it only after I have made my own state map.
+## What the agent should do—not ask you to do
 
-## Prompt: Chapter 5 SQL
+| Old companion behavior | AI-first behavior |
+| --- | --- |
+| “Open `request.json`.” | Reconstruct the request in chat, annotate it, and cite the source afterward. |
+| “Run this command.” | Run the safe no-key check, display the useful output, and explain what it proves. |
+| “Fill in this worksheet.” | Ask one question at a time, give feedback, and maintain the draft in chat. |
+| “Read these five files.” | Read the bounded sources silently and synthesize the relevant teaching object. |
+| “Here is the right answer.” | Ask for a prediction, compare it with evidence, and challenge one assumption. |
+| “The check passed.” | Translate the pass into product meaning and state the evidence boundary. |
 
-> Guide me through Chapter 5. Read `companion/sql/sakila/README.md` and `companion/sql/sakila/queries/film_demand_per_copy.sql`. Show me the exact SQL first. Explain the product question, output grain, denominator, joins, filter, ordering, result, and one limitation. Ask me to change one assumption in plain language before proposing SQL. Run SQLite only if I ask to verify the query.
+If an agent falls back to file navigation or terminal homework, say:
 
-## Prompt: Chapter 13 AI evaluation
+> Keep the conversation as the interface. Render the artifact here, run safe repository checks yourself, and ask me only for product judgment or context you cannot infer.
 
-> Guide me through Chapter 13. Read `companion/ai_evaluation/README.md`, the five cases, rubric, and expected comparison. Show me one case at a time. Ask whether each version should pass, fail, or abstain before revealing the expected result. Explain why two critical failures block v1 even though it passes some cases. Run the evaluator only after we have discussed the release decision.
+## Three session modes
 
-## Prompt: any chapter
+### Demonstrate the book example
 
-> Open the matching two-digit chapter guide—for example, `companion/chapters/02.md` for Chapter 2—and follow its product question, visible artifacts, walkthrough, application, agent prompt, and evidence boundary. Guide me through one step at a time. Do not open unrelated chapters or run a command unless that guide makes verification useful and I opt in.
+Use this when you want the book’s abstract idea to become concrete.
 
-## Prompt: adapt a worksheet to my product
+> Demonstrate Chapter 13. Show one evaluation case at a time, ask for my release judgment, run the supplied evaluator, and walk me through the result.
 
-> Read the Chapter [NUMBER] row in `COMPANION_MAP.md` and the linked template. Interview me one section at a time. Keep verified facts, interpretations, unknowns, and decisions separate. Do not invent company facts or fill blank fields without asking me. At the end, show the completed draft, unresolved questions, required specialist review, and the next smallest action.
+The agent should render the cases and outputs, not send you away to JSONL files.
 
-## What a good agent-guided session should produce
+### Apply it to my product
 
-By the end, you should be able to explain:
+Use this when you want a completed decision artifact rather than a blank worksheet.
 
-1. the product question;
-2. the artifact or evidence you inspected;
-3. the result you predicted;
-4. what the example or optional check established;
-5. what remains unknown or requires a specialist; and
-6. which decision or next action follows.
+> Apply Chapter 8 to our checkout recovery flow. Interview me one question at a time, challenge missing states, and build the Flow-to-Acceptance Record in this chat.
 
-If the agent only runs a script and reports “passed,” ask it to restart from the product question. The check is evidence about the fixture; it is not the learning outcome.
+The agent should keep facts, interpretations, unknowns, and specialist questions separate. It should give feedback after each meaningful answer and render the completed draft at the end.
 
-## Safe experimentation
+### Run a bounded experiment
 
-When you want to change a request, response, SQL query, rubric, or output:
+Use this after you understand the supplied example.
 
-1. ask the agent to create a branch or copy the file;
-2. state the prediction before the edit;
-3. make one bounded change;
-4. inspect the diff;
-5. run the narrow optional check; and
-6. translate the failure or pass into product meaning.
+> Experiment with Chapter 2. Help me predict what breaks if `request_id` is missing, make the change in a temporary copy, run the narrow check, show the diff and output, then restore the original state.
+
+The agent should make one reversible change at a time. It should ask before installing anything, using credentials, contacting an external service, editing shared state, or performing a destructive action.
+
+## Ready-to-use chapter prompts
+
+### Chapter 2: API contract
+
+> Guide me through Chapter 2 in demonstrate mode. Reconstruct the fictional host, method, path, request, and three response states directly in chat. Ask me what the interface should do for one state. Run the supplied contract validator yourself, show the salient output, and explain what the result does and does not prove. Then offer to interview me through an API State Worksheet for one action in my product.
+
+### Chapter 5: SQL
+
+> Guide me through Chapter 5 in demonstrate mode. Render the exact product query and a compact result table here. Explain grain, numerator, denominator, joins, filters, ordering, and limitation in plain language. Run the bounded SQLite exercise yourself and walk me through its output. Then ask for one product question I want to translate into query logic.
+
+### Chapter 6: analytics
+
+> Guide me through Chapter 6. Render one valid and one invalid event in chat, ask me to predict which is usable, run the tracking validator, and connect every failure to a product or measurement consequence. Then interview me through a tracking plan one decision at a time.
+
+### Chapter 13: AI evaluation
+
+> Guide me through Chapter 13. Render one held-out case and both candidate outputs at a time. Ask whether each version should pass, fail, or abstain. Run the evaluator yourself, explain why the release gate differs from an average score, and help me draft a scorecard for my capability.
+
+### Any workbook chapter
+
+> Apply Chapter [NUMBER] to [BOUNDED PRODUCT SITUATION]. Treat the workbook template as your internal schema. Ask one high-leverage question at a time, reflect my answer, give specific feedback, and update the draft in chat. Keep facts, interpretations, decisions, unknowns, and specialist questions separate. Before finalising, challenge one assumption. End with the complete record, unresolved questions, evidence boundary, reviewers, and next action.
+
+## The learning loop
+
+Every useful session follows the same compact loop:
+
+1. **See:** the agent renders a real teaching object in chat.
+2. **Predict:** you make a product judgment before the result is explained.
+3. **Verify:** the agent runs a safe check or compares preserved evidence.
+4. **Interpret:** you distinguish what the evidence proves from what remains unknown.
+5. **Apply:** the agent interviews you and drafts the relevant record.
+6. **Challenge:** together you test one counterexample or failure state.
+7. **Transfer:** you leave with one decision, artifact, and next action.
+
+## More AI-first techniques built into the repo
+
+- **Adaptive routing:** the agent chooses demonstrate, apply, or experiment based on your goal instead of making you navigate a syllabus.
+- **Progressive disclosure:** it shows one request, case, flow state, or worksheet section at a time rather than dumping every source file.
+- **Prediction before reveal:** you practise judgment instead of passively accepting the supplied answer.
+- **Executable evidence:** safe deterministic checks become live evidence receipts in the conversation, with their limitations attached.
+- **Counterexample coaching:** the agent pressure-tests the draft with a failure case, rival explanation, or disconfirming question.
+- **Teach-back:** you explain the product meaning in your own words so the agent can correct reasoning, not just terminology.
+- **Evidence ledger:** facts, interpretations, unknowns, decisions, and specialist-owned questions stay visibly separate as the session evolves.
+- **Artifact synthesis:** the agent produces the completed record in chat; writing a file is optional, not the definition of completion.
+- **Session checkpoints:** long exercises end each stage with what changed, what remains uncertain, and where to resume.
+- **Fictional fallback:** when you cannot share work context, the agent can demonstrate with supplied synthetic fixtures without pressuring you to expose confidential material.
+
+## What a complete session should leave behind
+
+You should finish with a decision or learning question, a rendered example, a prediction you made, executed evidence where available, a completed or advanced product record, specific feedback, one challenged assumption, an evidence boundary, and a next action.
 
 Never paste employer code, credentials, customer data, or confidential artifacts into this repository or an AI tool. Use fictional or approved data and follow your organisation’s policies.

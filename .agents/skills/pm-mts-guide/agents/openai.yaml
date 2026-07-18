@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM MTS Guide"
+  short_description: "Turn book chapters into guided practice sessions"
+  default_prompt: "Use $pm-mts-guide to guide me through Chapter 2 as an interactive practice session."

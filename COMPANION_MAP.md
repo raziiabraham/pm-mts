@@ -1,10 +1,10 @@
 # Companion Map
 
-Use this page when you know the chapter you are reading but do not know which companion file matters. Start with one row only. The companion is designed to support the book, not to become another syllabus.
+This is the routing table used by the AI guide. You do not need to navigate it during a session: invoke `$pm-mts-guide Chapter N`, `/pm-mts N`, or say “Guide me through Chapter N.” The agent selects one row, renders the relevant artifact in chat, runs safe evidence, and guides the application.
 
 ## The five-chapter quick path
 
-| Chapter | Product question | Start with | Optional check |
+| Chapter | Product question | Agent route | Executed evidence |
 | --- | --- | --- | --- |
 | 1 | How close should I work to this product’s technical behavior? | [Chapter 1 guide](companion/chapters/01.md) | None |
 | 8 | Which actors, states, handoffs, and failures are still ambiguous? | [Chapter 8 guide](companion/chapters/08.md) | None |
@@ -16,7 +16,7 @@ Add Chapter 15 when the product itself contains an agentic capability.
 
 ## All chapters
 
-| Chapter | Exercise | Start with | Verification |
+| Chapter | Exercise | Agent route and source contract | Evidence path |
 | --- | --- | --- | --- |
 | 1 | Map your technical floor | [Chapter 1 guide](companion/chapters/01.md) | Reflection |
 | 2 | Turn a user story into an API conversation | [Chapter 2 guide](companion/chapters/02.md) | Optional contract check |
@@ -40,13 +40,14 @@ Add Chapter 15 when the product itself contains an agentic capability.
 | 20 | Take one slice through delivery | [Chapter 20 guide](companion/chapters/20.md) | Delivery evidence |
 | Optional lab | Turn app reviews into a product instrument | [App-review lab](companion/feedback_instrument/README.md), [Product Instrument Design](companion/templates/product_instrument_design.md), and [Productionization Memo](companion/templates/productionization_memo.md) | Optional dataset check |
 
-## How to use one row
+## How the agent uses one row
 
-1. State the product question in your own words.
-2. Inspect the linked example or worksheet before running anything.
-3. Predict what you expect to find.
-4. Use the optional check only when it helps test that prediction.
-5. Record what the artifact proves, what it does not prove, and the next decision.
-6. Adapt the worksheet to one real, bounded product problem without adding confidential data to this repository or an AI tool.
+1. State the product question in plain language.
+2. Read the linked sources silently and render the first useful object in chat.
+3. Ask the reader to predict or judge one behavior.
+4. Run the narrow safe check itself when one exists and show the salient result.
+5. Explain what the evidence proves and what it cannot prove.
+6. Interview the reader through the related record one question at a time, with feedback.
+7. Challenge one assumption and finish with the draft, evidence boundary, and next action.
 
-If you are using an AI coding agent, open [AI_GUIDE.md](AI_GUIDE.md) and choose a prompt for the same chapter.
+For prompt and interaction patterns, see [AI_GUIDE.md](AI_GUIDE.md).

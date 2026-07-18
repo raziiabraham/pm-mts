@@ -1,89 +1,103 @@
 # PM MTS Companion
 
-The public companion to *PM Is Now Another Member of Technical Staff* by Razii Abraham.
+The AI-guided practice companion to *PM Is Now Another Member of Technical Staff* by Razii Abraham.
 
-Start with a product question—not Python. You can inspect every core teaching artifact directly on GitHub, ask an AI coding agent to guide you, or run the optional checks when you want evidence that the supplied examples still behave as described.
+You have done the reading. Now let the repository respond.
 
-## Choose what you want to understand
+Open or attach this repository in an AI coding agent and say:
 
-| I want to… | Start here | Setup |
+> Guide me through Chapter 2.
+
+Or use the repository-native invocation for your agent:
+
+- **Codex:** `$pm-mts-guide Chapter 2`
+- **Claude Code:** `/pm-mts 2`
+
+The agent should reconstruct the API request and responses in the conversation, ask for your product judgment, run the safe contract check itself, explain the output, then interview you through an API State Worksheet. You should not have to hunt through files, copy terminal commands, or fill in a blank workbook alone.
+
+For another chapter, change the number. For your own product, add one sentence of context:
+
+> Apply Chapter 8 to our checkout recovery flow. Interview me one question at a time and challenge missing states.
+
+See [AI_GUIDE.md](AI_GUIDE.md) for demonstration, application, and experiment prompts, including compact command examples.
+
+## What happens in an AI-guided session
+
+1. **The example appears in chat.** The agent reads bounded repository sources and renders the relevant request, query, event, flow, evaluation case, or decision table.
+2. **You make a prediction or judgment.** The agent asks one useful question before explaining the supplied result.
+3. **The agent runs safe checks.** When a no-key fixture exists, the agent executes it, shows the salient output, and explains what it proves.
+4. **You apply the technique.** The agent interviews you one question at a time, gives specific feedback, and maintains the workbook record in the conversation.
+5. **The result gets challenged.** The agent tests one failure state, counterexample, or unsupported assumption.
+6. **You leave with an artifact.** The completed draft, unresolved questions, evidence boundary, reviewers, and next action are rendered in chat. Saving a file is optional.
+
+Repository files remain available for provenance, deeper inspection, reproducible evidence, and reuse. They are not the default user interface.
+
+## Choose a practice session
+
+| I want to practise… | Say this | What the agent brings into chat |
 | --- | --- | --- |
-| Understand an API as a product contract | [See the host, method, request, responses, and UI decisions](companion/api/README.md) | None |
-| Understand what a product SQL query actually does | [Read the exact SQL, result, and interpretation boundary](companion/sql/sakila/README.md) | None to read; SQLite to run |
-| Compare two AI feature versions | [Inspect the cases, rubric, results, and release decision](companion/ai_evaluation/README.md) | None to read; Python is optional |
-| Turn any book chapter into an exercise | [Open one of the 20 chapter guides](companion/chapters/README.md) | None |
-| Let an AI coding agent guide me | [Copy a ready-made agent prompt](AI_GUIDE.md) | Clone or download the repository |
-| Work without code or a terminal | [Download the 55-page workbook](PM-MTS-Workbook.pdf) | None |
+| API product states | “Guide me through Chapter 2.” | Host, method, path, request, responses, UI decisions, and a live contract check |
+| SQL product reasoning | “Guide me through Chapter 5.” | Exact query, result table, grain and denominator walkthrough, and a live SQLite run |
+| Product analytics | “Guide me through Chapter 6.” | Tracking decision, valid and invalid events, validator output, and a guided tracking plan |
+| Experiment judgment | “Guide me through Chapter 7.” | Decision rule, result scenarios, interpretation feedback, and a pre-registration draft |
+| AI evaluation | “Guide me through Chapter 13.” | Held-out cases, candidate outputs, release gate, evaluator output, and a scorecard draft |
+| AI calibration | “Guide me through Chapter 14.” | Preserved failure, version chain, regression logic, check output, and a calibration record |
+| Agent design | “Guide me through Chapter 15.” | Goal, tools, memory, budgets, stops, authority, challenges, and an agent charter |
+| Repository orientation | “Guide me through Chapter 17.” | Inspection map, classified findings, contradictions, unknowns, and a bounded check when available |
+| Any chapter | “Apply Chapter N to [situation].” | A progressive interview, feedback, completed record, evidence boundary, and next action |
 
-## Three ways to use the companion
+The [Companion Map](COMPANION_MAP.md) covers all 20 chapters. The quick path remains Chapters 1, 8, 13, 16, and 20; add Chapter 15 when the product itself contains an agent. The capstone path begins with one evidence row in Chapter 18 and carries it through prototype and delivery in Chapters 19–20.
 
-### 1. Browse it on GitHub
+## Three modes
 
-Open any linked Markdown, JSON, SQL, or worksheet file in your browser. This is enough to learn from the API contract, SQL query, evaluation examples, calibration record, templates, and figures. You do not need Python merely to understand the material.
+- **Demonstrate:** reconstruct a supplied example, execute its bounded evidence, and explain the product meaning.
+- **Apply:** interview you and produce the relevant decision artifact in chat.
+- **Experiment:** record a prediction, make one reversible change, show the diff, run the narrow check, and compare the result.
 
-### 2. Ask an AI coding agent to guide you
+If you do not choose, the agent starts with a demonstration and then offers to apply the technique to your product.
 
-Clone or download the repository, open the complete `pm-mts` folder in any coding agent that can read local files, and paste this:
+## What is included
 
-> I am reading Chapter 2 of *PM Is Now Another Member of Technical Staff*. Read `AGENTS.md`, `AI_GUIDE.md`, and `COMPANION_MAP.md`. Start with the visible product artifact, not a command. Explain the product question in plain language, show me the files in the order I should inspect them, ask me to predict the expected behavior, and only then offer to run an optional check. Do not change files unless I ask to experiment.
+| Area | Source material and executable evidence |
+| --- | --- |
+| `companion/chapters/` | Conversation routes for every chapter |
+| `companion/templates/` | 26 chapter-aligned schemas used by guided interviews |
+| `companion/api/` | A complete fictional API contract and deterministic validator |
+| `companion/sql/` | The book’s exact SQL and open-licensed Sakila dataset |
+| `companion/analytics/` | Tracking plan, valid and invalid event envelopes, and validator |
+| `companion/ai_evaluation/` | Two constructed AI-output versions, held-out cases, rubric, and evaluator |
+| `companion/calibration/` | A preserved failure, diagnosis, change, regression evidence, and release chain |
+| `companion/repo_orientation/` | A bounded public-repository orientation exercise |
+| `companion/feedback_instrument/` | A synthetic labelled-feedback dataset with edge cases |
+| `companion/figures/` | Every book diagram as PDF, PNG, and SVG |
 
-Change the chapter number to match what you are reading. Every chapter has a guide with a product question, visible artifacts, walkthrough, application, agent prompt, and evidence boundary.
+## If your agent does not have the repository yet
 
-### 3. Run an optional evidence check
+Give it the repository URL—`https://github.com/raziiabraham/pm-mts`—or use your agent’s GitHub/open-folder flow. Ask the agent to obtain or open the repository for you. Manual clone and download options remain in [GETTING_STARTED.md](GETTING_STARTED.md) as a fallback, not the default lesson.
 
-The small Python and shell programs are not the lesson. They are deterministic checks behind the lesson: they confirm that the supplied request/response examples, SQL results, event cases, and evaluation decisions remain internally consistent.
+The supplied path needs no model API key, cloud account, production credential, or customer data. A terminal-capable agent can run the checks with Python 3.11+, SQLite 3.40+, and a POSIX-compatible shell.
 
-If you want to run them, first clone the repository:
+## Manual and maintainer verification
 
-```sh
-git clone https://github.com/raziiabraham/pm-mts.git
-cd pm-mts
-```
-
-Then follow the single exercise command shown in its README, or run every self-contained check:
+If you intentionally want to reproduce every check yourself:
 
 ```sh
 ./scripts/validate_companion.sh
 ```
 
-The no-key path uses Python 3.11+, SQLite 3.40+, and a POSIX-compatible shell. It needs no model API key, cloud account, package installation, production credential, or customer data.
-
-## What is included
-
-| Area | What readers can inspect or do |
-| --- | --- |
-| `companion/chapters/` | Follow one complete, artifact-first reader and AI-agent journey for every chapter |
-| `companion/templates/` | Complete 26 reusable, chapter-aligned product records |
-| `companion/api/` | Read a complete fictional API contract: host, method, path, request, success, validation failure, and provider failure |
-| `companion/sql/` | Read and optionally run the book’s exact SQL against the open-licensed Sakila dataset |
-| `companion/analytics/` | Inspect a tracking plan and valid and invalid event envelopes |
-| `companion/ai_evaluation/` | Compare two constructed AI-output versions against held-out cases and a release gate |
-| `companion/calibration/` | Trace one preserved failure through diagnosis, change, regression evidence, and release |
-| `companion/repo_orientation/` | Inspect the public Noted repository at the cited commit and find a documented-versus-implemented contract mismatch |
-| `companion/feedback_instrument/` | Inspect a synthetic labelled-feedback dataset and its edge cases |
-| `companion/figures/` | Print, reuse, or inspect every book diagram as PDF, PNG, and SVG files |
+This is an evidence and maintenance path, not the reader’s starting point.
 
 ## Downloadable materials
 
 - [55-page printable workbook](PM-MTS-Workbook.pdf)
 - [All 24 printable book figures](PM-MTS-Printable-Figures.pdf)
-- [Editable workbook in Markdown](companion/pm_mts_workbook.md)
-- [Individual templates](companion/templates/)
+- [Editable workbook source](companion/pm_mts_workbook.md)
+- [Individual template schemas](companion/templates/)
 - [Latest complete companion package](https://github.com/raziiabraham/pm-mts/releases/latest)
 
-## Reading paths
+## Evidence and data boundary
 
-1. **Quick path:** Chapters 1, 8, 13, 16, and 20. Add Chapter 15 if the product itself contains an agent.
-2. **Chapter path:** use the mapped worksheet after each chapter.
-3. **Capstone path:** begin with one evidence row in Chapter 18 and carry it through prototype and delivery in Chapters 19–20.
-
-The [companion map](COMPANION_MAP.md) links every chapter to its relevant worksheet or runnable artifact.
-
-## What a passing check proves
-
-A green check proves only the named assertions about the supplied teaching fixture. It does not prove that a production API, query, AI feature, or product decision is correct. The reader—and the relevant specialists—remain responsible for interpretation, evidence, permissions, and real-world verification.
-
-## Data boundary
+A green check proves only the named assertions about the supplied teaching fixture. It does not prove that a production API, query, AI feature, or product decision is correct. The reader and relevant specialists remain responsible for interpretation, evidence, permissions, and real-world verification.
 
 Named companies and people in constructed runnable fixtures are fictional, and all feedback reviews are synthetic. Chapter 5 vendors the open-licensed generated Sakila sample data. Chapter 17 intentionally inspects the author’s public Noted repository at a cited commit. This repository contains no employer code, credentials, customer data, or confidential artifacts.
 
