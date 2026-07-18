@@ -1,0 +1,120 @@
+openapi: 3.1.0
+info:
+  title: Briefly Context Draft API
+  version: 1.0.0
+  description: >-
+    Fictional teaching contract for Chapter 2 of PM Is Now Another Member of
+    Technical Staff. The server is intentionally non-live.
+servers:
+  - url: https://api.briefly.example
+    description: Fictional reserved host; no network request should be made.
+paths:
+  /v1/context-drafts:
+    post:
+      operationId: createContextDraft
+      summary: Create an editable context draft from a public website
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ContextDraftRequest"
+            examples:
+              supplied:
+                externalValue: ./request.json
+      responses:
+        "200":
+          description: Draft ready for human review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReadyForReview"
+              examples:
+                supplied:
+                  externalValue: ./success.json
+        "400":
+          description: Request validation failed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ValidationError"
+              examples:
+                supplied:
+                  externalValue: ./validation_error.json
+        "503":
+          description: Public source could not be retrieved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProviderError"
+              examples:
+                supplied:
+                  externalValue: ./provider_error.json
+components:
+  schemas:
+    ContextDraftRequest:
+      type: object
+      required: [request_id, website_url, requested_fields, user_can_edit]
+      properties:
+        request_id:
+          type: string
+        website_url:
+          type: string
+          format: uri
+        requested_fields:
+          type: array
+          items:
+            type: string
+        user_can_edit:
+          type: boolean
+          const: true
+    ReadyForReview:
+      type: object
+      required: [request_id, status, context, sources, user_can_edit]
+      properties:
+        request_id:
+          type: string
+        status:
+          type: string
+          const: ready_for_review
+        context:
+          type: object
+        sources:
+          type: array
+          items:
+            type: object
+            required: [url, retrieved_at]
+        user_can_edit:
+          type: boolean
+          const: true
+    ValidationError:
+      type: object
+      required: [request_id, status, error, retryable]
+      properties:
+        request_id:
+          type: string
+        status:
+          type: string
+          const: invalid_request
+        error:
+          type: object
+        retryable:
+          type: boolean
+          const: false
+    ProviderError:
+      type: object
+      required: [request_id, status, error, retryable, manual_entry_available]
+      properties:
+        request_id:
+          type: string
+        status:
+          type: string
+          const: source_unavailable
+        error:
+          type: object
+        retryable:
+          type: boolean
+          const: true
+        manual_entry_available:
+          type: boolean
+          const: true

@@ -1,142 +1,93 @@
 # Getting Started with the PM MTS Companion
 
-You do not need to be a developer to use this repository. The exercises are designed so that an AI coding agent can inspect the local files, explain unfamiliar terms, and run bounded checks while you remain responsible for the product interpretation.
+You do not need to be a developer, install Python, or run a command to begin. Choose the lightest path that answers your question.
 
-## Choose a path
+## Path 1: learn directly in your browser
 
-- **Agent-guided path:** clone the repository, open it in a local AI coding agent, and work through the chapter exercises. This is the recommended path.
-- **Manual path:** clone or download the repository and copy the commands in this guide yourself.
-- **Workbook-only path:** open [`PM-MTS-Workbook.pdf`](PM-MTS-Workbook.pdf) and complete the records without running code.
-- **Printable-figures path:** open [`PM-MTS-Printable-Figures.pdf`](PM-MTS-Printable-Figures.pdf) to print or annotate all 24 book figures, or use the individual files under `companion/figures/pdf/`.
+Use this when you want to understand the artifact without local setup.
 
-## Step 1: get a local copy
+1. For APIs, open [Chapter 2: Read an API as a Product Contract](companion/api/README.md). It shows the host, HTTP method, path, request, three response states, and corresponding product decisions.
+2. For SQL, open [Chapter 5: Read a Product Question in SQL](companion/sql/sakila/README.md). It shows the exact query, syntax explanation, captured result, and interpretation boundary.
+3. For any chapter, open the [Chapter Guides](companion/chapters/README.md) and select the number you are reading.
+4. For a printable path, open the [55-page workbook](PM-MTS-Workbook.pdf).
 
-### Terminal method
+The Python and shell files are optional checks behind these examples. They are not prerequisites for reading them.
 
-Open Terminal on macOS/Linux or Git Bash/PowerShell on Windows:
+## Path 2: use an AI coding agent as your guide
+
+Use this when you want the companion to respond to your questions, explain technical terms, or help adapt a worksheet.
+
+### Get a local copy
+
+Clone with a terminal:
 
 ```sh
 git clone https://github.com/raziiabraham/pm-mts.git
 cd pm-mts
 ```
 
-The first command downloads a local copy. The second moves the terminal into that folder so later commands can find the companion files.
+Or use **GitHub Desktop → File → Clone repository**, enter `raziiabraham/pm-mts`, and choose a local folder. You may also use **Code → Download ZIP** on GitHub and unzip it.
 
-### GitHub Desktop method
+### Open the complete folder
 
-1. Open GitHub Desktop.
-2. Choose **File → Clone repository**.
-3. Select the URL tab and enter `https://github.com/raziiabraham/pm-mts.git`.
-4. Choose where to save it.
-5. Open that local folder in your coding agent.
+Open the cloned or unzipped `pm-mts` folder—not one individual file—in your AI coding agent. Then paste:
 
-### Download-only method
+> Read `AGENTS.md`, `AI_GUIDE.md`, `COMPANION_MAP.md`, and the matching two-digit chapter guide—for example, `companion/chapters/02.md` for Chapter 2. I am reading Chapter [NUMBER]. Start with the product question and visible artifact, not a command. Explain the files in the order I should inspect them, ask me to predict the behavior or result, and only then offer an optional check. Do not change files unless I ask to experiment.
 
-On GitHub, choose **Code → Download ZIP**, unzip the file, and open the resulting `pm-mts` folder. This is enough for reading and running exercises, although cloning is better if you want future updates.
+See [AI_GUIDE.md](AI_GUIDE.md) for specific API, SQL, AI-evaluation, and worksheet prompts.
 
-## Step 2: ask your coding agent to orient itself
+## Path 3: reproduce or change an example
 
-Use this reusable prompt, replacing the chapter number and folder when needed:
+Use this after you understand the artifact and want to see how a bounded change affects the result.
 
-> I am reading Chapter 2. Read `README.md`, `AGENTS.md`, and `companion/api/README.md`. Do not edit files yet. Explain the exercise and every unfamiliar term in plain language. Show me which files to inspect, run the validator, and explain what the result proves and does not prove.
-
-The agent should work from the repository root—the folder containing `README.md`, `AGENTS.md`, `companion/`, and `scripts/`.
-
-## Step 3: Chapter 2 example—run your first Python check
-
-Chapter 2 uses a fictional API contract. The files show one request and three possible outcomes:
-
-1. `companion/api/request.json` — what the product sends;
-2. `companion/api/success.json` — a successful response;
-3. `companion/api/validation_error.json` — input the service rejects; and
-4. `companion/api/provider_error.json` — an upstream service failure.
-
-The validator reads those files and checks whether they preserve the states and safety boundaries described in the chapter. It does not contact an API or change the files.
-
-### macOS or Linux
-
-From the `pm-mts` folder, run:
-
-```sh
-python3 companion/api/validate_contract.py
-```
-
-### Windows
-
-From PowerShell or Windows Terminal, run:
-
-```powershell
-py companion\api\validate_contract.py
-```
-
-If `python3` works on your Windows installation, you may use the macOS/Linux form with forward slashes instead.
-
-Expected output:
-
-```text
-Chapter 2 API contract validation passed.
-```
-
-In plain language, “passed” means the supplied JSON examples contain the expected correlation ID, allowed states, validation details, retry rules, and failure boundaries. It does not prove that a real production API behaves correctly.
-
-## Chapter-by-chapter runnable checks
-
-Run only the exercise for the chapter you are reading. Your coding agent can run the command and then explain the output.
-
-| Chapter | Command on macOS/Linux | What it checks |
+| Chapter | Human-readable starting point | Optional command |
 | --- | --- | --- |
-| 2 | `python3 companion/api/validate_contract.py` | Request, success, validation-error, and provider-error states |
-| 5 | `./companion/sql/validate_chapter_05.sh` | The book's SQL examples and captured product query against the Sakila SQLite dataset |
-| 6 | `python3 companion/analytics/validate_tracking.py` | Event names, triggers, required properties, ownership, and invalid cases |
-| 13 | `python3 companion/ai_evaluation/evaluate.py` | Two resolver versions, held-out cases, critical errors, and release gates |
-| 14 | `python3 companion/calibration/validate_record.py` | Whether a calibration record stays connected to its preserved failure and outputs |
-| 17 | `python3 companion/repo_orientation/validate_task.py /path/to/noted-main` | The documented-versus-implemented 25 MB storage contract in the cited public Noted repository state |
-| 19 | `python3 companion/feedback_instrument/validate_dataset.py` | Synthetic review IDs, labels, splits, and required edge cases |
+| 2 | [API host, method, request, and responses](companion/api/README.md) | `python3 companion/api/validate_contract.py` |
+| 5 | [Exact SQL, result, and limitation](companion/sql/sakila/README.md) | `./companion/sql/validate_chapter_05.sh` |
+| 6 | [Tracking plan and event cases](companion/analytics/README.md) | `python3 companion/analytics/validate_tracking.py` |
+| 13 | [Held-out cases, outputs, rubric, and release result](companion/ai_evaluation/README.md) | `python3 companion/ai_evaluation/evaluate.py` |
+| 14 | [Preserved failure and calibration record](companion/calibration/README.md) | `python3 companion/calibration/validate_record.py` |
+| 17 | [Public-repository inspection question](companion/repo_orientation/README.md) | `python3 companion/repo_orientation/validate_task.py /path/to/noted-main` |
+| Optional lab | [Synthetic feedback instrument](companion/feedback_instrument/README.md) | `python3 companion/feedback_instrument/validate_dataset.py` |
 
-On Windows, replace `python3` with `py` and `/` with `\`. The Chapter 5 shell exercise is easiest through Git Bash or Windows Subsystem for Linux.
+On Windows, use `py` instead of `python3`. The Chapter 5 shell exercise is easiest in Git Bash or Windows Subsystem for Linux.
 
-To run every supported check on macOS/Linux or Git Bash:
+## The learning loop
+
+For any path:
+
+1. State the product question.
+2. Inspect the visible artifact.
+3. Predict the behavior, output, or failure.
+4. Compare the supplied result with your prediction.
+5. Run an optional check only if it adds useful evidence.
+6. Explain what the result proves and what remains unknown.
+7. Complete the related worksheet for one real, bounded problem.
+
+## Run every self-contained check
+
+If you intentionally want to validate the whole repository on macOS, Linux, or Git Bash:
 
 ```sh
 ./scripts/validate_companion.sh
 ```
 
-The complete script skips Chapter 17 when Noted is not available. To include it, clone `https://github.com/avidx-app/noted-main.git` beside this repository, check out commit `985ad957b0131cddd3fd5d16a432150651c90b99`, or set `NOTED_REPO_PATH` to that checkout.
-
-## A useful learning loop
-
-For each exercise:
-
-1. Ask the agent to explain the product question before inspecting code.
-2. Read the small input files yourself.
-3. Predict what the validator should accept or reject.
-4. Run the validator.
-5. Ask what the result proves and what remains unknown.
-6. If you want to experiment, create a Git branch or copy the file before changing it.
-7. Complete the related workbook record using your own bounded product problem.
+The Chapter 17 repository exercise runs only when Noted is cloned beside this repository or supplied through `NOTED_REPO_PATH`.
 
 ## Troubleshooting
 
 ### “python3: command not found”
 
-Ask your coding agent to check whether Python is installed. On Windows, try `py --version`. On macOS/Linux, try `python3 --version`. The exercises require Python 3.11 or later.
+You can still use every browser-first and workbook path. Install Python only if you want to run the optional checks. On Windows, try `py --version`.
 
 ### “No such file or directory”
 
-Your terminal is probably outside the repository root. Run `pwd` on macOS/Linux or `Get-Location` in PowerShell, then navigate to the cloned `pm-mts` folder.
+Your terminal is probably outside the repository root. Navigate to the folder containing `README.md`, `AGENTS.md`, `companion/`, and `scripts/`.
 
-### “Permission denied” for a `.sh` file
+### A check fails after I edited a file
 
-Run it through the shell explicitly:
-
-```sh
-sh scripts/validate_companion.sh
-```
-
-### The validator fails after I edited a file
-
-That is often the point of the exercise. Ask the agent to show the diff, explain which expectation changed, and help you decide whether the fixture, validator, or your edit is wrong. Do not simply change the expected answer to make the check green.
+That may be the useful result. Inspect the diff and decide whether the artifact, expectation, or your experiment changed. Do not merely rewrite the expected answer to make the check green.
 
 ## Safety and data boundary
 
-The supplied fixtures use fictional or synthetic data and do not require network access. Chapter 5's Sakila data is open licensed, and Chapter 17 is an explicit exercise against the author's public Noted repository at a cited commit. Do not paste employer code, credentials, customer data, or confidential artifacts into this repository or an AI tool. Follow your organisation's policies when adapting a template to real work.
+The supplied fixtures use fictional or synthetic data and require no model API key. Chapter 5 uses open-licensed generated Sakila data, and Chapter 17 explicitly inspects the author’s public Noted repository at a cited commit. Do not paste employer code, credentials, customer data, or confidential artifacts into this repository or an AI tool. Follow your organisation’s policies when adapting a template to real work.

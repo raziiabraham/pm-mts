@@ -1,24 +1,44 @@
-# Companion repository
+# Companion Practice Surface
 
-This directory is the runnable practice surface for *PM Is Now Another Member of Technical Staff*. It is intentionally small: readers inspect bounded product artifacts, run deterministic checks, and then use the workbook to make decisions. It is not a production application or a coding curriculum.
+This directory contains the bounded examples, worksheets, datasets, and optional checks used by *PM Is Now Another Member of Technical Staff*. It is not a production application or a coding curriculum.
 
-## Runtime promise
+If you are a reader, begin with the repository [README](../README.md), [one of the 20 chapter guides](chapters/README.md), [Companion Map](../COMPANION_MAP.md), or [AI Agent Guide](../AI_GUIDE.md). Do not start by running every script.
 
-The no-key path requires only:
+## Artifact-first map
 
-- Python 3.11 or later;
-- SQLite 3.40 or later; and
-- a POSIX-compatible shell.
+| Chapter | Inspect first | Product question | Optional verification |
+| --- | --- | --- | --- |
+| 2 | [`api/README.md`](api/README.md) | What request, response, failure, and control states make the API behavior complete? | `python3 companion/api/validate_contract.py` |
+| 5 | [`sql/sakila/README.md`](sql/sakila/README.md) | What does the exact SQL measure, at what grain, and what can the result not prove? | `./companion/sql/validate_chapter_05.sh` |
+| 6 | [`analytics/README.md`](analytics/README.md) | Can the event contract support the product decision it claims to inform? | `python3 companion/analytics/validate_tracking.py` |
+| 7 | [`experiments/chapter_07_statistical_interpretation_lab.md`](experiments/chapter_07_statistical_interpretation_lab.md) | What decision rule should exist before the result arrives? | Worksheet |
+| 13 | [`ai_evaluation/README.md`](ai_evaluation/README.md) | Which cases and failures determine whether an AI capability may ship? | `python3 companion/ai_evaluation/evaluate.py` |
+| 14 | [`calibration/README.md`](calibration/README.md) | Does a proposed change remain connected to the preserved failure and regression evidence? | `python3 companion/calibration/validate_record.py` |
+| 17 | [`repo_orientation/README.md`](repo_orientation/README.md) | What does the repository prove, contradict, and leave unresolved? | Optional public-repo check |
+| Optional lab | [`feedback_instrument/README.md`](feedback_instrument/README.md) | Can synthetic reviews become a bounded, evaluated product instrument? | `python3 companion/feedback_instrument/validate_dataset.py` |
+| All | [`templates/`](templates/) and [`pm_mts_workbook.md`](pm_mts_workbook.md) | How does the reader apply the chapter to one bounded product problem? | `./scripts/assemble_workbook.sh` |
 
-No cloud account, model API key, production credential, package installation, or customer data is required. The Python validators use only the standard library. Illustrative model prompts can be inspected without calling a model.
+## Why Python still exists here
 
-Run the complete companion check from the repository root:
+The Python files are small deterministic verifiers. They check that teaching fixtures remain internally consistent as the repository evolves. They do not teach the chapter by themselves, call a model, contact a production service, or establish that a real system is correct.
+
+The intended order is:
+
+1. understand the product question;
+2. inspect the human-readable artifact;
+3. predict the result;
+4. optionally run the narrow check; and
+5. translate the output into a decision and evidence boundary.
+
+## Complete no-key verification
+
+Maintainers and readers who intentionally want to check every self-contained fixture can run:
 
 ```sh
 ./scripts/validate_companion.sh
 ```
 
-The command exits non-zero if a fixture no longer matches the manuscript's promised behavior. Expected summary:
+Expected summary:
 
 ```text
 Chapter 2 API contract validation passed.
@@ -31,26 +51,12 @@ HarborCart dataset validation passed: 17 reviews, aligned labels, required edge 
 Companion validation passed.
 ```
 
-## Chapter map
-
-| Chapter | Artifact | Reader action | Verification |
-| --- | --- | --- | --- |
-| 2 | `api/` | Compare one request with success, validation, and provider-failure responses; map each state to product behavior | `python3 companion/api/validate_contract.py` |
-| 5 | `sql/sakila/` | Load the real generated Sakila SQLite data, print the book's product-first query and actual result, then run an agent-assisted follow-up query | `./companion/sql/validate_chapter_05.sh` |
-| 6 | `analytics/` | Inspect a tracking plan and test valid and invalid event envelopes | `python3 companion/analytics/validate_tracking.py` |
-| 7 | `experiments/chapter_07_statistical_interpretation_lab.md` | Interpret supplied experimental outputs and challenge validity | Worksheet; no calculator or external service required |
-| 13 | `ai_evaluation/` | Compare two resolver versions against a held-out constructed set and severity-aware gates | `python3 companion/ai_evaluation/evaluate.py` |
-| 14 | `calibration/` | Inspect a filled failure-to-change-to-regression record tied to the Chapter 13 cases | `python3 companion/calibration/validate_record.py` |
-| 17 | `repo_orientation/` | Inspect the public Noted repository at the cited commit and record a documented-versus-implemented storage-contract contradiction | `python3 companion/repo_orientation/validate_task.py /path/to/noted-main` |
-| Companion lab | `feedback_instrument/` and `app_reviews_product_instrument.md` | Work through the optional app-review-to-product-instrument chapter and inspect its synthetic labelled feedback set | `python3 companion/feedback_instrument/validate_dataset.py` |
-| All | `figures/` | Reuse or inspect all 24 book figures as individual PDF, PNG, or scalable SVG files; consult the manifest for captions and alt text | Checked during release packaging |
-| All | `templates/` and `pm_mts_workbook.md` | Apply 26 chapter-aligned records to one bounded product problem | `./scripts/assemble_workbook.sh` |
-| All | `../PM-MTS-Workbook.pdf` | Print or annotate the standalone 55-page A4 workbook | Verified in the publication release pipeline |
+The no-key path requires Python 3.11+, SQLite 3.40+, and a POSIX-compatible shell. It needs no cloud account, model API key, package installation, production credential, or customer data.
 
 ## Data and rights boundary
 
-Named companies and people in the constructed runnable fixtures are fictional, and the feedback reviews are synthetic. Chapter 5 is the stated exception: it vendors the open-licensed generated Sakila SQLite sample data and retains its provenance and licence notices. No Heatseeker customer data, Meta creative, Tokopedia review text, Qlip material, Shipper operational data, employer code, or GoPractice content appears here.
+Named companies and people in constructed runnable fixtures are fictional, and feedback reviews are synthetic. Chapter 5 vendors the open-licensed generated Sakila SQLite data with its provenance and licence notices. Chapter 17 intentionally inspects the author’s public Noted repository at a cited commit. No employer code, credentials, customer data, or confidential artifacts belong here.
 
 ## Maintenance rule
 
-When a chapter or companion lab changes an artifact field, expected state, or term, update the corresponding fixture and validator in the same revision. A passing manuscript audit does not substitute for this companion check.
+When an artifact field, expected state, or book term changes, update its fixture, human-readable README, and verifier in the same revision. A passing script does not substitute for checking that the reader-facing explanation still matches the book.
