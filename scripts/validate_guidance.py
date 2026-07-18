@@ -140,4 +140,16 @@ require(query in sql_readme, "SQL guide no longer embeds the exact runnable quer
 require("LOVE SUICIDES" in sql_readme and "rentals per copy" in sql_readme, "SQL guide is missing its visible result")
 require("does **not** prove unmet demand" in sql_readme, "SQL guide lost its interpretation boundary")
 
+chapter_5 = CHAPTER_GUIDES[4].read_text(encoding="utf-8")
+for expected in ("eight executable examples", "run_chapter_examples.sh", "Broader SQL progression"):
+    require(expected in chapter_5, f"Chapter 5 guide lost restored SQL coverage: {expected}")
+
+chapter_8 = CHAPTER_GUIDES[7].read_text(encoding="utf-8")
+for expected in ("reflective listening", "seven steps for flowcharting", "verb + object"):
+    require(expected in chapter_8, f"Chapter 8 guide lost restored flow guidance: {expected}")
+
+flow_record = (ROOT / "companion" / "templates" / "flow_to_acceptance.md").read_text(encoding="utf-8")
+require("## Reflective Listening Record" in flow_record, "Flow-to-Acceptance Record lost reflective listening")
+require("Counterexample used to challenge" in flow_record, "Flow-to-Acceptance Record lost challenge step")
+
 print("Reader and AI-agent guidance validation passed.")
