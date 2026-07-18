@@ -11,7 +11,7 @@ Start with a product question—not Python. You can inspect every core teaching 
 | Understand an API as a product contract | [See the host, method, request, responses, and UI decisions](companion/api/README.md) | None |
 | Understand what a product SQL query actually does | [Read the exact SQL, result, and interpretation boundary](companion/sql/sakila/README.md) | None to read; SQLite to run |
 | Compare two AI feature versions | [Inspect the cases, rubric, results, and release decision](companion/ai_evaluation/README.md) | None to read; Python is optional |
-| Turn one book chapter into an exercise | [Use the chapter-by-chapter companion map](COMPANION_MAP.md) | None |
+| Turn any book chapter into an exercise | [Open one of the 20 chapter guides](companion/chapters/README.md) | None |
 | Let an AI coding agent guide me | [Copy a ready-made agent prompt](AI_GUIDE.md) | Clone or download the repository |
 | Work without code or a terminal | [Download the 55-page workbook](PM-MTS-Workbook.pdf) | None |
 
@@ -27,7 +27,7 @@ Clone or download the repository, open the complete `pm-mts` folder in any codin
 
 > I am reading Chapter 2 of *PM Is Now Another Member of Technical Staff*. Read `AGENTS.md`, `AI_GUIDE.md`, and `COMPANION_MAP.md`. Start with the visible product artifact, not a command. Explain the product question in plain language, show me the files in the order I should inspect them, ask me to predict the expected behavior, and only then offer to run an optional check. Do not change files unless I ask to experiment.
 
-Change the chapter number to match what you are reading. The agent-specific guide includes ready-made prompts for APIs, SQL, AI evaluation, and choosing a path.
+Change the chapter number to match what you are reading. Every chapter has a guide with a product question, visible artifacts, walkthrough, application, agent prompt, and evidence boundary.
 
 ### 3. Run an optional evidence check
 
@@ -52,6 +52,7 @@ The no-key path uses Python 3.11+, SQLite 3.40+, and a POSIX-compatible shell. I
 
 | Area | What readers can inspect or do |
 | --- | --- |
+| `companion/chapters/` | Follow one complete, artifact-first reader and AI-agent journey for every chapter |
 | `companion/templates/` | Complete 26 reusable, chapter-aligned product records |
 | `companion/api/` | Read a complete fictional API contract: host, method, path, request, success, validation failure, and provider failure |
 | `companion/sql/` | Read and optionally run the book’s exact SQL against the open-licensed Sakila dataset |

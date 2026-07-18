@@ -2,7 +2,7 @@
 
 This directory contains the bounded examples, worksheets, datasets, and optional checks used by *PM Is Now Another Member of Technical Staff*. It is not a production application or a coding curriculum.
 
-If you are a reader, begin with the repository [README](../README.md), [Companion Map](../COMPANION_MAP.md), or [AI Agent Guide](../AI_GUIDE.md). Do not start by running every script.
+If you are a reader, begin with the repository [README](../README.md), [one of the 20 chapter guides](chapters/README.md), [Companion Map](../COMPANION_MAP.md), or [AI Agent Guide](../AI_GUIDE.md). Do not start by running every script.
 
 ## Artifact-first map
 

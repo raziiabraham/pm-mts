@@ -22,6 +22,30 @@ GUIDES = [
     ROOT / "companion" / "ai_evaluation" / "README.md",
     ROOT / "companion" / "calibration" / "README.md",
 ]
+CHAPTER_GUIDES = [ROOT / "companion" / "chapters" / f"{chapter:02d}.md" for chapter in range(1, 21)]
+GUIDES.extend([ROOT / "companion" / "chapters" / "README.md", *CHAPTER_GUIDES])
+CHAPTER_TITLES = (
+    "Why PMs Need a Technical Floor",
+    "APIs Are Where Product Ideas Become System Behavior",
+    "Delivery Is a Product Skill",
+    "Image Assets Are a Product Architecture Problem",
+    "SQL, NoSQL, and Product Reality",
+    "Product Analytics Is a Model of User Behavior",
+    "Experiments Turn Product Opinions into Evidence",
+    "Flows Make Ambiguity Visible",
+    "Design Systems Turn Taste into Shared Infrastructure",
+    "Product Psychology Explains Why Users Move or Stop",
+    "The Moment Traditional PM Stops Being Enough",
+    "Do Not Start with AI; Start with Solution Fit",
+    "AI Features Need Evaluation Systems",
+    "AI Products Improve Through Calibration Loops",
+    "When a Feature Becomes an Agent",
+    "AI Agents Are Teammates, Not Magic Assistants",
+    "The Repo Is a Product Surface",
+    "Discovery Becomes Evidence Operations",
+    "AI Makes Prototyping Cheap, Not Thinking Cheap",
+    "Delivery Still Matters Most",
+)
 
 
 def require(condition: bool, message: str) -> None:
@@ -59,6 +83,29 @@ require("Never lead with Python" in agents, "AGENTS.md no longer enforces artifa
 chapter_map = (ROOT / "COMPANION_MAP.md").read_text(encoding="utf-8")
 for chapter in range(1, 21):
     require(re.search(rf"^\| {chapter} \|", chapter_map, flags=re.MULTILINE) is not None, f"Chapter {chapter} is missing from COMPANION_MAP.md")
+    require(f"companion/chapters/{chapter:02d}.md" in chapter_map, f"Chapter {chapter} map does not route through its reader guide")
+
+required_guide_sections = (
+    "## Product question",
+    "## Start with the visible artifacts",
+    "## Five-minute walkthrough",
+    "## Take it to your product",
+    "## Ask an AI coding agent",
+    "## Evidence boundary",
+)
+for chapter, guide_path in enumerate(CHAPTER_GUIDES, start=1):
+    guide = guide_path.read_text(encoding="utf-8")
+    require(guide.startswith(f"# Chapter {chapter}: {CHAPTER_TITLES[chapter - 1]}"), f"Chapter {chapter} guide has the wrong title")
+    for section in required_guide_sections:
+        require(section in guide, f"Chapter {chapter} guide is missing: {section}")
+    require("../figures/png/" in guide, f"Chapter {chapter} guide does not expose its book figure")
+    require(f"figure_{chapter}_1.png" in guide, f"Chapter {chapter} guide does not link its chapter figure")
+    require("../templates/" in guide, f"Chapter {chapter} guide does not link its workbook record")
+    require(len(guide.split()) >= 180, f"Chapter {chapter} guide is too thin to guide a reader")
+
+chapter_index = (ROOT / "companion" / "chapters" / "README.md").read_text(encoding="utf-8")
+for chapter in range(1, 21):
+    require(f"({chapter:02d}.md)" in chapter_index, f"Chapter index is missing Chapter {chapter}")
 
 api_dir = ROOT / "companion" / "api"
 api_readme = (api_dir / "README.md").read_text(encoding="utf-8")

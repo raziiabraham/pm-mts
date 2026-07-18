@@ -8,7 +8,7 @@ Use this when you want to understand the artifact without local setup.
 
 1. For APIs, open [Chapter 2: Read an API as a Product Contract](companion/api/README.md). It shows the host, HTTP method, path, request, three response states, and corresponding product decisions.
 2. For SQL, open [Chapter 5: Read a Product Question in SQL](companion/sql/sakila/README.md). It shows the exact query, syntax explanation, captured result, and interpretation boundary.
-3. For any other chapter, open the [Companion Map](COMPANION_MAP.md) and select one row.
+3. For any chapter, open the [Chapter Guides](companion/chapters/README.md) and select the number you are reading.
 4. For a printable path, open the [55-page workbook](PM-MTS-Workbook.pdf).
 
 The Python and shell files are optional checks behind these examples. They are not prerequisites for reading them.
@@ -32,7 +32,7 @@ Or use **GitHub Desktop → File → Clone repository**, enter `raziiabraham/pm-
 
 Open the cloned or unzipped `pm-mts` folder—not one individual file—in your AI coding agent. Then paste:
 
-> Read `AGENTS.md`, `AI_GUIDE.md`, and `COMPANION_MAP.md`. I am reading Chapter [NUMBER]. Start with the product question and visible artifact, not a command. Explain the files in the order I should inspect them, ask me to predict the behavior or result, and only then offer an optional check. Do not change files unless I ask to experiment.
+> Read `AGENTS.md`, `AI_GUIDE.md`, `COMPANION_MAP.md`, and the matching two-digit chapter guide—for example, `companion/chapters/02.md` for Chapter 2. I am reading Chapter [NUMBER]. Start with the product question and visible artifact, not a command. Explain the files in the order I should inspect them, ask me to predict the behavior or result, and only then offer an optional check. Do not change files unless I ask to experiment.
 
 See [AI_GUIDE.md](AI_GUIDE.md) for specific API, SQL, AI-evaluation, and worksheet prompts.
 

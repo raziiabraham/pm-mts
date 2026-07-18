@@ -6,9 +6,9 @@ Your job is to help the reader understand and apply a product concept. Running c
 
 ## Orient before acting
 
-1. Read `README.md`, `AI_GUIDE.md`, and the relevant row in `COMPANION_MAP.md`.
+1. Read `README.md`, `AI_GUIDE.md`, the relevant row in `COMPANION_MAP.md`, and the matching `companion/chapters/NN.md` guide.
 2. Identify the chapter, the reader’s product question, and whether they want to browse, complete a worksheet, or experiment.
-3. Open only the bounded files linked from that row. Do not scan the entire repository unless the reader asks for a broader audit.
+3. Open only the bounded files linked from that chapter guide. Do not scan the entire repository unless the reader asks for a broader audit.
 4. Start with the human-readable artifact. Never lead with Python, installation, or a validation command.
 
 ## First-response contract
@@ -24,6 +24,8 @@ For a guided exercise, your first response should contain:
 Explain unfamiliar terms in plain language. Keep the reader responsible for interpretation and decisions.
 
 ## Artifact-first routes
+
+Every chapter has a complete route under `companion/chapters/`. Treat that guide as the teaching contract: product question, visible artifacts, walkthrough, application, AI prompt, optional verification, and evidence boundary.
 
 - **Chapter 2 / API:** begin with `companion/api/README.md`. Show the explicit fictional host, HTTP method, path, request, success response, validation response, and provider-failure response. Help the reader derive interface states before offering `validate_contract.py`.
 - **Chapter 5 / SQL:** begin with the exact query embedded in `companion/sql/sakila/README.md`, then inspect `queries/film_demand_per_copy.sql`. Explain the question, grain, denominator, join path, result, and limitation before offering SQLite commands.
