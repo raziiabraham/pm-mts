@@ -12,7 +12,7 @@ The templates are decision aids, not mandatory process. Adapt them to the team's
 
 Choose one of three modes:
 
-1. **Quick path:** Chapters 1, 8, 13, 15, and 20. Map your participation boundary, expose one flow, define an AI quality bar, create portable context, and carry one slice through delivery.
+1. **Quick path:** Chapters 1, 8, 13, 16, and 20. Map your participation boundary, expose one flow, define an AI quality bar, create portable context, and carry one slice through delivery. Add Chapter 15 when the product itself contains an agentic capability.
 2. **Chapter path:** complete the mapped worksheet after each chapter. Reuse the same product problem where the fit is natural.
 3. **Capstone path:** begin with one Assumption and Evidence Map, then complete only the artifacts required to carry that claim through prototype, implementation, review, release, and learning.
 
@@ -36,13 +36,14 @@ The PDF is designed for printing and handwriting. The Markdown files remain the 
 | 12 | Compare solution shapes | AI Solution-Fit Decision Record |
 | 13 | Design an AI evaluation system | AI Evaluation Scorecard |
 | 14 | Design a calibration loop | Prompt Evaluation Table, AI Calibration Record, and Ship Decision Record |
-| 15 | Create a portable context brief | Portable Context Brief |
-| 16 | Build a repo orientation map | Repository Orientation Map |
-| 17 | Create an assumption and evidence map | Assumption and Evidence Map |
-| 18 | Write a prototype contract | Prototype Contract |
-| 19 | Design a product instrument | Product Instrument Design Record and Productionization Memo |
+| 15 | Write an agent charter | Agent Charter |
+| 16 | Create a portable context brief | Portable Context Brief |
+| 17 | Build a repo orientation map | Repository Orientation Map |
+| 18 | Create an assumption and evidence map | Assumption and Evidence Map |
+| 19 | Write a prototype contract | Prototype Contract |
 | 20 | Take one slice through delivery | End-to-End Delivery Slice Record, PR Review Checklist, and Ship Decision Record |
+| Optional app-review lab | Design a product instrument | Product Instrument Design Record and Productionization Memo |
 
 ## Artifact Index
 
-The assembled workbook contains 25 reusable records. Some chapters use more than one record because the exercise crosses product, technical, or release boundaries. Reusing a record is intentional: the operating chain should carry evidence forward rather than duplicate it.
+The assembled workbook contains 26 reusable records. The twenty print chapters use the core records, while the optional app-review lab retains the product-instrument records. Some chapters use more than one record because the exercise crosses product, technical, or release boundaries. Reusing a record is intentional: the operating chain should carry evidence forward rather than duplicate it.

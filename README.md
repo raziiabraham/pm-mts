@@ -33,8 +33,8 @@ See [Getting Started](GETTING_STARTED.md) for screenshots-free, step-by-step ins
 
 ## Prefer the workbook without local setup?
 
-- [Download the 52-page printable workbook](PM-MTS-Workbook.pdf)
-- [Download all 25 printable diagrams](PM-MTS-Printable-Figures.pdf)
+- [Download the 55-page printable workbook](PM-MTS-Workbook.pdf)
+- [Download all 24 printable book figures](PM-MTS-Printable-Figures.pdf)
 - [Edit the workbook in Markdown](companion/pm_mts_workbook.md)
 - [Browse the individual templates](companion/templates/)
 - [Browse individual printable figure PDFs](companion/figures/pdf/)
@@ -44,13 +44,13 @@ See [Getting Started](GETTING_STARTED.md) for screenshots-free, step-by-step ins
 
 | Area | What readers can do |
 | --- | --- |
-| `companion/templates/` | Complete 25 reusable, chapter-aligned product records |
+| `companion/templates/` | Complete 26 reusable, chapter-aligned product records |
 | `companion/api/` | Inspect and validate request, success, validation-error, and provider-error states |
-| `companion/sql/` | Run representative SQL against deterministic sample data |
+| `companion/sql/` | Load the open-licensed Sakila dataset and run the book's product query against a real SQLite schema |
 | `companion/analytics/` | Inspect a tracking plan and validate event envelopes |
 | `companion/ai_evaluation/` | Compare two AI-output versions against a held-out constructed set |
 | `companion/calibration/` | Trace a failure through change and regression evidence |
-| `companion/repo_orientation/` | Find a contradiction between product documentation and implementation |
+| `companion/repo_orientation/` | Inspect the public Noted repository at the cited commit and verify its documented-versus-implemented storage contract |
 | `companion/feedback_instrument/` | Inspect a synthetic labelled-feedback dataset and edge cases |
 | `companion/figures/` | Print, reuse, or inspect every book diagram as PDF, PNG, and SVG files |
 
@@ -70,6 +70,8 @@ From the repository root:
 
 No model API key, cloud account, production credential, package installation, or customer data is required. The Python validators use only the standard library.
 
+The Chapter 17 repository-orientation check is the one optional external exercise. It uses the public [Noted repository](https://github.com/avidx-app/noted-main) at commit `985ad957b0131cddd3fd5d16a432150651c90b99`. The complete validation script runs every self-contained check and runs Chapter 17 too when `noted-main` is cloned beside this repository or supplied through `NOTED_REPO_PATH`.
+
 ## Workbook paths
 
 Choose one mode:
@@ -82,7 +84,7 @@ The PDF is designed for printing and handwriting. The Markdown source and indivi
 
 ## Data boundary
 
-All named companies and people in runnable fixtures are fictional, and all feedback reviews are synthetic. The repository contains no Heatseeker customer data, Meta creative, Tokopedia review text, Qlip material, Shipper operational data, employer code, or GoPractice content.
+Named companies and people in the constructed runnable fixtures are fictional, and all feedback reviews are synthetic. Chapter 5 vendors the open-licensed generated Sakila sample data. Chapter 17 intentionally inspects the author's public Noted repository at a cited commit. The repository contains no Heatseeker customer data, Meta creative, Tokopedia review text, Qlip material, Shipper operational data, employer code, or GoPractice content.
 
 ## About the title
 

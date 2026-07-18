@@ -1,32 +1,43 @@
 #!/usr/bin/env python3
 import json
 import re
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).parent
-TOY = ROOT / "toy_repo"
+ROOT = Path(__file__).resolve().parent
+DEFAULT_REPO = ROOT.parents[2] / "noted-main"
+REPO = Path(sys.argv[1]).expanduser().resolve() if len(sys.argv) > 1 else DEFAULT_REPO
 
 with (ROOT / "expected_orientation.json").open(encoding="utf-8") as handle:
     expected = json.load(handle)
 
+if not REPO.is_dir():
+    raise SystemExit(
+        "Noted repository not found. Clone https://github.com/avidx-app/noted-main.git "
+        "and pass its path as the first argument."
+    )
+
 for relative in expected["files_inspected"]:
-    assert (ROOT / relative).is_file(), f"Missing orientation file: {relative}"
+    assert (REPO / relative).is_file(), f"Missing Noted file: {relative}"
 
-design = (TOY / "docs/design/uploads.md").read_text(encoding="utf-8")
-validator = (TOY / "src/validateUpload.ts").read_text(encoding="utf-8")
-test = (TOY / "tests/document-cover.spec.ts").read_text(encoding="utf-8")
+storage = (REPO / "convex/storage.ts").read_text(encoding="utf-8")
+vision = (REPO / "team-os/product/vision.md").read_text(encoding="utf-8")
+paywall = (REPO / "team-os/product/prds/paywall/paywall-subscription-prd.md").read_text(encoding="utf-8")
+upload = (REPO / "hooks/use-tracked-upload.tsx").read_text(encoding="utf-8")
+edge_route = (REPO / "app/api/edgestore/[...edgestore]/route.ts").read_text(encoding="utf-8")
+modal_test = (REPO / "components/modals/cover-image-modal.test.tsx").read_text(encoding="utf-8")
 
-documented = re.search(r"Maximum file size communicated to users: (\d+) MB", design)
-implemented = re.search(r"MAX_UPLOAD_BYTES = (\d+) \* 1024 \* 1024", validator)
-tested = re.search(r"oneByteOverThreeMb = (\d+) \* 1024 \* 1024", test)
-
-assert documented and implemented and tested
-documented_mb = int(documented.group(1))
-implemented_mb = int(implemented.group(1))
-tested_mb = int(tested.group(1))
-assert documented_mb == 5
-assert implemented_mb == tested_mb == 3
-assert documented_mb != implemented_mb
+implemented = re.search(r"STORAGE_LIMIT_BYTES\s*=\s*(\d+)\s*\*\s*1024\s*\*\s*1024", storage)
+assert implemented and int(implemented.group(1)) == 25
+assert "File uploads (25MB hard cap)" in vision
+assert "25 MB-per-file upload cap" in paywall
+assert "input: { userId: undefined }" in upload
+assert "if (!userId)" in edge_route and "Allow unauthenticated uploads" in edge_route
+assert "handles file upload securely" in modal_test
+assert "quota" not in modal_test.lower()
 assert expected["contradiction"] and expected["repo_cannot_answer"] and expected["decision"]
 
-print(f"Chapter 16 repo-orientation validation passed: documented {documented_mb} MB; implemented {implemented_mb} MB.")
+print(
+    "Chapter 17 repo-orientation validation passed: Noted describes a 25 MB limit, "
+    "models cumulative user storage, and omits user identity from the upload quota gate."
+)

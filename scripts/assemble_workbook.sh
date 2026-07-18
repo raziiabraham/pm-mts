@@ -22,6 +22,7 @@ companion/templates/ai_solution_fit_decision.md
 companion/templates/ai_evaluation_scorecard.md
 companion/templates/prompt_evaluation_table.md
 companion/templates/ai_calibration_record.md
+companion/templates/agent_charter.md
 companion/templates/context_brief.md
 companion/templates/repo_orientation_map.md
 companion/templates/assumption_evidence_map.md
