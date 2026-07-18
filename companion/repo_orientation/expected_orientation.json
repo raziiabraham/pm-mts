@@ -1,18 +1,23 @@
 {
   "files_inspected": [
-    "toy_repo/README.md",
-    "toy_repo/docs/design/uploads.md",
-    "toy_repo/src/CoverImageUploader.tsx",
-    "toy_repo/src/validateUpload.ts",
-    "toy_repo/src/documentEvents.ts",
-    "toy_repo/tests/document-cover.spec.ts"
+    "components/toolbar.tsx",
+    "components/cover.tsx",
+    "components/modals/cover-image-modal.tsx",
+    "components/modals/cover-image-modal.test.tsx",
+    "hooks/use-tracked-upload.tsx",
+    "app/api/edgestore/[...edgestore]/route.ts",
+    "convex/storage.ts",
+    "convex/files.ts",
+    "convex/documents.ts",
+    "team-os/product/vision.md",
+    "team-os/product/prds/paywall/paywall-subscription-prd.md"
   ],
   "verified_behavior": [
-    "The interface exposes select, preview, replace, remove, loading, and error states.",
-    "The update event is emitted only after the server-confirmed save callback.",
-    "The implemented validator and test reject files larger than 3 MB."
+    "A document can upload a new cover or select one from the existing file library.",
+    "The upload path computes a checksum, reuses exact duplicates, records metadata, and stores the returned URL on the document.",
+    "The Files page and storage model present a cumulative 25 MB user quota."
   ],
-  "contradiction": "The design documentation promises 5 MB while the validator and test enforce 3 MB.",
-  "repo_cannot_answer": "Whether 3 MB is an intentional performance policy, a stale implementation, or a temporary provider limit.",
-  "decision": "Do not change one value in isolation. Resolve the intended contract with product and engineering evidence, then update interface copy, validation, tests, and documentation together."
+  "contradiction": "Product documents describe a 25 MB hard cap or per-file cap, storage code models a cumulative per-user quota, and the upload client passes no user ID into the server-side quota gate.",
+  "repo_cannot_answer": "Whether the intended contract is per-file, cumulative per-user, both, or temporarily unenforced.",
+  "decision": "Choose the intended storage contract, pass authenticated identity into enforcement, add boundary and analytics coverage, then update product documents and UI together."
 }

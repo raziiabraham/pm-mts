@@ -7,7 +7,7 @@ You do not need to be a developer to use this repository. The exercises are desi
 - **Agent-guided path:** clone the repository, open it in a local AI coding agent, and work through the chapter exercises. This is the recommended path.
 - **Manual path:** clone or download the repository and copy the commands in this guide yourself.
 - **Workbook-only path:** open [`PM-MTS-Workbook.pdf`](PM-MTS-Workbook.pdf) and complete the records without running code.
-- **Printable-figures path:** open [`PM-MTS-Printable-Figures.pdf`](PM-MTS-Printable-Figures.pdf) to print or annotate all 25 diagrams, or use the individual files under `companion/figures/pdf/`.
+- **Printable-figures path:** open [`PM-MTS-Printable-Figures.pdf`](PM-MTS-Printable-Figures.pdf) to print or annotate all 24 book figures, or use the individual files under `companion/figures/pdf/`.
 
 ## Step 1: get a local copy
 
@@ -86,11 +86,11 @@ Run only the exercise for the chapter you are reading. Your coding agent can run
 | Chapter | Command on macOS/Linux | What it checks |
 | --- | --- | --- |
 | 2 | `python3 companion/api/validate_contract.py` | Request, success, validation-error, and provider-error states |
-| 5 | `./companion/sql/validate_chapter_05.sh` | Representative SQL output against deterministic data |
+| 5 | `./companion/sql/validate_chapter_05.sh` | The book's SQL examples and captured product query against the Sakila SQLite dataset |
 | 6 | `python3 companion/analytics/validate_tracking.py` | Event names, triggers, required properties, ownership, and invalid cases |
 | 13 | `python3 companion/ai_evaluation/evaluate.py` | Two resolver versions, held-out cases, critical errors, and release gates |
 | 14 | `python3 companion/calibration/validate_record.py` | Whether a calibration record stays connected to its preserved failure and outputs |
-| 16 | `python3 companion/repo_orientation/validate_task.py` | Whether the documented 5 MB limit conflicts with the implemented 3 MB limit |
+| 17 | `python3 companion/repo_orientation/validate_task.py /path/to/noted-main` | The documented-versus-implemented 25 MB storage contract in the cited public Noted repository state |
 | 19 | `python3 companion/feedback_instrument/validate_dataset.py` | Synthetic review IDs, labels, splits, and required edge cases |
 
 On Windows, replace `python3` with `py` and `/` with `\`. The Chapter 5 shell exercise is easiest through Git Bash or Windows Subsystem for Linux.
@@ -100,6 +100,8 @@ To run every supported check on macOS/Linux or Git Bash:
 ```sh
 ./scripts/validate_companion.sh
 ```
+
+The complete script skips Chapter 17 when Noted is not available. To include it, clone `https://github.com/avidx-app/noted-main.git` beside this repository, check out commit `985ad957b0131cddd3fd5d16a432150651c90b99`, or set `NOTED_REPO_PATH` to that checkout.
 
 ## A useful learning loop
 
@@ -137,4 +139,4 @@ That is often the point of the exercise. Ask the agent to show the diff, explain
 
 ## Safety and data boundary
 
-These exercises use fictional or synthetic data and do not require network access. Do not paste employer code, credentials, customer data, or confidential artifacts into this repository or an AI tool. Follow your organisation's policies when adapting a template to real work.
+The supplied fixtures use fictional or synthetic data and do not require network access. Chapter 5's Sakila data is open licensed, and Chapter 17 is an explicit exercise against the author's public Noted repository at a cited commit. Do not paste employer code, credentials, customer data, or confidential artifacts into this repository or an AI tool. Follow your organisation's policies when adapting a template to real work.

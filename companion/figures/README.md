@@ -1,6 +1,6 @@
 # Standalone book diagrams
 
-The packaged companion includes all 25 final book diagrams as individual files:
+The packaged companion includes all 24 final book figures as individual files:
 
 - `png/` contains the reading- and presentation-ready raster versions.
 - `svg/` contains scalable vector versions for print, slides, and editing.
@@ -10,10 +10,8 @@ The packaged companion includes all 25 final book diagrams as individual files:
 - `contact_sheet.png` provides a quick visual index of the complete set.
 
 The repository root also contains `PM-MTS-Printable-Figures.pdf`, a combined
-25-page print pack. Portrait diagrams use portrait A4 pages; landscape diagrams,
-including the three spread figures, use landscape A4 pages. Print with “Fit to
-printable area” if your PDF viewer does not scale mixed-orientation pages
-automatically.
+24-page print pack. Portrait figures use portrait A4 pages; landscape figures,
+including the three spread figures, use landscape A4 pages.
 
 The spread figures (`F0.1`, `F12.2`, and `F20.1`) are supplied as complete
 two-page compositions. Their cross-page connectors align when the image is

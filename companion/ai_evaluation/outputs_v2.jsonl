@@ -1,5 +1,5 @@
 {"case_id":"domain","status":"matched","selected_page_id":"domain_research","evidence":["Candidate description matches the user's product-research context"]}
 {"case_id":"northstar","status":"matched","selected_page_id":"northstar_official","evidence":["Candidate description matches workforce planning"]}
 {"case_id":"acme_labs","status":"no_match","selected_page_id":null,"evidence":["No candidate matches developer observability"]}
-{"case_id":"storyrail","status":"matched","selected_page_id":"storyrail_current","evidence":["Official current page matches brand storytelling; archive is inactive"]}
+{"case_id":"brightwharf","status":"matched","selected_page_id":"brightwharf_current","evidence":["Official current page matches brand storytelling; archive is inactive"]}
 {"case_id":"prooflane_apac","status":"needs_review","selected_page_id":null,"evidence":["Global and regional pages are both plausible; product policy requires user confirmation"]}

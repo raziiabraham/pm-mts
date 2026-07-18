@@ -12,7 +12,7 @@ The templates are decision aids, not mandatory process. Adapt them to the team's
 
 Choose one of three modes:
 
-1. **Quick path:** Chapters 1, 8, 13, 15, and 20. Map your participation boundary, expose one flow, define an AI quality bar, create portable context, and carry one slice through delivery.
+1. **Quick path:** Chapters 1, 8, 13, 16, and 20. Map your participation boundary, expose one flow, define an AI quality bar, create portable context, and carry one slice through delivery. Add Chapter 15 when the product itself contains an agentic capability.
 2. **Chapter path:** complete the mapped worksheet after each chapter. Reuse the same product problem where the fit is natural.
 3. **Capstone path:** begin with one Assumption and Evidence Map, then complete only the artifacts required to carry that claim through prototype, implementation, review, release, and learning.
 
@@ -36,16 +36,17 @@ The PDF is designed for printing and handwriting. The Markdown files remain the 
 | 12 | Compare solution shapes | AI Solution-Fit Decision Record |
 | 13 | Design an AI evaluation system | AI Evaluation Scorecard |
 | 14 | Design a calibration loop | Prompt Evaluation Table, AI Calibration Record, and Ship Decision Record |
-| 15 | Create a portable context brief | Portable Context Brief |
-| 16 | Build a repo orientation map | Repository Orientation Map |
-| 17 | Create an assumption and evidence map | Assumption and Evidence Map |
-| 18 | Write a prototype contract | Prototype Contract |
-| 19 | Design a product instrument | Product Instrument Design Record and Productionization Memo |
+| 15 | Write an agent charter | Agent Charter |
+| 16 | Create a portable context brief | Portable Context Brief |
+| 17 | Build a repo orientation map | Repository Orientation Map |
+| 18 | Create an assumption and evidence map | Assumption and Evidence Map |
+| 19 | Write a prototype contract | Prototype Contract |
 | 20 | Take one slice through delivery | End-to-End Delivery Slice Record, PR Review Checklist, and Ship Decision Record |
+| Optional app-review lab | Design a product instrument | Product Instrument Design Record and Productionization Memo |
 
 ## Artifact Index
 
-The assembled workbook contains 25 reusable records. Some chapters use more than one record because the exercise crosses product, technical, or release boundaries. Reusing a record is intentional: the operating chain should carry evidence forward rather than duplicate it.
+The assembled workbook contains 26 reusable records. The twenty print chapters use the core records, while the optional app-review lab retains the product-instrument records. Some chapters use more than one record because the exercise crosses product, technical, or release boundaries. Reusing a record is intentional: the operating chain should carry evidence forward rather than duplicate it.
 
 
 
@@ -283,6 +284,45 @@ The assembled workbook contains 25 reusable records. Some chapters use more than
 ---
 
 # Product Data Question Record
+
+## Hands-on Sakila Lab
+
+Use the same generated Sakila data as Chapter 5 before applying this record to your own product. From the cloned repository root, build the SQLite database:
+
+```sh
+./companion/sql/sakila/load_sakila.sh
+```
+
+The loader should verify 599 customers, 1,000 films, 4,581 inventory copies, 16,044 rentals, 16,049 payments, and two stores. Then make the companion print the product question, exact query, actual result, and interpretation boundary:
+
+```sh
+./companion/sql/sakila/run_product_query.sh
+```
+
+Do not treat running the query as the end of the exercise. Inspect the relationship path `film -> inventory -> rental`, confirm that one result row represents one film, and explain why recorded rentals divided by distinct inventory copies is more useful than rental count alone for this investigation.
+
+Record one row exactly as the database returned it:
+
+| title | inventory copies | recorded rentals | rentals per copy |
+| --- | ---: | ---: | ---: |
+|  |  |  |  |
+
+- What possible availability problem does this result help investigate?
+- What decision must **not** be made from this result alone?
+- Which missing behavior would provide stronger evidence of unmet demand?
+
+Now give an AI coding agent this bounded task:
+
+> Using the loaded Sakila SQLite database, add one query that tests a different explanation for an availability problem. Before writing SQL, state the product question, decision, metric, grain, denominator, join path, and one limitation. Run the query and return the command, SQL, and actual result. Do not change the upstream schema or data.
+
+Capture the agent-assisted run rather than accepting a proposed query that was never executed:
+
+- Command used:
+- Query file created or changed:
+- Actual result returned:
+- Grain and denominator verified:
+- Join-duplication risk checked:
+- Interpretation and limitation:
 
 ## Question, Hypothesis, and Decision
 
@@ -1018,6 +1058,84 @@ State the current explanation and plausible alternatives.
 - Review owner/date:
 - Evidence that would reverse the diagnosis:
 - New regression cases and next decision:
+
+
+
+---
+
+# Agent Charter
+
+## Product Job
+
+- User and moment:
+- Goal in one sentence:
+- Evidence that proves the goal is met:
+- Why a fixed pipeline is insufficient:
+- Lowest useful autonomy level:
+
+## Product Shape
+
+| Decision or stage | Fixed application step, tool-using feature, or agent choice? | Why this shape? | Accountable owner |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+## Loop and Stop Conditions
+
+| Observe | Allowed next actions | Validation before action | Stop or escalation condition |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+- Goal-reached stop:
+- Step/time/token/cost budget stop:
+- Repeated-tool-failure stop:
+- Uncertainty that returns to the user:
+- Behaviour when no safe next action exists:
+
+## Tools and Connected Services
+
+| Tool or server | Job and scope | Read-only or side-effecting | Permission and tenant boundary | Failure/duplicate behaviour | Confirmation or rollback |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+
+## Memory and Retrieval
+
+| Information | Working, conversation, or durable memory? | Source and freshness | Retention/deletion | Who can inspect or correct it? |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+
+- What must be retrieved fresh rather than remembered?
+- What must never persist beyond the run?
+- How is tenant isolation verified?
+
+## Skills
+
+| Skill | Trigger | Instructions/tools loaded | Version | Evaluation set | Rollback path |
+| --- | --- | --- | --- | --- | --- |
+|  |  |  |  |  |  |
+
+## Trajectory and Outcome Evaluation
+
+- Required trajectory checks:
+- Required final-output checks:
+- Critical release blockers:
+- Human-review and adjudication path:
+- Trace fields a reviewer must be able to reconstruct:
+- Cost, latency, privacy, security, and rights guardrails:
+
+## Exposure and Earned Agency
+
+- Current autonomy rung:
+- Exposure boundary or feature flag:
+- Fallback and disable path:
+- Evidence required to widen agency:
+- New failure surface created by the next rung:
+- Evidence that would cause rollback or reduced autonomy:
+
+## Riskiest Line
+
+- The single riskiest decision in this charter:
+- Why it is risky:
+- Strongest harness control at that boundary:
 
 
 
