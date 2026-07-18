@@ -14,8 +14,8 @@ The repository root also contains `PM-MTS-Printable-Figures.pdf`, a combined
 including the three spread figures, use landscape A4 pages.
 
 The spread figures (`F0.1`, `F12.2`, and `F20.1`) are supplied as complete
-two-page compositions. Their cross-page connectors align when the image is
-split at its vertical midpoint, matching the final book.
+two-page compositions. Their page-safe content and visual rails align when the
+image is split at its vertical midpoint, matching the final book.
 
 These are the same generated assets used by the current publication build; they
 are added to the companion archive during release packaging so the book and
