@@ -4,7 +4,7 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-TYPE_MAP = {"string": str, "integer": int}
+TYPE_MAP = {"string": str, "integer": int, "boolean": bool}
 
 with (ROOT / "tracking_plan.json").open(encoding="utf-8") as handle:
     plan = json.load(handle)
@@ -26,8 +26,17 @@ def validate(event):
     for name, type_name in contract["required_properties"].items():
         value = properties.get(name)
         expected_type = TYPE_MAP[type_name]
+        # `type(...) is` rather than isinstance: bool is a subclass of int in
+        # Python, so isinstance would let True through as an integer count.
         if type(value) is not expected_type:
             return False
+    # Reject anything the plan did not declare. A permissive collector is how
+    # document bodies, email addresses, and API keys end up in an analytics
+    # warehouse: someone attaches a field because it was in scope, and no
+    # schema said no.
+    undeclared = set(properties) - set(contract["required_properties"])
+    if undeclared:
+        return False
     return True
 
 

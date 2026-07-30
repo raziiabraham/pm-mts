@@ -1,6 +1,6 @@
 # HarborCart Feedback Instrument Lab
 
-This is an original Chapter 19 companion. HarborCart is fictional. Every review and label is synthetic; no customer, app-store, employer, or course dataset is reproduced.
+This is an optional companion lab for the evidence-to-instrument method introduced in Chapter 18. It is not a numbered print chapter. HarborCart is fictional. Every review and label is synthetic; no customer, app-store, employer, or course dataset is reproduced.
 
 ## Files
 

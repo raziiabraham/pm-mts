@@ -1,38 +1,87 @@
 {
   "schema_version": "1.0",
-  "product": "Briefly",
+  "product": "Noted",
+  "feature": "visible publish-review affordance (proposed, not built)",
   "events": [
     {
-      "name": "Context Generation Started",
-      "trigger": "The server accepts a valid request and schedules public-context generation.",
+      "name": "publish_affordance_shown",
+      "trigger": "The assigned publish control finishes rendering for an eligible document. Not at assignment time, because a control that never painted was never seen.",
       "required_properties": {
-        "request_id": "string",
-        "invocation_source": "string"
+        "document_id": "string",
+        "draft_age_days": "integer",
+        "coworker_messages": "integer",
+        "experiment_variant": "string"
       },
-      "decision": "Compare discovery and completion by invocation source.",
+      "decision": "Establish a common exposed denominator that includes eligible users who never enter the publish flow.",
       "owner": "product_analytics"
     },
     {
-      "name": "Context Generation Completed",
-      "trigger": "The workflow reaches ready_for_review, source_unavailable, or failed.",
+      "name": "publish_flow_opened",
+      "trigger": "The assigned control's compact popover or review surface finishes rendering.",
       "required_properties": {
-        "request_id": "string",
-        "status": "string",
-        "duration_ms": "integer"
+        "document_id": "string",
+        "surface_type": "string",
+        "experiment_variant": "string"
       },
-      "decision": "Locate reliability and latency problems before interpreting downstream use.",
+      "decision": "Measure whether the visible affordance moves eligible users into either arm's publish flow.",
       "owner": "product_analytics"
     },
     {
-      "name": "Context Draft Edited",
-      "trigger": "A user saves a change to one generated context field.",
+      "name": "publish_warning_shown",
+      "trigger": "A checklist item flags something before the user can publish.",
       "required_properties": {
-        "request_id": "string",
-        "field": "string",
-        "edit_reason": "string"
+        "document_id": "string",
+        "warning_type": "string",
+        "experiment_variant": "string"
       },
-      "decision": "Separate factual correction, outdated context, positioning preference, and tone before using edits as evaluation evidence.",
+      "decision": "Find which objection the product itself raises most often, and whether raising it helps or stops people.",
+      "owner": "product_analytics"
+    },
+    {
+      "name": "publish_flow_abandoned",
+      "trigger": "The opened publish surface closes without a publish.",
+      "required_properties": {
+        "document_id": "string",
+        "seconds_open": "integer",
+        "last_item_seen": "string",
+        "experiment_variant": "string"
+      },
+      "decision": "Separate eligible users who never entered from those who entered either arm and still stopped.",
+      "owner": "product_analytics"
+    },
+    {
+      "name": "document_published",
+      "trigger": "The document becomes publicly readable. This is the primary activation outcome, not proof that a reader arrived.",
+      "required_properties": {
+        "document_id": "string",
+        "first_publish": "boolean",
+        "files_attached": "integer",
+        "experiment_variant": "string"
+      },
+      "decision": "Measure the primary outcome, split by whether it is the account's first publish.",
+      "owner": "product_analytics"
+    },
+    {
+      "name": "public_link_copied",
+      "trigger": "The published link is copied. Kept separate from publishing on purpose: 31 publishes produced 11 link copies in the cohort, and merging them would hide that gap.",
+      "required_properties": {
+        "document_id": "string",
+        "seconds_since_publish": "integer",
+        "experiment_variant": "string"
+      },
+      "decision": "Measure sharing intent after publication without claiming that a reader arrived.",
       "owner": "product_research"
+    },
+    {
+      "name": "public_link_opened",
+      "trigger": "An unauthenticated or external reader successfully loads the public document.",
+      "required_properties": {
+        "document_id": "string",
+        "seconds_since_publish": "integer",
+        "experiment_variant": "string"
+      },
+      "decision": "Measure realized reader value without collecting reader identity or document content.",
+      "owner": "product_analytics"
     }
   ]
 }

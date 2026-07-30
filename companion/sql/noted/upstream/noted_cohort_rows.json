@@ -1,0 +1,3184 @@
+{
+ "provenance": {
+  "source_repo": "avidx-app/noted-main",
+  "commit": "985ad957b0131cddd3fd5d16a432150651c90b99",
+  "generator": "scripts/seed-convex.mjs via scripts/cohort-fixture.mjs",
+  "fixture": "scripts/fixtures/cohort-sample-data.json",
+  "seed": 20260518,
+  "generated_for": "PM MTS Chapter 5"
+ },
+ "users": [
+  {
+   "userId": "cohort_power_01",
+   "persona": "power_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1",
+   "bytesUsed": 4091682
+  },
+  {
+   "userId": "cohort_power_02",
+   "persona": "power_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1",
+   "bytesUsed": 6111515
+  },
+  {
+   "userId": "cohort_power_03",
+   "persona": "power_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-sonnet-4-5",
+   "bytesUsed": 5633542
+  },
+  {
+   "userId": "cohort_power_04",
+   "persona": "power_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1",
+   "bytesUsed": 1446483
+  },
+  {
+   "userId": "cohort_power_05",
+   "persona": "power_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-sonnet-4-5",
+   "bytesUsed": 3370044
+  },
+  {
+   "userId": "cohort_casual_01",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 2127506
+  },
+  {
+   "userId": "cohort_casual_02",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 2580794
+  },
+  {
+   "userId": "cohort_casual_03",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 2688863
+  },
+  {
+   "userId": "cohort_casual_04",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 2220627
+  },
+  {
+   "userId": "cohort_casual_05",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 511031
+  },
+  {
+   "userId": "cohort_casual_06",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 1285637
+  },
+  {
+   "userId": "cohort_casual_07",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 554467
+  },
+  {
+   "userId": "cohort_casual_08",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 428921
+  },
+  {
+   "userId": "cohort_casual_09",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 682749
+  },
+  {
+   "userId": "cohort_casual_10",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 2130635
+  },
+  {
+   "userId": "cohort_casual_11",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 1325143
+  },
+  {
+   "userId": "cohort_casual_12",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 1506083
+  },
+  {
+   "userId": "cohort_casual_13",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 430587
+  },
+  {
+   "userId": "cohort_casual_14",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 1899816
+  },
+  {
+   "userId": "cohort_casual_15",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 2628522
+  },
+  {
+   "userId": "cohort_casual_16",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 884049
+  },
+  {
+   "userId": "cohort_casual_17",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 780019
+  },
+  {
+   "userId": "cohort_casual_18",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 1375568
+  },
+  {
+   "userId": "cohort_casual_19",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 1699453
+  },
+  {
+   "userId": "cohort_casual_20",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 2729954
+  },
+  {
+   "userId": "cohort_casual_21",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 1124192
+  },
+  {
+   "userId": "cohort_casual_22",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 2046166
+  },
+  {
+   "userId": "cohort_casual_23",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 2115665
+  },
+  {
+   "userId": "cohort_casual_24",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 823637
+  },
+  {
+   "userId": "cohort_casual_25",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 1679972
+  },
+  {
+   "userId": "cohort_casual_26",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 2250799
+  },
+  {
+   "userId": "cohort_casual_27",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 1548958
+  },
+  {
+   "userId": "cohort_casual_28",
+   "persona": "casual_users",
+   "aiProvider": "google",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 1120916
+  },
+  {
+   "userId": "cohort_casual_29",
+   "persona": "casual_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 711860
+  },
+  {
+   "userId": "cohort_casual_30",
+   "persona": "casual_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 2543954
+  },
+  {
+   "userId": "cohort_churned_01",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 2144084
+  },
+  {
+   "userId": "cohort_churned_02",
+   "persona": "churned_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 1028263
+  },
+  {
+   "userId": "cohort_churned_03",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 4519909
+  },
+  {
+   "userId": "cohort_churned_04",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 3842005
+  },
+  {
+   "userId": "cohort_churned_05",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 538334
+  },
+  {
+   "userId": "cohort_churned_06",
+   "persona": "churned_users",
+   "aiProvider": "anthropic",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 3989687
+  },
+  {
+   "userId": "cohort_churned_07",
+   "persona": "churned_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 3668441
+  },
+  {
+   "userId": "cohort_churned_08",
+   "persona": "churned_users",
+   "aiProvider": "anthropic",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 3432200
+  },
+  {
+   "userId": "cohort_churned_09",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 3815728
+  },
+  {
+   "userId": "cohort_churned_10",
+   "persona": "churned_users",
+   "aiProvider": "openai",
+   "aiModel": "claude-haiku-4-5",
+   "bytesUsed": 793359
+  },
+  {
+   "userId": "cohort_trial_01",
+   "persona": "trial_users",
+   "aiProvider": "openai",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 176317
+  },
+  {
+   "userId": "cohort_trial_02",
+   "persona": "trial_users",
+   "aiProvider": "openai",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 112854
+  },
+  {
+   "userId": "cohort_trial_03",
+   "persona": "trial_users",
+   "aiProvider": "google",
+   "aiModel": "gpt-5.1-mini",
+   "bytesUsed": 272124
+  },
+  {
+   "userId": "cohort_trial_04",
+   "persona": "trial_users",
+   "aiProvider": "google",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 317397
+  },
+  {
+   "userId": "cohort_trial_05",
+   "persona": "trial_users",
+   "aiProvider": "google",
+   "aiModel": "gemini-3-pro",
+   "bytesUsed": 762370
+  }
+ ],
+ "documents": [
+  {
+   "seedKey": "cohort_power_01:doc:1",
+   "title": "Hiring scorecard 1",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 1. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:2",
+   "title": "Founder narrative 2",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 2. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:4",
+   "title": "Launch notes 4",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 4. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:5",
+   "title": "Public changelog draft 5",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 5. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:6",
+   "title": "Founder narrative 6",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 6. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:7",
+   "title": "Meeting notes 7",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 7. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:8",
+   "title": "Team planning doc 8",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 8. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:9",
+   "title": "Customer synthesis 9",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 9. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:10",
+   "title": "Pricing notes 10",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 10. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:11",
+   "title": "Founder narrative 11",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 11. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:doc:12",
+   "title": "Public changelog draft 12",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 12. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_01:agent-instructions",
+   "title": "Squad Agent Instructions cohort_power_01",
+   "userId": "cohort_power_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_power_02:doc:1",
+   "title": "Research scratchpad 1",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 1. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:2",
+   "title": "Client update 2",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 2. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:4",
+   "title": "Public changelog draft 4",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 4. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:5",
+   "title": "Launch notes 5",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 5. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:6",
+   "title": "Workshop outline 6",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 6. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:7",
+   "title": "Client update 7",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 7. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:8",
+   "title": "Workshop outline 8",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 8. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:9",
+   "title": "Team planning doc 9",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 9. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:10",
+   "title": "Hiring scorecard 10",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 10. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:11",
+   "title": "Research scratchpad 11",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 11. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:12",
+   "title": "Client update 12",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 12. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:13",
+   "title": "Pricing notes 13",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 13. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:doc:14",
+   "title": "Customer synthesis 14",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 14. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_02:agent-instructions",
+   "title": "Squad Agent Instructions cohort_power_02",
+   "userId": "cohort_power_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_power_03:doc:1",
+   "title": "Public changelog draft 1",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 1. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:2",
+   "title": "Campaign brief 2",
+   "userId": "cohort_power_03",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 2. Synthetic power_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:3",
+   "title": "Hiring scorecard 3",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 3. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:4",
+   "title": "Product review notes 4",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 4. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:5",
+   "title": "Founder narrative 5",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 5. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:6",
+   "title": "Research scratchpad 6",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 6. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:7",
+   "title": "Launch notes 7",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 7. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:8",
+   "title": "Team planning doc 8",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 8. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:9",
+   "title": "Hiring scorecard 9",
+   "userId": "cohort_power_03",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 9. Synthetic power_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:10",
+   "title": "Research scratchpad 10",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 10. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_03:doc:11",
+   "title": "Draft strategy memo 11",
+   "userId": "cohort_power_03",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 11. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:1",
+   "title": "Workshop outline 1",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 1. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:2",
+   "title": "Draft strategy memo 2",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 2. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:3",
+   "title": "Public changelog draft 3",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 3. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:4",
+   "title": "Founder narrative 4",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 4. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:5",
+   "title": "Campaign brief 5",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 5. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:6",
+   "title": "Founder narrative 6",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 6. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:7",
+   "title": "Client update 7",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 7. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:8",
+   "title": "Hiring scorecard 8",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 8. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:9",
+   "title": "Launch notes 9",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 9. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:10",
+   "title": "Hiring scorecard 10",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 10. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_04:doc:11",
+   "title": "Draft strategy memo 11",
+   "userId": "cohort_power_04",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 11. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:1",
+   "title": "Draft strategy memo 1",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 1. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:2",
+   "title": "Research scratchpad 2",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 2. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:3",
+   "title": "Launch notes 3",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 3. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:4",
+   "title": "Research scratchpad 4",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 4. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:5",
+   "title": "Campaign brief 5",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 5. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:6",
+   "title": "Workshop outline 6",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 6. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:7",
+   "title": "Research scratchpad 7",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 7. Synthetic power_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:8",
+   "title": "Campaign brief 8",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 8. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:9",
+   "title": "Hiring scorecard 9",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 9. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_power_05:doc:10",
+   "title": "Public changelog draft 10",
+   "userId": "cohort_power_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 10. Synthetic power_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_01:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_01:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_01",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_01:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_casual_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_01:doc:4",
+   "title": "Research scratchpad 4",
+   "userId": "cohort_casual_01",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 4. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_01:doc:5",
+   "title": "Launch notes 5",
+   "userId": "cohort_casual_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:1",
+   "title": "Meeting notes 1",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:2",
+   "title": "Campaign brief 2",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:3",
+   "title": "Campaign brief 3",
+   "userId": "cohort_casual_02",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 3. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:4",
+   "title": "Research scratchpad 4",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:5",
+   "title": "Workshop outline 5",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:doc:6",
+   "title": "Client update 6",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 6. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_02:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_02",
+   "userId": "cohort_casual_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_03:doc:1",
+   "title": "Research scratchpad 1",
+   "userId": "cohort_casual_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_03:doc:2",
+   "title": "Launch notes 2",
+   "userId": "cohort_casual_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_04",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:3",
+   "title": "Meeting notes 3",
+   "userId": "cohort_casual_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:4",
+   "title": "Team planning doc 4",
+   "userId": "cohort_casual_04",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 4. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:5",
+   "title": "Founder narrative 5",
+   "userId": "cohort_casual_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_04:doc:6",
+   "title": "Draft strategy memo 6",
+   "userId": "cohort_casual_04",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 6. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_05:doc:1",
+   "title": "Product review notes 1",
+   "userId": "cohort_casual_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_05:doc:2",
+   "title": "Workshop outline 2",
+   "userId": "cohort_casual_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:1",
+   "title": "Research scratchpad 1",
+   "userId": "cohort_casual_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:2",
+   "title": "Founder narrative 2",
+   "userId": "cohort_casual_06",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:3",
+   "title": "Workshop outline 3",
+   "userId": "cohort_casual_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:4",
+   "title": "Campaign brief 4",
+   "userId": "cohort_casual_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:5",
+   "title": "Campaign brief 5",
+   "userId": "cohort_casual_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_06:doc:6",
+   "title": "Founder narrative 6",
+   "userId": "cohort_casual_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 6. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_07:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_07:doc:2",
+   "title": "Public changelog draft 2",
+   "userId": "cohort_casual_07",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_07:doc:3",
+   "title": "Workshop outline 3",
+   "userId": "cohort_casual_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_08:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_08",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_08:doc:2",
+   "title": "Draft strategy memo 2",
+   "userId": "cohort_casual_08",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_08:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_casual_08",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_08:doc:4",
+   "title": "Workshop outline 4",
+   "userId": "cohort_casual_08",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 4. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_09:doc:1",
+   "title": "Product review notes 1",
+   "userId": "cohort_casual_09",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_09:doc:2",
+   "title": "Pricing notes 2",
+   "userId": "cohort_casual_09",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_09:doc:3",
+   "title": "Public changelog draft 3",
+   "userId": "cohort_casual_09",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_09:doc:4",
+   "title": "Client update 4",
+   "userId": "cohort_casual_09",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_09:doc:5",
+   "title": "Public changelog draft 5",
+   "userId": "cohort_casual_09",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 5. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_10:doc:1",
+   "title": "Pricing notes 1",
+   "userId": "cohort_casual_10",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 1. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_10:doc:2",
+   "title": "Draft strategy memo 2",
+   "userId": "cohort_casual_10",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_10:doc:3",
+   "title": "Client update 3",
+   "userId": "cohort_casual_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_10:doc:4",
+   "title": "Client update 4",
+   "userId": "cohort_casual_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:1",
+   "title": "Launch notes 1",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:2",
+   "title": "Founder narrative 2",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:3",
+   "title": "Product review notes 3",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:4",
+   "title": "Meeting notes 4",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:5",
+   "title": "Launch notes 5",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_11:doc:6",
+   "title": "Product review notes 6",
+   "userId": "cohort_casual_11",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 6. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_12:doc:1",
+   "title": "Product review notes 1",
+   "userId": "cohort_casual_12",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_12:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_12",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_12:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_12",
+   "userId": "cohort_casual_12",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_13:doc:1",
+   "title": "Pricing notes 1",
+   "userId": "cohort_casual_13",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_13:doc:2",
+   "title": "Research scratchpad 2",
+   "userId": "cohort_casual_13",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_13:doc:3",
+   "title": "Product review notes 3",
+   "userId": "cohort_casual_13",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_13:doc:4",
+   "title": "Customer synthesis 4",
+   "userId": "cohort_casual_13",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_14:doc:1",
+   "title": "Draft strategy memo 1",
+   "userId": "cohort_casual_14",
+   "isArchived": true,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 1. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_14:doc:2",
+   "title": "Customer synthesis 2",
+   "userId": "cohort_casual_14",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_15:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_15",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_15:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_15",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_15:doc:3",
+   "title": "Founder narrative 3",
+   "userId": "cohort_casual_15",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_16:doc:1",
+   "title": "Launch notes 1",
+   "userId": "cohort_casual_16",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 1. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_16:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_16",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_16:doc:3",
+   "title": "Client update 3",
+   "userId": "cohort_casual_16",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_16:doc:4",
+   "title": "Research scratchpad 4",
+   "userId": "cohort_casual_16",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_16:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_16",
+   "userId": "cohort_casual_16",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_17:doc:1",
+   "title": "Customer synthesis 1",
+   "userId": "cohort_casual_17",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_17:doc:2",
+   "title": "Workshop outline 2",
+   "userId": "cohort_casual_17",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_17:doc:3",
+   "title": "Launch notes 3",
+   "userId": "cohort_casual_17",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_18:doc:1",
+   "title": "Founder narrative 1",
+   "userId": "cohort_casual_18",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_18:doc:2",
+   "title": "Pricing notes 2",
+   "userId": "cohort_casual_18",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_19:doc:1",
+   "title": "Client update 1",
+   "userId": "cohort_casual_19",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_19:doc:2",
+   "title": "Workshop outline 2",
+   "userId": "cohort_casual_19",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_19:doc:3",
+   "title": "Founder narrative 3",
+   "userId": "cohort_casual_19",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_19:doc:4",
+   "title": "Customer synthesis 4",
+   "userId": "cohort_casual_19",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:1",
+   "title": "Customer synthesis 1",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:2",
+   "title": "Meeting notes 2",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:3",
+   "title": "Client update 3",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:4",
+   "title": "Launch notes 4",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:5",
+   "title": "Pricing notes 5",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_20:doc:6",
+   "title": "Team planning doc 6",
+   "userId": "cohort_casual_20",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 6. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_21:doc:1",
+   "title": "Launch notes 1",
+   "userId": "cohort_casual_21",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_21:doc:2",
+   "title": "Public changelog draft 2",
+   "userId": "cohort_casual_21",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_21:doc:3",
+   "title": "Founder narrative 3",
+   "userId": "cohort_casual_21",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_21:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_21",
+   "userId": "cohort_casual_21",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_22:doc:1",
+   "title": "Campaign brief 1",
+   "userId": "cohort_casual_22",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 1. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_22:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_casual_22",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_22:doc:3",
+   "title": "Launch notes 3",
+   "userId": "cohort_casual_22",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_22:doc:4",
+   "title": "Founder narrative 4",
+   "userId": "cohort_casual_22",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_23:doc:1",
+   "title": "Workshop outline 1",
+   "userId": "cohort_casual_23",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_23:doc:2",
+   "title": "Customer synthesis 2",
+   "userId": "cohort_casual_23",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_24:doc:1",
+   "title": "Customer synthesis 1",
+   "userId": "cohort_casual_24",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 1. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_24:doc:2",
+   "title": "Team planning doc 2",
+   "userId": "cohort_casual_24",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 2. Synthetic casual_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_24:doc:3",
+   "title": "Customer synthesis 3",
+   "userId": "cohort_casual_24",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_24:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_24",
+   "userId": "cohort_casual_24",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_25:doc:1",
+   "title": "Hiring scorecard 1",
+   "userId": "cohort_casual_25",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_25:doc:2",
+   "title": "Draft strategy memo 2",
+   "userId": "cohort_casual_25",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_25:doc:3",
+   "title": "Campaign brief 3",
+   "userId": "cohort_casual_25",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_25:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_25",
+   "userId": "cohort_casual_25",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_casual_26:doc:1",
+   "title": "Research scratchpad 1",
+   "userId": "cohort_casual_26",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_26:doc:2",
+   "title": "Hiring scorecard 2",
+   "userId": "cohort_casual_26",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_27:doc:1",
+   "title": "Draft strategy memo 1",
+   "userId": "cohort_casual_27",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_27:doc:2",
+   "title": "Research scratchpad 2",
+   "userId": "cohort_casual_27",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_27:doc:3",
+   "title": "Pricing notes 3",
+   "userId": "cohort_casual_27",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_27:doc:4",
+   "title": "Team planning doc 4",
+   "userId": "cohort_casual_27",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_27:doc:5",
+   "title": "Campaign brief 5",
+   "userId": "cohort_casual_27",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_28:doc:1",
+   "title": "Hiring scorecard 1",
+   "userId": "cohort_casual_28",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_28:doc:2",
+   "title": "Meeting notes 2",
+   "userId": "cohort_casual_28",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_28:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_casual_28",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_28:doc:4",
+   "title": "Founder narrative 4",
+   "userId": "cohort_casual_28",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:1",
+   "title": "Client update 1",
+   "userId": "cohort_casual_29",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:2",
+   "title": "Public changelog draft 2",
+   "userId": "cohort_casual_29",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 2. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:3",
+   "title": "Research scratchpad 3",
+   "userId": "cohort_casual_29",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:4",
+   "title": "Team planning doc 4",
+   "userId": "cohort_casual_29",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 4. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:5",
+   "title": "Campaign brief 5",
+   "userId": "cohort_casual_29",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 5. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_29:doc:6",
+   "title": "Meeting notes 6",
+   "userId": "cohort_casual_29",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 6. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_30:doc:1",
+   "title": "Meeting notes 1",
+   "userId": "cohort_casual_30",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 1. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_30:doc:2",
+   "title": "Public changelog draft 2",
+   "userId": "cohort_casual_30",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 2. Synthetic casual_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_30:doc:3",
+   "title": "Product review notes 3",
+   "userId": "cohort_casual_30",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 3. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_30:doc:4",
+   "title": "Hiring scorecard 4",
+   "userId": "cohort_casual_30",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 4. Synthetic casual_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_casual_30:agent-instructions",
+   "title": "Squad Agent Instructions cohort_casual_30",
+   "userId": "cohort_casual_30",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "You are a synthetic cohort sample Squad agent. Help with review, editing, and synthesis."
+  },
+  {
+   "seedKey": "cohort_churned_01:doc:1",
+   "title": "Workshop outline 1",
+   "userId": "cohort_churned_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_01:doc:2",
+   "title": "Product review notes 2",
+   "userId": "cohort_churned_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_01:doc:3",
+   "title": "Customer synthesis 3",
+   "userId": "cohort_churned_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_02:doc:1",
+   "title": "Team planning doc 1",
+   "userId": "cohort_churned_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_02:doc:2",
+   "title": "Launch notes 2",
+   "userId": "cohort_churned_02",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 2. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_02:doc:3",
+   "title": "Team planning doc 3",
+   "userId": "cohort_churned_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_02:doc:4",
+   "title": "Hiring scorecard 4",
+   "userId": "cohort_churned_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 4. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_02:doc:5",
+   "title": "Customer synthesis 5",
+   "userId": "cohort_churned_02",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 5. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_03:doc:1",
+   "title": "Public changelog draft 1",
+   "userId": "cohort_churned_03",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 1. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_03:doc:2",
+   "title": "Workshop outline 2",
+   "userId": "cohort_churned_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_03:doc:3",
+   "title": "Founder narrative 3",
+   "userId": "cohort_churned_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_03:doc:4",
+   "title": "Customer synthesis 4",
+   "userId": "cohort_churned_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 4. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_04:doc:1",
+   "title": "Hiring scorecard 1",
+   "userId": "cohort_churned_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_04:doc:2",
+   "title": "Pricing notes 2",
+   "userId": "cohort_churned_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_04:doc:3",
+   "title": "Public changelog draft 3",
+   "userId": "cohort_churned_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_04:doc:4",
+   "title": "Launch notes 4",
+   "userId": "cohort_churned_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 4. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:1",
+   "title": "Team planning doc 1",
+   "userId": "cohort_churned_05",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 1. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:2",
+   "title": "Meeting notes 2",
+   "userId": "cohort_churned_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:3",
+   "title": "Client update 3",
+   "userId": "cohort_churned_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:4",
+   "title": "Research scratchpad 4",
+   "userId": "cohort_churned_05",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 4. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:5",
+   "title": "Meeting notes 5",
+   "userId": "cohort_churned_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 5. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:6",
+   "title": "Customer synthesis 6",
+   "userId": "cohort_churned_05",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 6. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_05:doc:7",
+   "title": "Hiring scorecard 7",
+   "userId": "cohort_churned_05",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 7. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_06:doc:1",
+   "title": "Workshop outline 1",
+   "userId": "cohort_churned_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_06:doc:2",
+   "title": "Client update 2",
+   "userId": "cohort_churned_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_06:doc:3",
+   "title": "Draft strategy memo 3",
+   "userId": "cohort_churned_06",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_07:doc:1",
+   "title": "Campaign brief 1",
+   "userId": "cohort_churned_07",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 1. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_07:doc:2",
+   "title": "Team planning doc 2",
+   "userId": "cohort_churned_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_07:doc:3",
+   "title": "Workshop outline 3",
+   "userId": "cohort_churned_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Workshop outline 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_07:doc:4",
+   "title": "Public changelog draft 4",
+   "userId": "cohort_churned_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 4. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_07:doc:5",
+   "title": "Meeting notes 5",
+   "userId": "cohort_churned_07",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 5. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:1",
+   "title": "Product review notes 1",
+   "userId": "cohort_churned_08",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:2",
+   "title": "Draft strategy memo 2",
+   "userId": "cohort_churned_08",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Draft strategy memo 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:3",
+   "title": "Pricing notes 3",
+   "userId": "cohort_churned_08",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 3. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:4",
+   "title": "Customer synthesis 4",
+   "userId": "cohort_churned_08",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 4. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:5",
+   "title": "Client update 5",
+   "userId": "cohort_churned_08",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 5. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:6",
+   "title": "Meeting notes 6",
+   "userId": "cohort_churned_08",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 6. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_08:doc:7",
+   "title": "Campaign brief 7",
+   "userId": "cohort_churned_08",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 7. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_09:doc:1",
+   "title": "Customer synthesis 1",
+   "userId": "cohort_churned_09",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_09:doc:2",
+   "title": "Customer synthesis 2",
+   "userId": "cohort_churned_09",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 2. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_09:doc:3",
+   "title": "Founder narrative 3",
+   "userId": "cohort_churned_09",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 3. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:1",
+   "title": "Meeting notes 1",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 1. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:2",
+   "title": "Campaign brief 2",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 2. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:3",
+   "title": "Pricing notes 3",
+   "userId": "cohort_churned_10",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Pricing notes 3. Synthetic churned_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:4",
+   "title": "Team planning doc 4",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 4. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:5",
+   "title": "Founder narrative 5",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Founder narrative 5. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:6",
+   "title": "Team planning doc 6",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Team planning doc 6. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:7",
+   "title": "Research scratchpad 7",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Research scratchpad 7. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_churned_10:doc:8",
+   "title": "Product review notes 8",
+   "userId": "cohort_churned_10",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Product review notes 8. Synthetic churned_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_01:doc:1",
+   "title": "Campaign brief 1",
+   "userId": "cohort_trial_01",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Campaign brief 1. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_01:doc:2",
+   "title": "Client update 2",
+   "userId": "cohort_trial_01",
+   "isArchived": true,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 2. Synthetic trial_users sample. State: archived.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_02:doc:1",
+   "title": "Customer synthesis 1",
+   "userId": "cohort_trial_02",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Customer synthesis 1. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_03:doc:1",
+   "title": "Meeting notes 1",
+   "userId": "cohort_trial_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 1. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_03:doc:2",
+   "title": "Meeting notes 2",
+   "userId": "cohort_trial_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 2. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_03:doc:3",
+   "title": "Client update 3",
+   "userId": "cohort_trial_03",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 3. Synthetic trial_users sample. State: published.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_03:doc:4",
+   "title": "Hiring scorecard 4",
+   "userId": "cohort_trial_03",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 4. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_04:doc:1",
+   "title": "Public changelog draft 1",
+   "userId": "cohort_trial_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Public changelog draft 1. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_04:doc:2",
+   "title": "Launch notes 2",
+   "userId": "cohort_trial_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Launch notes 2. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_04:doc:3",
+   "title": "Meeting notes 3",
+   "userId": "cohort_trial_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Meeting notes 3. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_04:doc:4",
+   "title": "Client update 4",
+   "userId": "cohort_trial_04",
+   "isArchived": false,
+   "isPublished": false,
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Client update 4. Synthetic trial_users sample. State: draft.\"}]"
+  },
+  {
+   "seedKey": "cohort_trial_05:doc:1",
+   "title": "Hiring scorecard 1",
+   "userId": "cohort_trial_05",
+   "isArchived": false,
+   "isPublished": true,
+   "icon": "globe",
+   "content": "[{\"type\":\"paragraph\",\"content\":\"Hiring scorecard 1. Synthetic trial_users sample. State: published.\"}]"
+  }
+ ],
+ "files": [
+  {
+   "name": "power-1-3-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-1-3-source.pdf",
+   "userId": "cohort_power_01",
+   "size": 1248713,
+   "documentSeedKey": "cohort_power_01:doc:3",
+   "checksum": "cohort-sample-power-1-3"
+  },
+  {
+   "name": "power-1-4-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-1-4-cover.png",
+   "userId": "cohort_power_01",
+   "size": 183910,
+   "documentSeedKey": "cohort_power_01:doc:4",
+   "checksum": "cohort-sample-power-1-4"
+  },
+  {
+   "name": "power-1-5-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-1-5-cover.png",
+   "userId": "cohort_power_01",
+   "size": 202292,
+   "documentSeedKey": "cohort_power_01:doc:5",
+   "checksum": "cohort-sample-power-1-5"
+  },
+  {
+   "name": "power-1-6-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-1-6-cover.png",
+   "userId": "cohort_power_01",
+   "size": 235961,
+   "documentSeedKey": "cohort_power_01:doc:6",
+   "checksum": "cohort-sample-power-1-6"
+  },
+  {
+   "name": "power-1-8-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-1-8-cover.png",
+   "userId": "cohort_power_01",
+   "size": 271015,
+   "documentSeedKey": "cohort_power_01:doc:8",
+   "checksum": "cohort-sample-power-1-8"
+  },
+  {
+   "name": "power-1-10-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-1-10-source.pdf",
+   "userId": "cohort_power_01",
+   "size": 1633347,
+   "documentSeedKey": "cohort_power_01:doc:10",
+   "checksum": "cohort-sample-power-1-10"
+  },
+  {
+   "name": "power-1-11-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-1-11-export.csv",
+   "userId": "cohort_power_01",
+   "size": 68079,
+   "documentSeedKey": "cohort_power_01:doc:11",
+   "checksum": "cohort-sample-power-1-11"
+  },
+  {
+   "name": "power-1-12-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-1-12-source.pdf",
+   "userId": "cohort_power_01",
+   "size": 1347067,
+   "documentSeedKey": "cohort_power_01:doc:12",
+   "checksum": "cohort-sample-power-1-12"
+  },
+  {
+   "name": "power-2-2-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-2-2-cover.png",
+   "userId": "cohort_power_02",
+   "size": 190370,
+   "documentSeedKey": "cohort_power_02:doc:2",
+   "checksum": "cohort-sample-power-2-2"
+  },
+  {
+   "name": "power-2-3-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-2-3-cover.png",
+   "userId": "cohort_power_02",
+   "size": 256175,
+   "documentSeedKey": "cohort_power_02:doc:3",
+   "checksum": "cohort-sample-power-2-3"
+  },
+  {
+   "name": "power-2-5-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-2-5-source.pdf",
+   "userId": "cohort_power_02",
+   "size": 2155949,
+   "documentSeedKey": "cohort_power_02:doc:5",
+   "checksum": "cohort-sample-power-2-5"
+  },
+  {
+   "name": "power-2-6-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-2-6-export.csv",
+   "userId": "cohort_power_02",
+   "size": 90404,
+   "documentSeedKey": "cohort_power_02:doc:6",
+   "checksum": "cohort-sample-power-2-6"
+  },
+  {
+   "name": "power-2-8-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-2-8-source.pdf",
+   "userId": "cohort_power_02",
+   "size": 1755464,
+   "documentSeedKey": "cohort_power_02:doc:8",
+   "checksum": "cohort-sample-power-2-8"
+  },
+  {
+   "name": "power-2-9-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-2-9-cover.png",
+   "userId": "cohort_power_02",
+   "size": 333413,
+   "documentSeedKey": "cohort_power_02:doc:9",
+   "checksum": "cohort-sample-power-2-9"
+  },
+  {
+   "name": "power-2-10-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-2-10-export.csv",
+   "userId": "cohort_power_02",
+   "size": 90415,
+   "documentSeedKey": "cohort_power_02:doc:10",
+   "checksum": "cohort-sample-power-2-10"
+  },
+  {
+   "name": "power-2-11-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-2-11-export.csv",
+   "userId": "cohort_power_02",
+   "size": 63134,
+   "documentSeedKey": "cohort_power_02:doc:11",
+   "checksum": "cohort-sample-power-2-11"
+  },
+  {
+   "name": "power-2-12-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-2-12-export.csv",
+   "userId": "cohort_power_02",
+   "size": 75762,
+   "documentSeedKey": "cohort_power_02:doc:12",
+   "checksum": "cohort-sample-power-2-12"
+  },
+  {
+   "name": "power-3-4-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-3-4-export.csv",
+   "userId": "cohort_power_03",
+   "size": 88279,
+   "documentSeedKey": "cohort_power_03:doc:4",
+   "checksum": "cohort-sample-power-3-4"
+  },
+  {
+   "name": "power-3-6-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-3-6-source.pdf",
+   "userId": "cohort_power_03",
+   "size": 2149247,
+   "documentSeedKey": "cohort_power_03:doc:6",
+   "checksum": "cohort-sample-power-3-6"
+  },
+  {
+   "name": "power-3-10-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-3-10-export.csv",
+   "userId": "cohort_power_03",
+   "size": 105949,
+   "documentSeedKey": "cohort_power_03:doc:10",
+   "checksum": "cohort-sample-power-3-10"
+  },
+  {
+   "name": "power-4-1-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-4-1-export.csv",
+   "userId": "cohort_power_04",
+   "size": 95820,
+   "documentSeedKey": "cohort_power_04:doc:1",
+   "checksum": "cohort-sample-power-4-1"
+  },
+  {
+   "name": "power-4-2-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/power-4-2-export.csv",
+   "userId": "cohort_power_04",
+   "size": 112632,
+   "documentSeedKey": "cohort_power_04:doc:2",
+   "checksum": "cohort-sample-power-4-2"
+  },
+  {
+   "name": "power-4-7-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-4-7-cover.png",
+   "userId": "cohort_power_04",
+   "size": 233270,
+   "documentSeedKey": "cohort_power_04:doc:7",
+   "checksum": "cohort-sample-power-4-7"
+  },
+  {
+   "name": "power-4-9-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-4-9-source.pdf",
+   "userId": "cohort_power_04",
+   "size": 1637642,
+   "documentSeedKey": "cohort_power_04:doc:9",
+   "checksum": "cohort-sample-power-4-9"
+  },
+  {
+   "name": "power-4-10-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/power-4-10-source.pdf",
+   "userId": "cohort_power_04",
+   "size": 1134387,
+   "documentSeedKey": "cohort_power_04:doc:10",
+   "checksum": "cohort-sample-power-4-10"
+  },
+  {
+   "name": "power-4-11-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-4-11-cover.png",
+   "userId": "cohort_power_04",
+   "size": 217058,
+   "documentSeedKey": "cohort_power_04:doc:11",
+   "checksum": "cohort-sample-power-4-11"
+  },
+  {
+   "name": "power-5-3-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/power-5-3-cover.png",
+   "userId": "cohort_power_05",
+   "size": 206248,
+   "documentSeedKey": "cohort_power_05:doc:3",
+   "checksum": "cohort-sample-power-5-3"
+  },
+  {
+   "name": "casual-1-4-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/casual-1-4-export.csv",
+   "userId": "cohort_casual_01",
+   "size": 72556,
+   "documentSeedKey": "cohort_casual_01:doc:4",
+   "checksum": "cohort-sample-casual-1-4"
+  },
+  {
+   "name": "casual-5-2-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-5-2-source.pdf",
+   "userId": "cohort_casual_05",
+   "size": 1412695,
+   "documentSeedKey": "cohort_casual_05:doc:2",
+   "checksum": "cohort-sample-casual-5-2"
+  },
+  {
+   "name": "casual-6-1-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-6-1-cover.png",
+   "userId": "cohort_casual_06",
+   "size": 254968,
+   "documentSeedKey": "cohort_casual_06:doc:1",
+   "checksum": "cohort-sample-casual-6-1"
+  },
+  {
+   "name": "casual-6-2-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-6-2-source.pdf",
+   "userId": "cohort_casual_06",
+   "size": 2280438,
+   "documentSeedKey": "cohort_casual_06:doc:2",
+   "checksum": "cohort-sample-casual-6-2"
+  },
+  {
+   "name": "casual-7-2-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-7-2-source.pdf",
+   "userId": "cohort_casual_07",
+   "size": 1592267,
+   "documentSeedKey": "cohort_casual_07:doc:2",
+   "checksum": "cohort-sample-casual-7-2"
+  },
+  {
+   "name": "casual-8-1-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/casual-8-1-export.csv",
+   "userId": "cohort_casual_08",
+   "size": 85001,
+   "documentSeedKey": "cohort_casual_08:doc:1",
+   "checksum": "cohort-sample-casual-8-1"
+  },
+  {
+   "name": "casual-9-4-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/casual-9-4-export.csv",
+   "userId": "cohort_casual_09",
+   "size": 83508,
+   "documentSeedKey": "cohort_casual_09:doc:4",
+   "checksum": "cohort-sample-casual-9-4"
+  },
+  {
+   "name": "casual-10-1-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-10-1-source.pdf",
+   "userId": "cohort_casual_10",
+   "size": 1415870,
+   "documentSeedKey": "cohort_casual_10:doc:1",
+   "checksum": "cohort-sample-casual-10-1"
+  },
+  {
+   "name": "casual-11-1-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-11-1-cover.png",
+   "userId": "cohort_casual_11",
+   "size": 231943,
+   "documentSeedKey": "cohort_casual_11:doc:1",
+   "checksum": "cohort-sample-casual-11-1"
+  },
+  {
+   "name": "casual-13-4-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-13-4-source.pdf",
+   "userId": "cohort_casual_13",
+   "size": 1955810,
+   "documentSeedKey": "cohort_casual_13:doc:4",
+   "checksum": "cohort-sample-casual-13-4"
+  },
+  {
+   "name": "casual-21-1-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-21-1-cover.png",
+   "userId": "cohort_casual_21",
+   "size": 284510,
+   "documentSeedKey": "cohort_casual_21:doc:1",
+   "checksum": "cohort-sample-casual-21-1"
+  },
+  {
+   "name": "casual-21-3-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-21-3-cover.png",
+   "userId": "cohort_casual_21",
+   "size": 199965,
+   "documentSeedKey": "cohort_casual_21:doc:3",
+   "checksum": "cohort-sample-casual-21-3"
+  },
+  {
+   "name": "casual-25-3-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-25-3-source.pdf",
+   "userId": "cohort_casual_25",
+   "size": 2476286,
+   "documentSeedKey": "cohort_casual_25:doc:3",
+   "checksum": "cohort-sample-casual-25-3"
+  },
+  {
+   "name": "casual-27-1-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-27-1-cover.png",
+   "userId": "cohort_casual_27",
+   "size": 258685,
+   "documentSeedKey": "cohort_casual_27:doc:1",
+   "checksum": "cohort-sample-casual-27-1"
+  },
+  {
+   "name": "casual-27-3-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/casual-27-3-source.pdf",
+   "userId": "cohort_casual_27",
+   "size": 1253857,
+   "documentSeedKey": "cohort_casual_27:doc:3",
+   "checksum": "cohort-sample-casual-27-3"
+  },
+  {
+   "name": "casual-27-4-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-27-4-cover.png",
+   "userId": "cohort_casual_27",
+   "size": 212480,
+   "documentSeedKey": "cohort_casual_27:doc:4",
+   "checksum": "cohort-sample-casual-27-4"
+  },
+  {
+   "name": "casual-27-5-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-27-5-cover.png",
+   "userId": "cohort_casual_27",
+   "size": 241723,
+   "documentSeedKey": "cohort_casual_27:doc:5",
+   "checksum": "cohort-sample-casual-27-5"
+  },
+  {
+   "name": "casual-28-2-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-28-2-cover.png",
+   "userId": "cohort_casual_28",
+   "size": 275779,
+   "documentSeedKey": "cohort_casual_28:doc:2",
+   "checksum": "cohort-sample-casual-28-2"
+  },
+  {
+   "name": "casual-29-4-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-29-4-cover.png",
+   "userId": "cohort_casual_29",
+   "size": 279616,
+   "documentSeedKey": "cohort_casual_29:doc:4",
+   "checksum": "cohort-sample-casual-29-4"
+  },
+  {
+   "name": "casual-30-1-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/casual-30-1-export.csv",
+   "userId": "cohort_casual_30",
+   "size": 81053,
+   "documentSeedKey": "cohort_casual_30:doc:1",
+   "checksum": "cohort-sample-casual-30-1"
+  },
+  {
+   "name": "casual-30-2-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/casual-30-2-cover.png",
+   "userId": "cohort_casual_30",
+   "size": 283784,
+   "documentSeedKey": "cohort_casual_30:doc:2",
+   "checksum": "cohort-sample-casual-30-2"
+  },
+  {
+   "name": "churned-2-5-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/churned-2-5-export.csv",
+   "userId": "cohort_churned_02",
+   "size": 73575,
+   "documentSeedKey": "cohort_churned_02:doc:5",
+   "checksum": "cohort-sample-churned-2-5"
+  },
+  {
+   "name": "churned-4-3-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/churned-4-3-cover.png",
+   "userId": "cohort_churned_04",
+   "size": 279979,
+   "documentSeedKey": "cohort_churned_04:doc:3",
+   "checksum": "cohort-sample-churned-4-3"
+  },
+  {
+   "name": "churned-5-3-source.pdf",
+   "type": "application/pdf",
+   "url": "https://example.com/cohort-sample/churned-5-3-source.pdf",
+   "userId": "cohort_churned_05",
+   "size": 1106067,
+   "documentSeedKey": "cohort_churned_05:doc:3",
+   "checksum": "cohort-sample-churned-5-3"
+  },
+  {
+   "name": "churned-9-2-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/churned-9-2-cover.png",
+   "userId": "cohort_churned_09",
+   "size": 235098,
+   "documentSeedKey": "cohort_churned_09:doc:2",
+   "checksum": "cohort-sample-churned-9-2"
+  },
+  {
+   "name": "churned-10-2-cover.png",
+   "type": "image/png",
+   "url": "https://example.com/cohort-sample/churned-10-2-cover.png",
+   "userId": "cohort_churned_10",
+   "size": 177243,
+   "documentSeedKey": "cohort_churned_10:doc:2",
+   "checksum": "cohort-sample-churned-10-2"
+  },
+  {
+   "name": "trial-3-2-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/trial-3-2-export.csv",
+   "userId": "cohort_trial_03",
+   "size": 54675,
+   "documentSeedKey": "cohort_trial_03:doc:2",
+   "checksum": "cohort-sample-trial-3-2"
+  },
+  {
+   "name": "trial-3-4-export.csv",
+   "type": "text/csv",
+   "url": "https://example.com/cohort-sample/trial-3-4-export.csv",
+   "userId": "cohort_trial_03",
+   "size": 109702,
+   "documentSeedKey": "cohort_trial_03:doc:4",
+   "checksum": "cohort-sample-trial-3-4"
+  }
+ ],
+ "coworkerMessages": [
+  {
+   "userId": "cohort_power_01",
+   "role": "user",
+   "count": 62
+  },
+  {
+   "userId": "cohort_power_02",
+   "role": "user",
+   "count": 76
+  },
+  {
+   "userId": "cohort_power_03",
+   "role": "user",
+   "count": 116
+  },
+  {
+   "userId": "cohort_power_04",
+   "role": "user",
+   "count": 110
+  },
+  {
+   "userId": "cohort_power_05",
+   "role": "user",
+   "count": 63
+  },
+  {
+   "userId": "cohort_casual_01",
+   "role": "user",
+   "count": 16
+  },
+  {
+   "userId": "cohort_casual_02",
+   "role": "user",
+   "count": 31
+  },
+  {
+   "userId": "cohort_casual_03",
+   "role": "user",
+   "count": 43
+  },
+  {
+   "userId": "cohort_casual_04",
+   "role": "user",
+   "count": 16
+  },
+  {
+   "userId": "cohort_casual_05",
+   "role": "user",
+   "count": 71
+  },
+  {
+   "userId": "cohort_casual_06",
+   "role": "user",
+   "count": 62
+  },
+  {
+   "userId": "cohort_casual_07",
+   "role": "user",
+   "count": 59
+  },
+  {
+   "userId": "cohort_casual_08",
+   "role": "user",
+   "count": 32
+  },
+  {
+   "userId": "cohort_casual_09",
+   "role": "user",
+   "count": 45
+  },
+  {
+   "userId": "cohort_casual_10",
+   "role": "user",
+   "count": 10
+  },
+  {
+   "userId": "cohort_casual_11",
+   "role": "user",
+   "count": 55
+  },
+  {
+   "userId": "cohort_casual_12",
+   "role": "user",
+   "count": 54
+  },
+  {
+   "userId": "cohort_casual_13",
+   "role": "user",
+   "count": 43
+  },
+  {
+   "userId": "cohort_casual_14",
+   "role": "user",
+   "count": 24
+  },
+  {
+   "userId": "cohort_casual_15",
+   "role": "user",
+   "count": 64
+  },
+  {
+   "userId": "cohort_casual_16",
+   "role": "user",
+   "count": 8
+  },
+  {
+   "userId": "cohort_casual_17",
+   "role": "user",
+   "count": 13
+  },
+  {
+   "userId": "cohort_casual_18",
+   "role": "user",
+   "count": 24
+  },
+  {
+   "userId": "cohort_casual_19",
+   "role": "user",
+   "count": 56
+  },
+  {
+   "userId": "cohort_casual_20",
+   "role": "user",
+   "count": 27
+  },
+  {
+   "userId": "cohort_casual_21",
+   "role": "user",
+   "count": 26
+  },
+  {
+   "userId": "cohort_casual_22",
+   "role": "user",
+   "count": 22
+  },
+  {
+   "userId": "cohort_casual_23",
+   "role": "user",
+   "count": 50
+  },
+  {
+   "userId": "cohort_casual_24",
+   "role": "user",
+   "count": 33
+  },
+  {
+   "userId": "cohort_casual_25",
+   "role": "user",
+   "count": 52
+  },
+  {
+   "userId": "cohort_casual_26",
+   "role": "user",
+   "count": 76
+  },
+  {
+   "userId": "cohort_casual_27",
+   "role": "user",
+   "count": 75
+  },
+  {
+   "userId": "cohort_casual_28",
+   "role": "user",
+   "count": 65
+  },
+  {
+   "userId": "cohort_casual_29",
+   "role": "user",
+   "count": 41
+  },
+  {
+   "userId": "cohort_casual_30",
+   "role": "user",
+   "count": 64
+  },
+  {
+   "userId": "cohort_churned_01",
+   "role": "user",
+   "count": 157
+  },
+  {
+   "userId": "cohort_churned_02",
+   "role": "user",
+   "count": 116
+  },
+  {
+   "userId": "cohort_churned_03",
+   "role": "user",
+   "count": 98
+  },
+  {
+   "userId": "cohort_churned_04",
+   "role": "user",
+   "count": 151
+  },
+  {
+   "userId": "cohort_churned_05",
+   "role": "user",
+   "count": 87
+  },
+  {
+   "userId": "cohort_churned_06",
+   "role": "user",
+   "count": 104
+  },
+  {
+   "userId": "cohort_churned_07",
+   "role": "user",
+   "count": 93
+  },
+  {
+   "userId": "cohort_churned_08",
+   "role": "user",
+   "count": 116
+  },
+  {
+   "userId": "cohort_churned_09",
+   "role": "user",
+   "count": 108
+  },
+  {
+   "userId": "cohort_churned_10",
+   "role": "user",
+   "count": 117
+  },
+  {
+   "userId": "cohort_trial_01",
+   "role": "user",
+   "count": 16
+  },
+  {
+   "userId": "cohort_trial_02",
+   "role": "user",
+   "count": 13
+  },
+  {
+   "userId": "cohort_trial_03",
+   "role": "user",
+   "count": 13
+  },
+  {
+   "userId": "cohort_trial_04",
+   "role": "user",
+   "count": 9
+  },
+  {
+   "userId": "cohort_trial_05",
+   "role": "user",
+   "count": 13
+  }
+ ],
+ "squadAgents": [
+  {
+   "userId": "cohort_power_01",
+   "name": "Skeptical PM",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "rocket",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_power_01"
+  },
+  {
+   "userId": "cohort_power_02",
+   "name": "Editor Coach",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "pencil",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_power_02"
+  },
+  {
+   "userId": "cohort_casual_02",
+   "name": "Launch Reviewer",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "pencil",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_02"
+  },
+  {
+   "userId": "cohort_casual_12",
+   "name": "Launch Reviewer",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "rocket",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_12"
+  },
+  {
+   "userId": "cohort_casual_16",
+   "name": "Skeptical PM",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "rocket",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_16"
+  },
+  {
+   "userId": "cohort_casual_21",
+   "name": "Research Synthesizer",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "rocket",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_21"
+  },
+  {
+   "userId": "cohort_casual_24",
+   "name": "Editor Coach",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "test-tube",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_24"
+  },
+  {
+   "userId": "cohort_casual_25",
+   "name": "Research Synthesizer",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "pencil",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_25"
+  },
+  {
+   "userId": "cohort_casual_30",
+   "name": "Research Synthesizer",
+   "description": "Synthetic sample agent for Week 3 and Week 4 data exploration",
+   "icon": "magnifying-glass",
+   "instructionsDocSeedTitle": "Squad Agent Instructions cohort_casual_30"
+  }
+ ],
+ "insights": [
+  {
+   "name": "chat_to_publish_gap",
+   "studentQuestion": "Which synthetic users have high Coworker usage but no published documents?",
+   "expectedPattern": "Churn-risk and a meaningful minority of casual users have high Coworker message counts with zero published documents."
+  },
+  {
+   "name": "power_user_publish_rate",
+   "studentQuestion": "Do power users publish at a higher rate than casual users?",
+   "expectedPattern": "Power users own more documents, publish more often, attach more files, and are more likely to create Squad agents."
+  },
+  {
+   "name": "squad_agent_onboarding_cliff",
+   "studentQuestion": "How many users create or configure Squad agents compared with users who send Coworker messages?",
+   "expectedPattern": "Squad agent rows are sparse compared with Coworker message usage, matching the course narrative that Squad has high interest but lower activation."
+  },
+  {
+   "name": "draft_review_pressure",
+   "studentQuestion": "How many active users create multiple private drafts but never publish?",
+   "expectedPattern": "Several users have multiple non-archived unpublished documents and high chat activity, suggesting a draft-review bridge problem rather than low engagement."
+  }
+ ],
+ "notes": [
+  "The seeder expands this scenario into deterministic schema-valid rows.",
+  "There is no user table in the current Convex schema, so persona is encoded in userId and duplicated in the seeder summary.",
+  "The data is synthetic but designed to support realistic Week 3 and Week 4 product-discovery queries."
+ ]
+}

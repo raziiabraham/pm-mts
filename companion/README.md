@@ -9,7 +9,7 @@ If you are a reader, invoke `$pm-mts-guide Chapter N`, `/pm-mts N`, or say “Gu
 | Chapter | Agent source | Product question | Check the agent may execute |
 | --- | --- | --- | --- |
 | 2 | [`api/README.md`](api/README.md) | What request, response, failure, and control states make the API behavior complete? | `python3 companion/api/validate_contract.py` |
-| 5 | [`sql/sakila/README.md`](sql/sakila/README.md) | What does the exact SQL measure, at what grain, and what can the result not prove? | `./companion/sql/validate_chapter_05.sh` |
+| 5 | [`sql/noted/PROVENANCE.md`](sql/noted/PROVENANCE.md) | What does the exact SQL measure, at what grain, and what can the result not prove? | `./companion/sql/noted/run_chapter_examples.sh` |
 | 6 | [`analytics/README.md`](analytics/README.md) | Can the event contract support the product decision it claims to inform? | `python3 companion/analytics/validate_tracking.py` |
 | 7 | [`experiments/chapter_07_statistical_interpretation_lab.md`](experiments/chapter_07_statistical_interpretation_lab.md) | What decision rule should exist before the result arrives? | Worksheet |
 | 13 | [`ai_evaluation/README.md`](ai_evaluation/README.md) | Which cases and failures determine whether an AI capability may ship? | `python3 companion/ai_evaluation/evaluate.py` |
@@ -55,7 +55,7 @@ The no-key path requires Python 3.11+, SQLite 3.40+, and a POSIX-compatible shel
 
 ## Data and rights boundary
 
-Named companies and people in constructed runnable fixtures are fictional, and feedback reviews are synthetic. Chapter 5 vendors the open-licensed generated Sakila SQLite data with its provenance and licence notices. Chapter 17 intentionally inspects the author’s public Noted repository at a cited commit. No employer code, credentials, customer data, or confidential artifacts belong here.
+Named companies and people in constructed runnable fixtures are fictional, and feedback reviews are synthetic. Chapter 5 vendors a synthetic Noted cohort, expanded from a fixed seed by Noted’s own seeder and recorded in [`sql/noted/PROVENANCE.md`](sql/noted/PROVENANCE.md); its results are reproducible rather than measured. The open-licensed generated Sakila SQLite data remains under [`sql/sakila/`](sql/sakila/) as a general SQL lab, with its provenance and licence notices intact. Chapter 17 intentionally inspects the author’s public Noted repository at a cited commit. No employer code, credentials, customer data, or confidential artifacts belong here.
 
 ## Maintenance rule
 

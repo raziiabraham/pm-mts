@@ -285,35 +285,38 @@ The assembled workbook contains 26 reusable records. The twenty print chapters u
 
 # Product Data Question Record
 
-## Hands-on Sakila Lab
+## Hands-on Noted Cohort Lab
 
-Use the same generated Sakila data as Chapter 5 before applying this record to your own product. From the cloned repository root, build the SQLite database:
-
-```sh
-./companion/sql/sakila/load_sakila.sh
-```
-
-The loader should verify 599 customers, 1,000 films, 4,581 inventory copies, 16,044 rentals, 16,049 payments, and two stores. Then make the companion print the product question, exact query, actual result, and interpretation boundary:
+Use the same fifty-user Noted cohort as Chapter 5 before applying this record to your own product. From the cloned repository root, build the SQLite database:
 
 ```sh
-./companion/sql/sakila/run_product_query.sh
+python companion/sql/noted/load_noted.py
 ```
 
-Do not treat running the query as the end of the exercise. Inspect the relationship path `film -> inventory -> rental`, confirm that one result row represents one film, and explain why recorded rentals divided by distinct inventory copies is more useful than rental count alone for this investigation.
+The loader should report users=50, documents=243, files=55, coworker_messages=50, squad_agents=9, ai_settings=50, user_storage=50, and events=2892. The cohort is synthetic and generated from a fixed seed, so its numbers are reproducible rather than discovered; `companion/sql/noted/PROVENANCE.md` records where the rows come from and what they deliberately do not reconcile. Then make the companion print each of the chapter's questions beside the rows its query actually returned:
 
-Record one row exactly as the database returned it:
+```sh
+./companion/sql/noted/run_chapter_examples.sh
+```
 
-| title | inventory copies | recorded rentals | rentals per copy |
-| --- | ---: | ---: | ---: |
-|  |  |  |  |
+Do not treat running the queries as the end of the exercise. Inspect the relationship path `users -> documents -> files`: one user holds many documents, and one document holds many files.
 
-- What possible availability problem does this result help investigate?
+Then find the printed result that joins `cohort_power_01` to both `documents` and `coworker_messages`. That account is one user row with thirteen documents and a single message-count row, so the join repeats the count once per document and `SUM(message_count)` reports 806 messages instead of the 62 the account actually sent. Every join key is correct and no warning appears. Write down how you would have caught a thirteen-times overstatement before quoting it in a review.
+
+Now record the published-rate result exactly as the database returned it. Raw counts make the two groups look equivalent—seventeen published documents against sixteen—so the fourth column is the same evidence divided by the group it came from:
+
+| persona | users | published | published per user | % of drafts published |
+| --- | ---: | ---: | ---: | ---: |
+| power_users |  |  |  |  |
+| casual_users |  |  |  |  |
+
+- Which roadmap decision would the raw counts of seventeen and sixteen have supported that the per-user rate does not?
 - What decision must **not** be made from this result alone?
-- Which missing behavior would provide stronger evidence of unmet demand?
+- Which missing record would provide stronger evidence about when the publishing gap opened?
 
 Now give an AI coding agent this bounded task:
 
-> Using the loaded Sakila SQLite database, add one query that tests a different explanation for an availability problem. Before writing SQL, state the product question, decision, metric, grain, denominator, join path, and one limitation. Run the query and return the command, SQL, and actual result. Do not change the upstream schema or data.
+> Using the loaded Noted SQLite database, add one query that tests a different explanation for the publishing gap. Before writing SQL, state the product question, decision, metric, grain, denominator, join path, and one limitation. Run the query and return the command, SQL, and actual result. Do not change the upstream schema or data.
 
 Capture the agent-assisted run rather than accepting a proposed query that was never executed:
 

@@ -406,10 +406,8 @@ Choosing to productionize the instrument creates a delivery obligation rather th
 
 ## Evidence and source note
 
-**Firsthand account:** The original prompt-development and practice-data application is preserved in dated July–August 2024 artifacts, including Prompt V2/V3 code, train/test splits, labelled evaluation sheets, and topic-category mapping.
+**Firsthand account:** The original prompt-development and practice-data application is preserved in dated July–August 2024 artifacts, including Prompt V2/V3 code, train/test splits, labelled evaluation sheets, and topic-category mapping. The earlier workshop and its raw app-review corpus remain the provenance inputs behind that work.
 
 **Constructed teaching example:** HarborCart, its reviews and labels, the publication prompt, figures, and companion dataset were created for this book so readers can inspect and rerun the workflow without depending on private source material.
-
-**External source/framework:** The earlier workshop and raw app-review corpus remain provenance inputs. Readers work with the synthetic HarborCart case and companion dataset presented here.
 
 **Recommended practice:** Evaluation, taxonomy governance, human review, ingestion rights, privacy, cost, drift, and decision rituals require specialist adaptation before production use.
