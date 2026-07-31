@@ -41,8 +41,9 @@ Maintainers and readers who intentionally want to check every self-contained fix
 Expected summary:
 
 ```text
+Reader and AI-agent guidance validation passed.
 Chapter 2 API contract validation passed.
-Chapter 5 Sakila load, book queries, and captured result passed.
+Chapter 5 Noted cohort load, book queries, and captured results passed.
 Chapter 6 tracking validation passed.
 Chapter 13 evaluation passed: v1 2/5; v2 5/5.
 Chapter 14 calibration record validation passed.
