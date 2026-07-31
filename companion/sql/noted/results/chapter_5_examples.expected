@@ -1,0 +1,100 @@
+
+Example 1: SELECT title, is_published FROM documents WHERE is_published = 1
+title             is_published
+----------------  ------------
+Campaign brief 1  1           
+Client update 12  1           
+Client update 3   1           
+Client update 6   1           
+Client update 7   1           
+
+Example 2: SELECT (SELECT COUNT(*) FROM users) AS users, (SELECT SUM(messag
+users  coworker_messages  documents  published
+-----  -----------------  ---------  ---------
+50     2895               243        35       
+
+Example 3: SELECT is_published, COUNT(*) AS documents FROM documents GROUP 
+is_published  documents
+------------  ---------
+0             208      
+1             35       
+
+Example 4: SELECT COUNT(*) AS rows_returned, COUNT(DISTINCT u.user_id) AS u
+rows_returned  users  summed_messages
+-------------  -----  ---------------
+13             1      806            
+
+Example 5: SELECT d.title, f.name, f.mime_type FROM documents AS d JOIN fil
+title                     name                  mime_type      
+------------------------  --------------------  ---------------
+Draft strategy memo 3     power-1-3-source.pdf  application/pdf
+Launch notes 4            power-1-4-cover.png   image/png      
+Public changelog draft 5  power-1-5-cover.png   image/png      
+Founder narrative 6       power-1-6-cover.png   image/png      
+Team planning doc 8       power-1-8-cover.png   image/png      
+
+Example 6: SELECT u.persona, COUNT(DISTINCT u.user_id) AS users, SUM(m.mess
+persona        users  messages
+-------------  -----  --------
+casual_users   30     4965    
+churned_users  10     5505    
+power_users    5      5062    
+trial_users    5      146     
+
+Example 7: WITH per_user AS ( SELECT u.user_id, u.persona, m.message_count,
+persona        users  messages  documents  published
+-------------  -----  --------  ---------  ---------
+casual_users   30     1257      122        16       
+churned_users  10     1147      49         0        
+power_users    5      427       60         17       
+trial_users    5      64        12         2        
+
+Example 8: SELECT COUNT(*) AS engaged_users_never_published FROM coworker_m
+engaged_users_never_published
+-----------------------------
+27                           
+
+Example 9: SELECT CASE WHEN published > 0 THEN  published at least once  WH
+activation_state           users
+-------------------------  -----
+chatting, never published  27   
+published at least once    20   
+drafting, barely chatting  3    
+
+Example 10: WITH per_user AS ( SELECT user_id, message_count FROM coworker_m
+users_above_average  average_messages
+-------------------  ----------------
+23                   57.9            
+
+Example 11: WITH per_user AS ( SELECT u.user_id, u.persona, (SELECT COUNT(*)
+persona        users  published  published_per_user  pct_of_drafts_published
+-------------  -----  ---------  ------------------  -----------------------
+power_users    5      17         3.4                 28.3                   
+casual_users   30     16         0.53                13.1                   
+trial_users    5      2          0.4                 16.7                   
+churned_users  10     0          0.0                 0.0                    
+
+Example 12: WITH per_persona AS ( SELECT u.persona, (SELECT SUM(m.message_co
+persona        messages  published  messages_per_published
+-------------  --------  ---------  ----------------------
+churned_users  1147      0                                
+power_users    427       17         25.0                  
+trial_users    64        2          32.0                  
+casual_users   1257      16         79.0                  
+
+Example 13: SELECT COUNT(*) AS private_drafts, COUNT(DISTINCT user_id) AS us
+private_drafts  users
+--------------  -----
+102             30   
+
+Example 14: SELECT u.persona, COUNT(*) AS private_drafts, COUNT(DISTINCT d.u
+persona        private_drafts  users
+-------------  --------------  -----
+casual_users   58              17   
+churned_users  38              10   
+trial_users    6               3    
+
+Example 15: SELECT (SELECT COUNT(*) FROM coworker_messages WHERE message_cou
+users_in_chat  users_with_agent
+-------------  ----------------
+50             9               

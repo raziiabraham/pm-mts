@@ -106,6 +106,12 @@ for chapter in range(1, 21):
     require(re.search(rf"^\| {chapter} \|", chapter_map, flags=re.MULTILINE) is not None, f"Chapter {chapter} is missing from COMPANION_MAP.md")
     require(f"companion/chapters/{chapter:02d}.md" in chapter_map, f"Chapter {chapter} map does not route through its reader guide")
 
+# The book's figure manifest runs F1.1-F9.1 then F11.1-F20.1: Chapter 10 works
+# its Fogg and COM-B diagnosis through Examples 10.1-10.6 in the chapter itself
+# rather than a numbered figure, so it has nothing in companion/figures/png to
+# link. Every other chapter must still expose one.
+CHAPTERS_WITHOUT_A_NUMBERED_FIGURE = {10}
+
 required_guide_sections = (
     "## Product question",
     "## What the agent brings into chat",
@@ -119,8 +125,9 @@ for chapter, guide_path in enumerate(CHAPTER_GUIDES, start=1):
     require(guide.startswith(f"# Chapter {chapter}: {CHAPTER_TITLES[chapter - 1]}"), f"Chapter {chapter} guide has the wrong title")
     for section in required_guide_sections:
         require(section in guide, f"Chapter {chapter} guide is missing: {section}")
-    require("../figures/png/" in guide, f"Chapter {chapter} guide does not expose its book figure")
-    require(f"figure_{chapter}_1.png" in guide, f"Chapter {chapter} guide does not link its chapter figure")
+    if chapter not in CHAPTERS_WITHOUT_A_NUMBERED_FIGURE:
+        require("../figures/png/" in guide, f"Chapter {chapter} guide does not expose its book figure")
+        require(f"figure_{chapter}_1.png" in guide, f"Chapter {chapter} guide does not link its chapter figure")
     require("../templates/" in guide, f"Chapter {chapter} guide does not link its workbook record")
     require(len(guide.split()) >= 180, f"Chapter {chapter} guide is too thin to guide a reader")
 
@@ -154,16 +161,36 @@ openapi = (api_dir / "openapi.yaml").read_text(encoding="utf-8")
 for expected in ("openapi: 3.1.0", "https://api.briefly.example", "/v1/context-drafts:", '"200":', '"400":', '"503":'):
     require(expected in openapi, f"OpenAPI contract is missing: {expected}")
 
-sql_dir = ROOT / "companion" / "sql" / "sakila"
-query = (sql_dir / "queries" / "film_demand_per_copy.sql").read_text(encoding="utf-8").strip()
-sql_readme = (sql_dir / "README.md").read_text(encoding="utf-8")
-require(query in sql_readme, "SQL guide no longer embeds the exact runnable query")
-require("LOVE SUICIDES" in sql_readme and "rentals per copy" in sql_readme, "SQL guide is missing its visible result")
-require("does **not** prove unmet demand" in sql_readme, "SQL guide lost its interpretation boundary")
+# The Sakila lab is retained as standalone SQL practice. Chapter 5 no longer
+# uses it, but these checks keep the lab itself honest for readers who work it.
+sakila_dir = ROOT / "companion" / "sql" / "sakila"
+query = (sakila_dir / "queries" / "film_demand_per_copy.sql").read_text(encoding="utf-8").strip()
+sakila_readme = (sakila_dir / "README.md").read_text(encoding="utf-8")
+require(query in sakila_readme, "Sakila lab no longer embeds the exact runnable query")
+require("LOVE SUICIDES" in sakila_readme and "rentals per copy" in sakila_readme, "Sakila lab is missing its visible result")
+require("does **not** prove unmet demand" in sakila_readme, "Sakila lab lost its interpretation boundary")
+require("no longer Chapter 5" in sakila_readme, "Sakila lab does not say it has been superseded by the Noted cohort")
+
+# Chapter 5 itself runs on the vendored Noted cohort.
+noted_dir = ROOT / "companion" / "sql" / "noted"
+for required in ("load_noted.py", "run_chapter_examples.sh", "PROVENANCE.md"):
+    require((noted_dir / required).exists(), f"Noted cohort is missing {required}")
+require(
+    (noted_dir / "queries" / "chapter_5_examples.sql").exists(),
+    "Noted cohort is missing the generated Chapter 5 queries",
+)
+require(
+    (noted_dir / "results" / "chapter_5_examples.expected").exists(),
+    "Noted cohort is missing the captured results validate_chapter_05.sh diffs against",
+)
 
 chapter_5 = CHAPTER_GUIDES[4].read_text(encoding="utf-8")
-for expected in ("eight executable examples", "run_chapter_examples.sh", "Broader SQL progression"):
-    require(expected in chapter_5, f"Chapter 5 guide lost restored SQL coverage: {expected}")
+for expected in ("fifteen examples", "sql/noted/run_chapter_examples.sh", "Working hypothesis"):
+    require(expected in chapter_5, f"Chapter 5 guide lost its Noted investigation: {expected}")
+require(
+    "sakila" not in chapter_5.lower(),
+    "Chapter 5 guide still points readers at the superseded Sakila lab",
+)
 
 chapter_8 = CHAPTER_GUIDES[7].read_text(encoding="utf-8")
 for expected in ("reflective listening", "seven steps for flowcharting", "verb + object"):

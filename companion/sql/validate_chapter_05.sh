@@ -3,21 +3,20 @@ set -eu
 
 here=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 work=$(mktemp -d)
-database="$work/sakila.db"
-actual="$work/film_demand_per_copy.actual"
+database="$work/noted.db"
+actual="$work/chapter_5_examples.actual"
 trap 'rm -rf "$work"' EXIT HUP INT TERM
 
-"$here/sakila/load_sakila.sh" "$database" >/dev/null
+# Build the cohort from the vendored seed into a scratch database rather than
+# reusing companion/sql/noted/noted.db, so the check cannot pass against a
+# database someone has edited by hand. No Convex deployment, no network.
+python3 "$here/noted/load_noted.py" --database "$database" >/dev/null
 
-# Execute every query shape printed in Chapter 5 against the real Sakila
-# schema. The detailed output is discarded here because syntax and schema
-# compatibility are the regression contract for these examples.
-sqlite3 "$database" < "$here/chapter_05_validation.sql" >/dev/null
+# Chapter 5 prints these exact rows, so the contract is byte-for-byte over the
+# whole transcript, not merely that the SQL parses. queries/chapter_5_examples.sql
+# is generated from the chapter by scripts/sync_chapter_5_examples.py, so a query
+# edited in the book and a result captured here cannot drift apart unnoticed.
+sqlite3 "$database" < "$here/noted/queries/chapter_5_examples.sql" > "$actual"
+diff -u "$here/noted/results/chapter_5_examples.expected" "$actual"
 
-# The worked product investigation has a stronger contract: the book prints
-# these exact rows, so compare the deterministic output byte for byte.
-sqlite3 -header -list -separator '|' "$database" \
-    < "$here/sakila/queries/film_demand_per_copy.sql" > "$actual"
-diff -u "$here/sakila/results/film_demand_per_copy.expected" "$actual"
-
-printf '%s\n' 'Chapter 5 Sakila load, book queries, and captured result passed.'
+printf '%s\n' 'Chapter 5 Noted cohort load, book queries, and captured results passed.'

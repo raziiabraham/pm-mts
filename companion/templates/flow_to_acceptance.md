@@ -1,5 +1,17 @@
 # Flow-to-Acceptance Record
 
+## Reflective Listening Record
+
+- Stakeholder/actor and operational context:
+- Language, sequence, workaround, or uncertainty heard:
+- Ambiguous nouns or verbs to clarify:
+- Meaning and constraint reflected back:
+- Counterexample used to challenge the provisional model:
+- Reconstructed trigger, states, evidence, exceptions, and open decisions:
+- Stakeholder corrections and approval boundary:
+
+Do not begin the diagram until the stakeholder has had a chance to correct the reconstruction.
+
 ## Scope and Operational Claim
 
 - Product journey/object:
